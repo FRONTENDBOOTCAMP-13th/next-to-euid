@@ -1,1 +1,16 @@
-/* CSS 스타일을 작성해 주세요. */ 
+/* CSS 스타일을 작성해 주세요. */
+@import "./theme.css";
+
+body {
+  background-color: var(--foundation-background-color);
+  color: var(--contents-primary-color);
+  font: var(--font-family);
+}
+
+h1 {
+  color: var(--foundation-primary-color);
+}
+
+ul {
+  color: var(--contents-secondary-color);
+}
