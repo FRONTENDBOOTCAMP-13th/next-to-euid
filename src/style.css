@@ -1,14 +1,14 @@
+/* src/style.css */
 /* CSS 스타일을 작성해 주세요. */
+@import "../public/common/mini-reset.css";
 @import "./theme.css";
+@import "./styles/component-start.css";
+@import "../public/common/a11y.css";
 
 body {
   background-color: var(--foundation-background-color);
-  color: var(--contents-primary-color);
+  color: var(--contents-secondary-color);
   font: var(--font-family);
-}
-
-h1 {
-  color: var(--foundation-primary-color);
 }
 
 ul {

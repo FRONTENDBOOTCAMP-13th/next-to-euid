@@ -1,2 +1,6 @@
 /* src/styles/component-start.css */
 @import "../theme.css";
+
+body {
+  color: var(--contents-primary-color);
+}
