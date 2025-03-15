@@ -1,0 +1,225 @@
+/* src/theme.css */
+
+:root {
+  /* Spacing 간격 설정 */
+  /* 숫자 스케일 시스템 적용 */
+  --space-4: 0.25rem; /* 4px */
+  --space-8: 0.5rem; /* 8px */
+  --space-12: 0.75rem; /* 12px */
+  --space-16: 1rem; /* 16px */
+  --space-20: 1.25rem; /* 20px */
+  --space-24: 1.5rem; /* 24px */
+  --space-28: 1.75rem; /* 28px */
+  --space-32: 2rem; /* 32px */
+  --space-36: 2.25rem; /* 36px */
+  --space-40: 2.5rem; /* 40px */
+  --space-44: 2.75rem; /* 44px */
+  --space-48: 3rem; /* 48px */
+  --space-52: 3.25rem; /* 52px */
+  --space-56: 3.5rem; /* 56px */
+  --space-60: 3.75rem; /* 60px */
+  --space-64: 4rem; /* 64px */
+
+  /* 의미론적 별칭(semantic aliases) - 필요에 따라 사용 */
+  --spacing-xs: var(--space-4);
+  --spacing-sm: var(--space-8);
+  --spacing-md: var(--space-16);
+  --spacing-lg: var(--space-24);
+  --spacing-xl: var(--space-32);
+  --spacing-2xl: var(--space-40);
+  --spacing-3xl: var(--space-48);
+  --spacing-4xl: var(--space-64);
+
+  /* Color Palette 색상 팔레트 설정 */
+  /* LightMode Color Palette 라이트모드 색상 (기본값) */
+  /* Foundation */
+  --foundation-primary-color: #373f67;
+  --foundation-secondary-color: #5a85ee;
+  --foundation-tertiary-color: #719cf7;
+  --foundation-negative-color: #e11900;
+  --foundation-background-color: #ffffff;
+
+  /* Contents  */
+  --contents-primary-color: #000000;
+  --contents-secondary-color: #919191;
+  --contents-tertiary-color: #9da1b4;
+
+  /* 다크모드 색상 (변수만 정의) */
+  /* Foundation */
+  --dark-foundation-primary-color: #6a75b0;
+  --dark-foundation-secondary-color: #3a65cc;
+  --dark-foundation-tertiary-color: #4b7de6;
+  --dark-foundation-negative-color: #ff4d4d;
+  --dark-foundation-background-color: #121212;
+
+  /* Contents */
+  --dark-contents-primary-color: #ffffff;
+  --dark-contents-secondary-color: #b0b0b0;
+  --dark-contents-tertiary-color: #c8cce0;
+
+  /* 다크모드 미디어 쿼리 사용을 위한 설정 */
+  --color-scheme: light;
+
+  /* Typography 글꼴 설정 */
+  /* font 스타일 */
+  --font-family: "Pretendard", sans-serif;
+  /* font size */
+  --font-3xl-48: var(--space-48);
+  --font-2xl-32: var(--space-32);
+  --font-xl-24: var(--space-24);
+  --font-lg-16: var(--space-16);
+  --font-md-12: var(--space-12);
+  --font-sm-8: var(--space-8);
+  /* font weight */
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-regular: 400;
+  /* 기타 변수 */
+  --line-height-heading: 1.4;
+  --line-height-label: 1.5;
+  --line-height-paragraph: 1.6;
+
+  /* Grid System 간격 설정 */
+  /* 모바일 (320-599px) */
+  --grid-columns-mobile: 4;
+  --grid-margins-mobile: 16px;
+  --grid-gutter-mobile: 16px;
+
+  /* 태블릿 (600-1135px) */
+  --grid-columns-tablet: 8;
+  --grid-margins-tablet: 36px;
+  --grid-gutter-tablet: 36px;
+
+  /* 데스크탑 (1136px 이상) */
+  --grid-columns-desktop: 12;
+  --grid-margins-desktop: 64px;
+  --grid-gutter-desktop: 36px;
+
+  /* 기본값 (모바일 우선 접근법) */
+  --grid-columns: var(--grid-columns-mobile);
+  --grid-margins: var(--grid-margins-mobile);
+  --grid-gutter: var(--grid-gutter-mobile);
+  --container-width: 100%;
+
+  /* 그 외 반응형 설정 */
+  --breakpoint-mobile: 320px;
+  --breakpoint-tablet: 600px;
+  --breakpoint-desktop: 1136px;
+}
+
+/* font-heading */
+.font-heading-3xl {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  font-size: var(--font-3xl-48);
+}
+.font-heading-2xl {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  font-size: var(--font-2xl-32);
+}
+.font-heading-xl {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  font-size: var(--font-xl-24);
+}
+.font-heading-lg {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  font-size: var(--font-lg-16);
+}
+.font-heading-md {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  font-size: var(--font-md-12);
+}
+.font-heading-sm {
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-heading);
+  font-size: var(--font-sm-8);
+}
+/* font-label */
+.font-label-2xl {
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-label);
+  font-size: var(--font-2xl-32);
+}
+.font-label-xl {
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-label);
+  font-size: var(--font-xl-24);
+}
+.font-label-lg {
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-label);
+  font-size: var(--font-lg-16);
+}
+.font-label-md {
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-label);
+  font-size: var(--font-md-12);
+}
+.font-label-sm {
+  font-weight: var(--font-weight-semibold);
+  line-height: var(--line-height-label);
+  font-size: var(--font-sm-8);
+}
+/* font-paragraph */
+.font-paragraph-xl {
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-paragraph);
+  font-size: var(--font-xl-24);
+}
+.font-paragraph-lg {
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-paragraph);
+  font-size: var(--font-lg-16);
+}
+.font-paragraph-md {
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-paragraph);
+  font-size: var(--font-md-12);
+}
+.font-paragraph-sm {
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-paragraph);
+  font-size: var(--font-sm-8);
+}
+
+/* 다크모드 설정 */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-scheme: dark;
+
+    /* 라이트모드 변수를 다크모드 값으로 재정의 */
+    /* Foundation */
+    --foundation-primary-color: var(--dark-foundation-primary-color);
+    --foundation-secondary-color: var(--dark-foundation-secondary-color);
+    --foundation-tertiary-color: var(--dark-foundation-tertiary-color);
+    --foundation-negative-color: var(--dark-foundation-negative-color);
+    --foundation-background-color: var(--dark-foundation-background-color);
+
+    /* Contents */
+    --contents-primary-color: var(--dark-contents-primary-color);
+    --contents-secondary-color: var(--dark-contents-secondary-color);
+    --contents-tertiary-color: var(--dark-contents-tertiary-color);
+  }
+}
+
+/* 태블릿 미디어쿼리 설정 */
+@media (min-width: 600px) {
+  :root {
+    --grid-columns: var(--grid-columns-tablet);
+    --grid-margins: var(--grid-margins-tablet);
+    --grid-gutter: var(--grid-gutter-tablet);
+  }
+}
+
+/* 데스크탑 미디어쿼리 설정 */
+@media (min-width: 1136px) {
+  :root {
+    --grid-columns: var(--grid-columns-desktop);
+    --grid-margins: var(--grid-margins-desktop);
+    --grid-gutter: var(--grid-gutter-desktop);
+  }
+}
