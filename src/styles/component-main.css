@@ -1,0 +1,156 @@
+@import "../theme.css";
+@import "../../public/common/mini-reset.css";
+@import "../../public/common/a11y.css";
+
+body {
+  background-color: #5f5f5f;
+}
+
+.line {
+  margin-top: 10px;
+}
+
+/* main-region&menu */
+
+.main-region {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  height: 40px;
+  background-color: var(--foundation-background-color);
+  /* border: 1px solid #ccc; */
+  padding-left: var(--space-20);
+  padding-right: var(--space-20);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.region-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.region-icons {
+  display: flex;
+  gap: var(--space-8);
+}
+
+.region-icon {
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+}
+
+/* main-region&menu */
+
+.main-navitems {
+  width: 320px;
+  height: 37px;
+  background-color: #373f67;
+}
+
+/* 네비게이션 리스트 */
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: var(--space-8);
+}
+
+/* 네비게이션 아이템 */
+.nav-item-story {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 92px;
+  height: 37px;
+  color: #ffff;
+  cursor: pointer;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 37px;
+  color: #ffff;
+  cursor: pointer;
+}
+
+/* main/storyField */
+
+.main-storyfield {
+  width: 138px;
+  height: 171px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.storyfield-rounded-box {
+  width: 138px;
+  height: 104px;
+  border-radius: 8px;
+  background-color: #919191;
+}
+
+.storyfield-texts {
+  width: 138px;
+  height: 55px;
+}
+
+.storyfield-no-faded-text {
+  width: 138px;
+  height: 34px;
+  display: flex;
+  flex-direction: column;
+}
+
+.storyfield-text {
+  color: #ffff;
+  height: 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.storyfield-faded-text {
+  color: #919191;
+  height: 17px;
+  display: flex;
+  align-items: center;
+}
+
+/* main/navItem */
+
+.main-navitem {
+  width: 58px;
+  height: 98px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navitem-box {
+  width: 42px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navitem-text {
+  display: flex;
+  width: 26px;
+  height: 21px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
