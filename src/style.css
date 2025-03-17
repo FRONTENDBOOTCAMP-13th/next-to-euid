@@ -5,12 +5,10 @@
 @import "./styles/component-start.css";
 @import "../public/common/a11y.css";
 
-body {
+
+/* main page style */
+.main-page {
   background-color: var(--foundation-background-color);
   color: var(--contents-secondary-color);
   font: var(--font-family);
-}
-
-ul {
-  color: var(--contents-secondary-color);
 }
