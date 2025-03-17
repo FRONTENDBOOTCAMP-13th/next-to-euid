@@ -1,77 +1,139 @@
-body *,
-body *::before,
-body *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+@import "/public/common/mini-reset.css";
+@import "/src/theme.css";
 
 body {
-  margin: 1.875rem;
+  background-color: var(--contents-tertiary-color);
+  margin: var(--space-20);
 }
 
-/* 분자 단위 컴포넌트 */
 h1 {
-  font-size: 1.5rem;
+  color: var(--contents-color);
+  margin-block: var(--space-32);
+
+  &::before {
+    content: "🎁";
+    margin-inline-end: var(--space-8);
+  }
+
+  strong {
+    font-size: var(--space-16);
+
+  }
 }
 
-.box-wrapper {
-  width: 400px;
-  margin: 0 auto;
+.container {
+  --columns: 1;
+
+  color: var(--contents-primary-color);
   display: grid;
-  grid-template-columns: minmax(350px) auto auto auto;
-  gap: 1.875rem;
+  grid-template-columns: repeat(var(--columns), minmax(350px, 1fr));
+  gap: var(--space-32);
 
-  .unit-box {
-    border: .8px solid rgb(113, 110, 110);
-    padding: 1.5625rem;
-    border-radius: .625rem;
+  @media (min-width: 48rem) {
+    --columns: 2;
+  }
 
-    &>svg {
-      margin: 0 .625rem;
+  @media (min-width: 80rem) {
+    --columns: 4;
+  }
+
+
+  .group {
+    background-color: var(--foundation-background-color);
+    padding: var(--space-16);
+    border-radius: var(--space-8);
+
+    h2 {
+      margin-block: var(--space-16);
+      color: var(--contents-tertiary-color);
+      font-size: var(--space-28);
+
+      &::before {
+        content: "🍄";
+        margin-inline-end: var(--space-8);
+      }
+    }
+
+    ul {
+      columns: 2;
+      column-rule: 1px solid var(--contents-tertiary-color);
+      column-gap: var(--space-64);
+      list-style-type: none;
+    }
+
+    li {
+      margin-block: var(--space-8);
+    }
+
+    .component-box--light {
+      height: var(--space-16);
+      display: flex;
+      align-items: center;
+      margin-bottom: var(--space-4);
+
+      .component-box--light__text {
+        height: 100%;
+        color: var(--contents-tertiary-color);
+        margin-left: var(--space-2);
+      }
+    }
+
+    .component-box--dark {
+      height: var(--space-16);
+      display: flex;
+      align-items: center;
+
+      .component-box--dark__text {
+        height: 100%;
+        color: var(--contents-primary-color);
+        margin-left: var(--space-8);
+      }
+    }
+
+    .text--light {
+      color: var(--dark-contents-secondary-color)
+    }
+
+    .text--dark {
+      color: var(--dark-contents-color);
+    }
+
+    .card-component {
+      width: 19.9375rem;
+      height: 7.875rem;
+      border: 1px solid var(--contents-primary-color);
+      margin: var(--space-8) 0;
+      padding: var(--space-12);
+      position: relative;
+
+      .component-box--badge {
+        width: var(--space-56);
+        height: var(--space-16);
+        background: var(--contents-tertiary-color);
+        border-radius: var(--space-4);
+        padding: 0 var(--space-4);
+        color: var(--contents-color);
+        text-align: center;
+      }
+
+      .card-component-text--wrapper {
+        margin-top: var(--space-4);
+      }
+
+      .people--count {
+        position: absolute;
+        bottom: var(--space-12);
+        right: var(--space-12);
+        color: var(--dark-contents-secondary-color);
+
+        &>span {
+          margin-left: var(--space-8);
+        }
+      }
+
+      .hide {
+        display: none;
+      }
     }
   }
-}
-
-/* 원자 단위 컴포넌트 */
-.unit-content--box {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  gap: 1.25rem;
-
-}
-
-.component-box--light {
-  height: .875rem;
-  display: flex;
-  align-items: center;
-
-  .component-box--light__text {
-    align-self: last baseline;
-    font-size: .6875rem;
-    color: #B1B4C3;
-    margin-left: .125rem;
-
-  }
-}
-
-.component-box--dark {
-  height: .875rem;
-  display: flex;
-  align-items: center;
-
-  .component-box--dark__text {
-    height: 100%;
-    align-self: flex-start;
-    font-size: .9063rem;
-    color: currentColor;
-    margin-left: .5rem;
-  }
-}
-
-.component-box--badge {}
-
-/* 조직체 단위 컴포넌트 */
-h3 {
-  font-size: 1.5rem;
 }
