@@ -12,7 +12,7 @@
 .start-section {
   --columns: 1;
   display: grid;
-  grid-template-columns: repeat(var(--columns), minmax(280px, 1fr));
+  grid-template-columns: repeat(var(--columns), minmax(17.5rem, 1fr));
 
   @media (min-width: 48rem) {
     --columns: 2;
@@ -28,7 +28,7 @@
 
   .component-start {
     columns: 2;
-    column-rule: 1px solid currentColor;
+    column-rule: 0.0625rem solid currentColor;
     column-gap: 4rem;
     list-style-type: none;
   }
@@ -52,7 +52,7 @@
 }
 
 .wrapper {
-  border: 1px solid var(--contents-primary-color);
+  border: 0.0625rem solid var(--contents-primary-color);
   border-radius: var(--spacing-sm);
   margin: var(--spacing-sm);
   width: 100%;
@@ -82,25 +82,25 @@
 }
 
 /* Common/nav CSS */
-.component-organism-list-start-nav {
+.nav-start-common--list-item {
   align-items: center;
   background: var(--foundation-background-color);
-  border: 1px solid var(--contents-primary-color);
+  border: 0.0625rem solid var(--contents-primary-color);
   display: flex;
   justify-content: space-between;
   flex-direction: row;
   padding: var(--space-8) var(--space-12) var(--space-24) var(--space-12);
-  width: 320px;
+  width: 20rem;
 }
 
 /* Common/back CSS */
-.component-organism-list-start-previous {
+.header-start-common--previous {
   align-items: center;
   background: var(--foundation-background-color);
-  border: 1px solid var(--contents-primary-color);
+  border: 0.0625rem solid var(--contents-primary-color);
   display: flex;
   flex-direction: row;
-  width: 320px;
+  width: 20rem;
   height: var(--space-36);
 
   .icon-start-left {
@@ -122,7 +122,7 @@
 }
 
 /* Common/button CSS */
-.component-organism-list-start-button {
+.button-start-common {
   align-items: center;
   background-color: var(--foundation-primary-color);
   border: 0;
@@ -133,21 +133,21 @@
   gap: var(--space-4);
   justify-content: center;
   padding: var(--space-8);
-  width: 301px;
+  width: 18.8125rem;
 }
 
 /* Common/category CSS */
-.btn-start-category--unchecked {
+.button-start-category--unchecked {
   align-items: center;
   background: var(--contents-tertiary-color);
   border: 0;
   border-radius: var(--space-8);
   color: var(--foundation-background-color);
   display: inline-flex;
-  height: 61px;
+  height: 3.8125rem;
   justify-content: space-between;
   padding: var(--space-12);
-  width: 96px;
+  width: 6rem;
 
   .btn-text-category--wrapper {
     justify-items: flex-start;
@@ -162,9 +162,9 @@
     background-color: var(--contents-secondary-color);
     display: inline-flex;
     border-radius: 50%;
-    height: 18px;
+    height: var(--space-20);
     justify-content: center;
-    width: 18px;
+    width: var(--space-20);
 
     .icon-start--plus {
       display: flex;
@@ -174,17 +174,17 @@
   }
 }
 
-.btn-start-category--checked {
+.button-start-category--checked {
   align-items: center;
   background: var(--foundation-primary-color);
   border: 0;
   border-radius: var(--space-8);
   color: var(--foundation-background-color);
   display: inline-flex;
-  height: 61px;
+  height: 3.8125rem;
   justify-content: space-between;
   padding: var(--space-12);
-  width: 96px;
+  width: 6rem;
 
   .btn-text-category--wrapper {
     justify-items: flex-start;
@@ -193,49 +193,48 @@
   .icon-start-check {
     align-items: center;
     background-color: var(--foundation-background-color);
-    display: inline-flex;
     border-radius: 50%;
-    height: 18px;
+    display: inline-flex;
+    height: var(--space-20);
     justify-content: center;
-    width: 18px;
+    width: var(--space-20);
 
     .icon-start--checked {
+      align-items: center;
       display: flex;
       justify-content: center;
-      align-items: center;
     }
   }
 }
 
 /* Signup/number CSS */
-.input-start-sigh-up-wrapper {
+.input-start-sign-up-wrapper {
   position: relative;
   width: 100%;
 
-  .input-start-sigh-up {
+  .input-start-sign-up {
     background-color: var(--foundation-background-color);
-    border: 0.5px solid var(--contents-primary-color);
+    border: 0.0313rem solid var(--contents-primary-color);
     border-radius: var(--spacing-xs);
     caret-color: var(--foundation-secondary-color);
     color: var(--contents-primary-color);
-    height: 38px;
-    width: 295px;
+    height: 2.375rem;
+    width: 18.4375rem;
   }
 }
 /* 포커스되었거나 값이 있는 입력 필드에 대한 라벨 스타일 */
-.input-start-sigh-up:focus + .input-start-sigh-up-label,
-.input-start-sigh-up:not(:placeholder-shown) + .input-start-sigh-up-label {
-  transform: translateX(-10px) translateY(-7px) scale(0.5); /* 위로 이동하고 크기를 0.5배로 축소 */
+.input-start-sign-up:focus + .input-start-sign-up-label,
+.input-start-sign-up:not(:placeholder-shown) + .input-start-sign-up-label {
+  transform: translateX(-0.625rem) translateY(-0.4375rem) scale(0.5); /* 위로 이동하고 크기를 0.5배로 축소 */
 }
 
-.input-start-sigh-up-label {
+.input-start-sign-up-label {
   position: absolute;
   left: 0;
-
   margin: var(--space-8) var(--space-12) var(--space-8) var(--space-12);
   padding-left: var(--spacing-xs);
   pointer-events: none;
-  top: 2px;
+  top: 0.125rem;
   transform-origin: left top;
   transition: all 0.3s ease;
   z-index: 10;
@@ -249,10 +248,10 @@
 }
 
 /* Signup/component CSS */
-.btn-sigh-up {
+.btn-sign-up {
   background-color: var(--foundation-background-color);
-  border-radius: 4px;
-  border: 0.5px solid var(--Contents-contentSecondary, #919191);
+  border-radius: 0.25rem;
+  border: 0.0313rem solid var(--Contents-contentSecondary, #919191);
   padding: var(--space-8) var(--space-16) var(--space-8) var(--space-16);
 }
 .btn-inactive {
