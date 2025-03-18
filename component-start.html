@@ -3,23 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Euid-component</title>
+    <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <link rel="stylesheet" href="/src/style.css" />
     <link rel="stylesheet" href="styles/component-start.css" />
+    <title>Euid-component</title>
+    <!-- <script type="module" src="/src/main.js"></script> -->
   </head>
+
   <body class="component-page">
     <h1 class="page-title">EUIM UI Project component</h1>
     <div class="start-section">
-      <section class="icon-wrapper">
-        <h2 class="title-section">atomic-start-icon</h2>
-
+      <section class="wrapper icon-wrapper">
+        <h2 class="title-section">atomic-start-icon / 원자 컴포넌트 icon</h2>
         <!-- Atomic Unit Components -->
         <div class="component-atomic">
-          <ul class="component-atomic-start-icon">
+          <ul class="component-start component-atomic-start-icon">
             <!-- Icon/active-fullmy -->
-            <li class="component-atomic-start-icon-full">
+            <li class="component-atomic-icon-start--active">
               Icon/active-fullmy 20x20
-              <div class="icon-active-fullmy">
+              <div class="icon-start-fullmy--active">
                 <a href="/" aria-label="개인 페이지로 이동" tabindex="0">
                   <svg
                     width="14"
@@ -37,18 +46,10 @@
               </div>
             </li>
 
-<div class="main header button-items">
-  <div class="button-wrapper">
-    <div class="left"></div>
-    <div class="home"></div>
-  </div>
-</div>
-
-
             <!-- Icon/inactive-my -->
-            <li class="component-atomic-start-icon-inactive">
+            <li class="component-atomic-icon-start--inactive">
               Icon/inactive-my 20x20
-              <div class="icon-inactive-my">
+              <div class="icon-start-my--inactive">
                 <a href="/" aria-label="개인 페이지로 이동" tabindex="0">
                   <svg
                     width="14"
@@ -67,9 +68,9 @@
             </li>
 
             <!-- Icon/active-fullhome -->
-            <li class="component-atomic-start-icon-full">
+            <li class="component-atomic-icon-start--active">
               Icon/active-fullhome 20x20
-              <div class="icon-active-fullhome">
+              <div class="icon-start-fullhome--active">
                 <a href="/" aria-label="홈으로 이동" tabindex="0">
                   <svg
                     width="14"
@@ -88,9 +89,9 @@
             </li>
 
             <!-- Icon/inactive-home -->
-            <li class="component-atomic-start-icon-inactive">
+            <li class="component-atomic-icon-start--inactive">
               Icon/inactive-home 20x20
-              <div class="icon-inactive-home">
+              <div class="icon-start-home--inactive">
                 <a href="/" aria-label="홈으로 이동" tabindex="0">
                   <svg
                     width="16"
@@ -109,9 +110,9 @@
             </li>
 
             <!-- Icon/active-fullfile -->
-            <li class="component-atomic-start-icon-full">
+            <li class="component-atomic-icon-start--active">
               Icon/active-fullfile 20x20
-              <div class="icon-active-fullfile">
+              <div class="icon-start-fullfile--active">
                 <a href="/" aria-label="전체 게시판으로 이동" tabindex="0">
                   <svg
                     width="12"
@@ -129,10 +130,10 @@
               </div>
             </li>
 
-            <!-- Icon/inactive-fullfile -->
-            <li class="component-atomic-start-icon-inactive">
+            <!-- Icon/inactive-file -->
+            <li class="component-atomic-icon-start--inactive">
               Icon/inactive-life 20x20
-              <div class="icon-inactive-life">
+              <div class="icon-start-life--inactive">
                 <a href="/" aria-label="전체 게시판으로 이동" tabindex="0">
                   <svg
                     width="12"
@@ -151,9 +152,9 @@
             </li>
 
             <!-- Icon/active-fullmap -->
-            <li class="component-atomic-start-icon-full">
+            <li class="component-atomic-icon-start--active">
               Icon/active-fullmap 20x20
-              <div class="icon-active-fullmap">
+              <div class="icon-start-fullmap--active">
                 <a href="/" aria-label="우리 동네 게시판으로 이동" tabindex="0">
                   <svg
                     width="14"
@@ -171,10 +172,10 @@
               </div>
             </li>
 
-            <!-- Icon/inactive-fullmap -->
-            <li class="component-atomic-start-icon-full">
+            <!-- Icon/inactive-map -->
+            <li class="component-atomic-icon-start--inactive">
               Icon/inactive-map 20x20
-              <div class="icon-inactive-map">
+              <div class="icon-start-map--inactive">
                 <a href="/" aria-label="우리 동네 게시판으로 이동" tabindex="0">
                   <svg
                     width="14"
@@ -193,9 +194,9 @@
             </li>
 
             <!-- Icon/active-fullchat -->
-            <li class="component-atomic-start-icon-full">
+            <li class="component-atomic-icon-start--active">
               Icon/active-fullchat 20x20
-              <div class="icon-active-fullchat">
+              <div class="icon-start-fullchat--active">
                 <a href="/" aria-label="채팅창으로 이동" tabindex="0">
                   <svg
                     width="20"
@@ -217,10 +218,10 @@
               </div>
             </li>
 
-            <!-- Icon/inactive-fullchat -->
-            <li class="component-atomic-start-icon-full">
+            <!-- Icon/inactive-chat -->
+            <li class="component-atomic-icon-start--inactive">
               Icon/inactive-chat 20x20
-              <div class="icon-inactive-chat">
+              <div class="icon-start-chat--inactive">
                 <a href="/" aria-label="채팅창으로 이동" tabindex="0">
                   <svg
                     width="18"
@@ -240,7 +241,7 @@
             <!-- Icon/up -->
             <li class="component-atomic-start-icon-up">
               Icon/up 20x20
-              <div class="icon-up">
+              <div class="icon-start-up">
                 <a href="/" aria-label="위로 이동" tabindex="0">
                   <svg
                     width="14"
@@ -260,7 +261,7 @@
             <!-- Icon/down -->
             <li class="component-atomic-start-icon-down">
               Icon/down 20x20
-              <div class="icon-down">
+              <div class="icon-start-down">
                 <a href="/" aria-label="아래로 이동" tabindex="0">
                   <svg
                     width="14"
@@ -277,11 +278,10 @@
                 </a>
               </div>
             </li>
-
             <!-- Icon/left -->
             <li class="component-atomic-start-icon-left">
               Icon/left 20x20
-              <div class="icon-left">
+              <div class="icon-start-left">
                 <a href="/" aria-label="왼쪽으로 이동" tabindex="0">
                   <svg
                     width="9"
@@ -301,7 +301,7 @@
             <!-- Icon/right -->
             <li class="component-atomic-start-icon-right">
               Icon/right 20x20
-              <div class="icon-right">
+              <div class="icon-start-right">
                 <a href="/" aria-label="오른쪽으로 이동" tabindex="0">
                   <svg
                     width="9"
@@ -321,7 +321,7 @@
             <!-- Icon/check -->
             <li class="component-atomic-start-icon-check">
               Icon/check 20x20
-              <div class="icon-check">
+              <div class="icon-start-check">
                 <a href="/" aria-label="선택됨" tabindex="0">
                   <svg
                     width="12"
@@ -342,7 +342,7 @@
             <!-- Icon/search -->
             <li class="component-atomic-start-icon-search">
               Icon/search 20x20
-              <div class="icon-search">
+              <div class="icon-start-search">
                 <a href="/" aria-label="검색창 활성화" tabindex="0">
                   <svg
                     width="20"
@@ -376,7 +376,7 @@
             <!-- Icon/position -->
             <li class="component-atomic-start-icon-position">
               Icon/position 20x20
-              <div class="icon-position">
+              <div class="icon-start-position">
                 <a href="/" aria-label="관심분야 선택하기" tabindex="0">
                   <svg
                     width="16"
@@ -399,7 +399,7 @@
             <!-- Icon/plus -->
             <li class="component-atomic-start-icon-plus">
               Icon/plus 20x20
-              <div class="icon-plus">
+              <div class="icon-start-plus">
                 <a href="/" aria-label="추가하기" tabindex="0">
                   <svg
                     width="12"
@@ -420,15 +420,15 @@
         </div>
       </section>
 
-      <section class="logo-wrapper">
-        <h2 class="title-section">atomic-start-logo</h2>
+      <section class="wrapper logo-wrapper">
+        <h2 class="title-section">atomic-start-logo / 원자 컴포넌트 logo</h2>
         <!-- Atomic Unit Components -->
         <div class="component-atomic">
-          <ul class="component-atomic-start-logo">
+          <ul class="component-start component-atomic-start-logo">
             <!-- Common/logo -->
-            <li class="component-atomic-start-common-logo">
+            <li class="component-atomic-logo-start-common">
               Common/logo
-              <div class="common-logo">
+              <div class="logo-start-common">
                 <a
                   href="https://yamoo9.github.io/front-end-master/"
                   aria-label="이듬 페이지로 이동"
@@ -486,8 +486,659 @@
         </div>
       </section>
 
+      <section class="wrapper item-wrapper">
+        <h2 class="title-section">molecular-start / 분자 컴포넌트</h2>
+        <!-- Molecular Unit Components -->
+        <div class="component-start component-molecular">
+          <ul class="component-molecular-start-item">
+            <!-- Common/nav-items-home--active -->
+            <li
+              class="items component-molecular-item-start--nav-items-home--active"
+            >
+              Common/nav-items-home--active
+              <div class="item-start-common--nav-items-home--active">
+                <!-- Icon/active-fullhome -->
+                <a
+                  class="nav-item-box"
+                  href="/"
+                  aria-label="홈으로 이동"
+                  tabindex="0"
+                >
+                  <svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="var(--contents-primary-color)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0.333252 15.5V5.5L6.99992 0.5L13.6666 5.5V15.5H8.66658V9.66667H5.33325V15.5H0.333252Z"
+                      fill="var(--contents-primary-color)"
+                    />
+                  </svg>
+                  <span
+                    class="item-start-common--nav-items-home-text nav-item-text"
+                    >홈</span
+                  >
+                </a>
+              </div>
+            </li>
+
+            <!-- Common/nav-items-home--inactive -->
+            <li
+              class="items component-molecular-item-start--nav-items-home--inactive"
+            >
+              Common/nav-items-home--inactive
+              <div class="item-start-common--nav-items-home--inactive">
+                <!-- Icon/inactive-home -->
+                <a
+                  class="nav-item-box"
+                  href="/"
+                  aria-label="홈으로 이동"
+                  tabindex="0"
+                >
+                  <svg
+                    width="16"
+                    height="17"
+                    viewBox="0 0 16 17"
+                    fill="var(--contents-primary-color)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.19167 1.15834C7.41757 0.967041 7.70399 0.862061 8 0.862061C8.29601 0.862061 8.58243 0.967041 8.80833 1.15834L15.0583 6.46084C15.1967 6.57817 15.3079 6.72422 15.3842 6.88884C15.4605 7.05347 15.5 7.23273 15.5 7.41417V15.25C15.5 15.5815 15.3683 15.8995 15.1339 16.1339C14.8995 16.3683 14.5815 16.5 14.25 16.5H9.45833C9.29257 16.5 9.1336 16.4342 9.01639 16.3169C8.89918 16.1997 8.83333 16.0408 8.83333 15.875V10.6667H7.16667V15.875C7.16667 16.0408 7.10082 16.1997 6.98361 16.3169C6.8664 16.4342 6.70743 16.5 6.54167 16.5H1.75C1.41848 16.5 1.10054 16.3683 0.866117 16.1339C0.631696 15.8995 0.5 15.5815 0.5 15.25V7.41417C0.5 7.0475 0.661667 6.69834 0.941667 6.46084L7.19167 1.15834ZM8 2.11167L1.75 7.41417V15.25H5.91667V10.0417C5.91667 9.87591 5.98251 9.71694 6.09973 9.59973C6.21694 9.48252 6.37591 9.41667 6.54167 9.41667H9.45833C9.62409 9.41667 9.78306 9.48252 9.90027 9.59973C10.0175 9.71694 10.0833 9.87591 10.0833 10.0417V15.25H14.25V7.41417L8 2.11167Z"
+                      fill="var(--contents-primary-color)"
+                    />
+                  </svg>
+                  <span
+                    class="item-start-common--nav-items-home-text nav-item-text"
+                    >홈</span
+                  >
+                </a>
+              </div>
+            </li>
+
+            <!-- Common/nav-items-file--active -->
+            <li
+              class="items component-molecular-item-start--nav-items-file--active"
+            >
+              Common/nav-items-file--active
+              <div class="item-start-common--nav-items-file--active">
+                <!-- Icon/active-fullfile -->
+                <a
+                  class="nav-item-box"
+                  href="/"
+                  aria-label="전체 게시판으로 이동"
+                  tabindex="0"
+                >
+                  <svg
+                    width="12"
+                    height="16"
+                    viewBox="0 0 12 16"
+                    fill="var(--contents-primary-color)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 0V4.5C6 4.89782 6.15803 5.27936 6.43934 5.56066C6.72064 5.84196 7.10217 6 7.5 6H12V14.5C12 14.8978 11.842 15.2794 11.5607 15.5607C11.2794 15.842 10.8978 16 10.5 16H1.5C1.10218 16 0.720644 15.842 0.43934 15.5607C0.158035 15.2794 0 14.8978 0 14.5V1.5C0 1.10218 0.158035 0.720644 0.43934 0.43934C0.720644 0.158035 1.10218 0 1.5 0H6ZM7 0.25V4.5C7 4.63261 7.05268 4.75979 7.14645 4.85355C7.24021 4.94732 7.36739 5 7.5 5H11.75L7 0.25Z"
+                      fill="var(--contents-primary-color)"
+                    />
+                  </svg>
+                  <span
+                    class="item-start-common--nav-items-file-text nav-item-text"
+                    >게시판</span
+                  >
+                </a>
+              </div>
+            </li>
+
+            <!-- Common/nav-items-file--inactive -->
+            <li
+              class="items component-molecular-item-start--nav-items-file--inactive"
+            >
+              Common/nav-items-file--inactive
+              <div class="item-start-common--nav-items-file--inactive">
+                <!-- Icon/inactive-file -->
+                <a
+                  class="nav-item-box"
+                  href="/"
+                  aria-label="전체 게시판으로 이동"
+                  tabindex="0"
+                >
+                  <svg
+                    width="12"
+                    height="16"
+                    viewBox="0 0 12 16"
+                    fill="var(--contents-primary-color)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H10C10.5304 16 11.0391 15.7893 11.4142 15.4142C11.7893 15.0391 12 14.5304 12 14V5.414C11.9996 5.01631 11.8414 4.63503 11.56 4.354L7.646 0.439C7.3648 0.157982 6.98355 8.48813e-05 6.586 0H2ZM1 2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H6V4.5C6 4.89782 6.15803 5.27936 6.43934 5.56066C6.72064 5.84196 7.10217 6 7.5 6H11V14C11 14.2652 10.8946 14.5196 10.7071 14.7071C10.5196 14.8946 10.2652 15 10 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2ZM10.793 5H7.5C7.36739 5 7.24021 4.94732 7.14645 4.85355C7.05268 4.75979 7 4.63261 7 4.5V1.207L10.793 5Z"
+                      fill="var(--contents-primary-color)"
+                    />
+                  </svg>
+                  <span
+                    class="item-start-common--nav-items-file-text nav-item-text"
+                    >게시판</span
+                  >
+                </a>
+              </div>
+            </li>
+
+            <!-- Common/nav-items-map--active -->
+            <li
+              class="items component-molecular-item-start--nav-items-map--active"
+            >
+              Common/nav-items-map--active
+              <div class="item-start-common--nav-items-map--active">
+                <!-- Icon/active-fullmap -->
+                <a
+                  class="nav-item-box"
+                  href="/"
+                  aria-label="우리 동네 게시판으로 이동"
+                  tabindex="0"
+                >
+                  <svg
+                    width="14"
+                    height="18"
+                    viewBox="0 0 14 18"
+                    fill="var(--contents-primary-color)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.625 16.5H8.76094C9.41004 15.9204 10.0222 15.3007 10.5938 14.6445C12.7383 12.1781 13.875 9.57812 13.875 7.125C13.875 5.30164 13.1507 3.55295 11.8614 2.26364C10.572 0.974328 8.82336 0.25 7 0.25C5.17664 0.25 3.42795 0.974328 2.13864 2.26364C0.849328 3.55295 0.125 5.30164 0.125 7.125C0.125 9.57812 1.25859 12.1781 3.40625 14.6445C3.97782 15.3007 4.58996 15.9204 5.23906 16.5H1.375C1.20924 16.5 1.05027 16.5658 0.933058 16.6831C0.815848 16.8003 0.75 16.9592 0.75 17.125C0.75 17.2908 0.815848 17.4497 0.933058 17.5669C1.05027 17.6842 1.20924 17.75 1.375 17.75H12.625C12.7908 17.75 12.9497 17.6842 13.0669 17.5669C13.1842 17.4497 13.25 17.2908 13.25 17.125C13.25 16.9592 13.1842 16.8003 13.0669 16.6831C12.9497 16.5658 12.7908 16.5 12.625 16.5ZM7 4.625C7.49445 4.625 7.9778 4.77162 8.38893 5.04633C8.80005 5.32103 9.12048 5.71148 9.3097 6.16829C9.49892 6.62511 9.54843 7.12777 9.45196 7.61273C9.3555 8.09768 9.1174 8.54314 8.76777 8.89277C8.41814 9.2424 7.97268 9.4805 7.48773 9.57696C7.00277 9.67343 6.50011 9.62392 6.04329 9.4347C5.58648 9.24548 5.19603 8.92505 4.92133 8.51393C4.64662 8.1028 4.5 7.61945 4.5 7.125C4.5 6.46196 4.76339 5.82607 5.23223 5.35723C5.70107 4.88839 6.33696 4.625 7 4.625Z"
+                      fill="var(--contents-primary-color)"
+                    />
+                  </svg>
+                  <span
+                    class="item-start-common--nav-items-map-text nav-item-text"
+                    >내 근처</span
+                  >
+                </a>
+              </div>
+            </li>
+
+            <!-- Common/nav-items-map--inactive -->
+            <li
+              class="items component-molecular-item-start--nav-items-map--inactive"
+            >
+              Common/nav-items-map--inactive
+              <div class="item-start-common--nav-items-map--inactive">
+                <!-- Icon/inactive-map -->
+                <a
+                  class="nav-item-box"
+                  href="/"
+                  aria-label="우리 동네 게시판으로 이동"
+                  tabindex="0"
+                >
+                  <svg
+                    width="14"
+                    height="18"
+                    viewBox="0 0 14 18"
+                    fill="var(--contents-primary-color)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12.625 16.6562H8.34531C9.1065 16.0039 9.81956 15.2973 10.4789 14.5422C12.5984 12.1047 13.7188 9.54219 13.7188 7.125C13.7188 5.34308 13.0109 3.63414 11.7509 2.37413C10.4909 1.11412 8.78192 0.40625 7 0.40625C5.21808 0.40625 3.50914 1.11412 2.24913 2.37413C0.989117 3.63414 0.28125 5.34308 0.28125 7.125C0.28125 9.53984 1.40156 12.1047 3.52109 14.5422C4.18044 15.2973 4.8935 16.0039 5.65469 16.6562H1.375C1.25068 16.6562 1.13145 16.7056 1.04354 16.7935C0.955636 16.8815 0.90625 17.0007 0.90625 17.125C0.90625 17.2493 0.955636 17.3685 1.04354 17.4565C1.13145 17.5444 1.25068 17.5938 1.375 17.5938H12.625C12.7493 17.5938 12.8685 17.5444 12.9565 17.4565C13.0444 17.3685 13.0938 17.2493 13.0938 17.125C13.0938 17.0007 13.0444 16.8815 12.9565 16.7935C12.8685 16.7056 12.7493 16.6562 12.625 16.6562ZM1.21875 7.125C1.21875 5.59172 1.82784 4.12123 2.91204 3.03704C3.99623 1.95284 5.46672 1.34375 7 1.34375C8.53328 1.34375 10.0038 1.95284 11.088 3.03704C12.1722 4.12123 12.7812 5.59172 12.7812 7.125C12.7812 11.7828 8.17188 15.6352 7 16.5398C5.82812 15.6352 1.21875 11.7828 1.21875 7.125ZM9.96875 7.125C9.96875 6.53784 9.79464 5.96386 9.46842 5.47565C9.14221 4.98744 8.67856 4.60693 8.13609 4.38223C7.59362 4.15754 6.99671 4.09874 6.42083 4.21329C5.84494 4.32784 5.31596 4.61059 4.90078 5.02578C4.48559 5.44096 4.20284 5.96994 4.08829 6.54583C3.97374 7.12171 4.03254 7.71862 4.25723 8.26109C4.48193 8.80356 4.86244 9.26721 5.35065 9.59342C5.83886 9.91964 6.41284 10.0938 7 10.0938C7.78736 10.0938 8.54247 9.78097 9.09922 9.22422C9.65597 8.66747 9.96875 7.91236 9.96875 7.125ZM4.96875 7.125C4.96875 6.72326 5.08788 6.33054 5.31108 5.9965C5.53427 5.66246 5.85151 5.40211 6.22267 5.24837C6.59384 5.09463 7.00225 5.0544 7.39628 5.13278C7.7903 5.21116 8.15224 5.40461 8.43631 5.68869C8.72039 5.97276 8.91384 6.3347 8.99222 6.72872C9.0706 7.12275 9.03037 7.53116 8.87663 7.90233C8.72289 8.27349 8.46254 8.59073 8.1285 8.81392C7.79446 9.03712 7.40174 9.15625 7 9.15625C6.46128 9.15625 5.94462 8.94224 5.56369 8.56131C5.18276 8.18038 4.96875 7.66372 4.96875 7.125Z"
+                      fill="var(--contents-primary-color)"
+                    />
+                  </svg>
+                  <span
+                    class="item-start-common--nav-items-map-text nav-item-text"
+                    >내 근처</span
+                  >
+                </a>
+              </div>
+            </li>
+
+            <!-- Common/nav-items-chat--active -->
+            <li
+              class="items component-molecular-item-start--nav-items-chat--active"
+            >
+              Common/nav-items-chat--active
+              <div class="item-start-common--nav-items-chat--active">
+                <!-- Icon/active-fullchat -->
+                <a
+                  class="nav-item-box"
+                  href="/"
+                  aria-label="채팅창으로 이동"
+                  tabindex="0"
+                >
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                    fill="var(--contents-primary-color)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M2.36104 15.202C2.36104 15.2047 2.36104 15.2098 2.35791 15.2168C2.35908 15.2121 2.35986 15.207 2.36104 15.202ZM17.1837 15.8438C17.0551 15.841 16.9281 15.8145 16.8091 15.7656L14.5911 14.9793L14.5747 14.9727C14.5263 14.9525 14.4744 14.9424 14.422 14.943C14.3737 14.943 14.3258 14.9518 14.2806 14.9688C14.2267 14.9891 13.7411 15.1715 13.2317 15.3113C12.9556 15.3871 11.9942 15.6344 11.2228 15.6344C9.25088 15.6344 7.40713 14.8766 6.03174 13.5004C5.35983 12.8326 4.82705 12.0382 4.46423 11.1631C4.10142 10.288 3.91578 9.34966 3.91807 8.40235C3.91805 7.90875 3.97122 7.41658 4.07666 6.93438C4.42002 5.34766 5.32939 3.9043 6.63721 2.87188C7.97875 1.81955 9.63491 1.24837 11.3399 1.25C13.3794 1.25 15.2798 2.03125 16.6915 3.44453C18.0259 4.78321 18.7571 6.54336 18.7513 8.40039C18.7501 9.7803 18.3381 11.1286 17.5677 12.2734L17.5603 12.2844L17.5313 12.3234C17.5247 12.3324 17.5181 12.341 17.5118 12.35L17.506 12.3605C17.4904 12.387 17.4763 12.4142 17.4638 12.4422L18.0786 14.6273C18.1058 14.7175 18.1205 14.8109 18.1224 14.9051C18.1225 15.0284 18.0983 15.1505 18.0512 15.2645C18.0041 15.3784 17.935 15.482 17.8478 15.5692C17.7606 15.6564 17.657 15.7255 17.5431 15.7726C17.4291 15.8197 17.307 15.8439 17.1837 15.8438Z"
+                      fill="var(--contents-primary-color)"
+                    />
+                    <path
+                      d="M11.7137 16.6167C11.6733 16.5382 11.6165 16.4693 11.5472 16.4147C11.4778 16.3601 11.3975 16.3211 11.3117 16.3003C11.086 16.2405 10.8227 16.2507 10.6215 16.2358C8.72203 16.1038 6.93456 15.2886 5.58947 13.9409C4.39367 12.7518 3.61652 11.2064 3.37502 9.53738C3.32033 9.15691 3.32033 9.06238 3.32033 9.06238C3.32031 8.93544 3.28163 8.81152 3.20945 8.7071C3.13726 8.60268 3.03499 8.52271 2.91625 8.47785C2.7975 8.43298 2.66791 8.42533 2.54471 8.45592C2.42151 8.48651 2.31055 8.5539 2.22658 8.6491C2.22658 8.6491 1.91877 8.98426 1.77346 9.32059C1.36591 10.2596 1.19211 11.2834 1.26694 12.3043C1.34178 13.3252 1.66302 14.3128 2.20314 15.1823C2.30471 15.3514 2.30471 15.4296 2.28205 15.6054C2.17541 16.1565 1.98869 17.1288 1.89143 17.6331C1.85922 17.7966 1.8712 17.9658 1.92613 18.1232C1.98106 18.2805 2.07695 18.4204 2.20393 18.5284L2.22189 18.5436C2.38987 18.677 2.59802 18.7497 2.81252 18.7499C2.93317 18.75 3.05265 18.7262 3.16408 18.68L5.25432 17.8733C5.32628 17.846 5.40579 17.846 5.47775 17.8733C6.3008 18.1796 7.15744 18.3421 7.96916 18.3421C8.98054 18.343 9.97968 18.1208 10.8953 17.6913C11.1086 17.5913 11.4422 17.4827 11.6375 17.2569C11.7114 17.1693 11.758 17.062 11.7716 16.9482C11.7851 16.8344 11.765 16.7192 11.7137 16.6167Z"
+                      fill="var(--contents-primary-color)"
+                    />
+                  </svg>
+                  <span
+                    class="item-start-common--nav-items-chat-text nav-item-text"
+                    >채팅</span
+                  >
+                </a>
+              </div>
+            </li>
+
+            <!-- Common/nav-items-chat--inactive -->
+            <li
+              class="items component-molecular-item-start--nav-items-chat--inactive"
+            >
+              Common/nav-items-chat--inactive
+              <div class="item-start-common--nav-items-chat--inactive">
+                <!-- Icon/inactive-chat -->
+                <a
+                  class="nav-item-box"
+                  href="/"
+                  aria-label="채팅창으로 이동"
+                  tabindex="0"
+                >
+                  <svg
+                    width="18"
+                    height="16"
+                    viewBox="0 0 18 16"
+                    fill="var(--contents-primary-color)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M16.9422 12.6195C17.3866 11.7386 17.6105 10.7629 17.5946 9.77634C17.5787 8.78978 17.3235 7.82183 16.8509 6.9557C16.3783 6.08956 15.7024 5.35113 14.8814 4.80389C14.0604 4.25665 13.1188 3.91696 12.1375 3.81401C11.8259 3.05561 11.3646 2.36787 10.781 1.79198C10.1974 1.21608 9.50361 0.76388 8.74114 0.462441C7.97867 0.161003 7.16322 0.016529 6.3436 0.037671C5.52398 0.0588129 4.71706 0.245136 3.97114 0.585483C3.22523 0.92583 2.55567 1.4132 2.00255 2.01841C1.44943 2.62363 1.02414 3.33424 0.752124 4.10769C0.480111 4.88115 0.366978 5.70154 0.419498 6.51974C0.472018 7.33795 0.689112 8.13715 1.05778 8.86948L0.442936 11.0234C0.397128 11.1841 0.3951 11.3541 0.437063 11.5158C0.479025 11.6776 0.563453 11.8252 0.681606 11.9433C0.799759 12.0615 0.947344 12.1459 1.10908 12.1879C1.27082 12.2298 1.44084 12.2278 1.60153 12.182L3.75544 11.5671C4.41405 11.8981 5.12709 12.1072 5.86012 12.1843C6.17898 12.962 6.65516 13.6653 7.25876 14.2502C7.86237 14.835 8.58037 15.2888 9.36769 15.583C10.155 15.8772 10.9946 16.0054 11.8339 15.9597C12.6731 15.9139 13.4938 15.6952 14.2445 15.3171L16.3984 15.932C16.5591 15.9778 16.7291 15.9798 16.8909 15.9379C17.0526 15.8959 17.2002 15.8115 17.3183 15.6933C17.4365 15.5752 17.5209 15.4276 17.5629 15.2658C17.6048 15.1041 17.6028 14.9341 17.557 14.7734L16.9422 12.6195ZM3.807 10.596C3.76339 10.5958 3.71998 10.6019 3.67809 10.614L1.34372 11.2812L2.01012 8.9476C2.04416 8.82909 2.03012 8.70194 1.97106 8.5937C1.37838 7.5046 1.198 6.2384 1.46297 5.02712C1.72795 3.81584 2.42053 2.7406 3.41381 1.99844C4.40708 1.25628 5.63454 0.896894 6.87124 0.986141C8.10795 1.07539 9.27108 1.60729 10.1475 2.48438C11.0239 3.36147 11.555 4.525 11.6433 5.76178C11.7316 6.99855 11.3713 8.22573 10.6283 9.21845C9.88543 10.2112 8.80967 10.9029 7.59819 11.167C6.38671 11.431 5.12065 11.2497 4.032 10.6562C3.96313 10.6178 3.88582 10.5972 3.807 10.596ZM15.989 12.6968L16.6562 15.0312L14.3226 14.3648C14.2041 14.3308 14.077 14.3448 13.9687 14.4039C13.3625 14.7343 12.6961 14.9397 12.009 15.0077C11.322 15.0758 10.6282 15.0052 9.96896 14.8001C9.3097 14.595 8.69835 14.2595 8.17116 13.8137C7.64397 13.3679 7.2117 12.8207 6.89997 12.2046C7.77648 12.1476 8.63026 11.9016 9.4027 11.4834C10.1751 11.0652 10.8479 10.4849 11.3749 9.78215C11.9019 9.07943 12.2705 8.27098 12.4556 7.41233C12.6406 6.55368 12.6376 5.66515 12.4468 4.80776C13.247 4.95675 14.0005 5.29304 14.6457 5.78912C15.2909 6.28519 15.8096 6.92697 16.1592 7.66194C16.5088 8.39691 16.6795 9.20421 16.6572 10.0178C16.635 10.8314 16.4205 11.6281 16.0312 12.3429C15.9711 12.4507 15.9559 12.5779 15.989 12.6968Z"
+                      fill="var(--contents-primary-color)"
+                    />
+                  </svg>
+                  <span
+                    class="item-start-common--nav-items-chat-text nav-item-text"
+                    >채팅</span
+                  >
+                </a>
+              </div>
+            </li>
+
+            <!-- Common/nav-items-my--active -->
+            <li
+              class="items component-molecular-item-start--nav-items-my--active"
+            >
+              Common/nav-items-my--active
+              <div class="item-start-common--nav-items-my--active">
+                <!-- Icon/active-fullchat -->
+                <a
+                  class="nav-item-box"
+                  href="/"
+                  aria-label="개인 페이지로 이동"
+                  tabindex="0"
+                >
+                  <svg
+                    width="14"
+                    height="18"
+                    viewBox="0 0 14 18"
+                    fill="var(--contents-primary-color)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M11.7958 10.6667C12.042 10.6668 12.2856 10.7154 12.513 10.8097C12.7403 10.904 12.9469 11.0421 13.1208 11.2163C13.2948 11.3904 13.4327 11.597 13.5268 11.8245C13.6209 12.0519 13.6693 12.2956 13.6692 12.5417V13.3067C13.6692 13.7842 13.52 14.2498 13.2425 14.6384C11.9542 16.4417 9.85084 17.3342 7.00084 17.3342C4.14917 17.3342 2.04667 16.4409 0.76167 14.6376C0.485108 14.2492 0.336544 13.7843 0.33667 13.3076V12.5409C0.33667 12.0438 0.534126 11.5671 0.885601 11.2157C1.23707 10.8642 1.71378 10.6667 2.21084 10.6667H11.7958ZM7 0.670898C7.54718 0.670898 8.08899 0.778672 8.59452 0.988067C9.10004 1.19746 9.55937 1.50438 9.94628 1.89129C10.3332 2.2782 10.6401 2.73753 10.8495 3.24305C11.0589 3.74857 11.1667 4.29039 11.1667 4.83756C11.1667 5.38474 11.0589 5.92656 10.8495 6.43208C10.6401 6.9376 10.3332 7.39693 9.94628 7.78384C9.55937 8.17075 9.10004 8.47767 8.59452 8.68706C8.08899 8.89646 7.54718 9.00423 7 9.00423C5.89493 9.00423 4.83513 8.56524 4.05372 7.78384C3.27232 7.00244 2.83334 5.94263 2.83334 4.83756C2.83334 3.7325 3.27232 2.67269 4.05372 1.89129C4.83513 1.10989 5.89493 0.670898 7 0.670898Z"
+                      fill="var(--contents-primary-color)"
+                    />
+                  </svg>
+                  <span
+                    class="item-start-common--nav-items-my-text nav-item-text"
+                    >나의 이듬</span
+                  >
+                </a>
+              </div>
+            </li>
+
+            <!-- Common/nav-items-my--inactive -->
+            <li
+              class="items component-molecular-item-start--nav-items-my--inactive"
+            >
+              Common/nav-items-my--inactive
+              <div class="item-start-common--nav-items-my--inactive">
+                <!-- Icon/inactive-my -->
+                <a
+                  class="nav-item-box"
+                  href="/"
+                  aria-label="개인 페이지로 이동"
+                  tabindex="0"
+                >
+                  <svg
+                    width="14"
+                    height="16"
+                    viewBox="0 0 14 16"
+                    fill="var(--contents-primary-color)"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7 0C5.93913 0 4.92172 0.421427 4.17157 1.17157C3.42143 1.92172 3 2.93913 3 4C3 5.06087 3.42143 6.07828 4.17157 6.82843C4.92172 7.57857 5.93913 8 7 8C8.06087 8 9.07828 7.57857 9.82843 6.82843C10.5786 6.07828 11 5.06087 11 4C11 2.93913 10.5786 1.92172 9.82843 1.17157C9.07828 0.421427 8.06087 0 7 0ZM4 4C4 3.20435 4.31607 2.44129 4.87868 1.87868C5.44129 1.31607 6.20435 1 7 1C7.79565 1 8.55871 1.31607 9.12132 1.87868C9.68393 2.44129 10 3.20435 10 4C10 4.79565 9.68393 5.55871 9.12132 6.12132C8.55871 6.68393 7.79565 7 7 7C6.20435 7 5.44129 6.68393 4.87868 6.12132C4.31607 5.55871 4 4.79565 4 4ZM2.009 9C1.74564 8.99895 1.48466 9.04989 1.24102 9.14992C0.997393 9.24994 0.775904 9.39708 0.589259 9.58289C0.402614 9.7687 0.254485 9.98952 0.153366 10.2327C0.0522479 10.4759 0.000129512 10.7366 0 11C0 12.691 0.833 13.966 2.135 14.797C3.417 15.614 5.145 16 7 16C8.855 16 10.583 15.614 11.865 14.797C13.167 13.967 14 12.69 14 11C14 10.4696 13.7893 9.96086 13.4142 9.58579C13.0391 9.21071 12.5304 9 12 9H2.009ZM1 11C1 10.447 1.448 10 2.009 10H12C12.2652 10 12.5196 10.1054 12.7071 10.2929C12.8946 10.4804 13 10.7348 13 11C13 12.309 12.378 13.284 11.327 13.953C10.257 14.636 8.735 15 7 15C5.265 15 3.743 14.636 2.673 13.953C1.623 13.283 1 12.31 1 11Z"
+                      fill="var(--contents-primary-color)"
+                    />
+                  </svg>
+                  <span
+                    class="item-start-common--nav-items-my-text nav-item-text"
+                    >나의 이듬</span
+                  >
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="wrapper nav-wrapper">
+        <h2 class="title-section">organism-start / 유기체 컴포넌트</h2>
+        <!-- Organism Unit Components -->
+
+        <div class="component-organism">
+          <ul class="component-organism-start-nav">
+            <li class="component-organism-start-nav--list-item">
+              Common/nav
+              <!-- Common/nav -->
+              <nav class="component-organism-list-start-nav">
+                <!-- Common/nav-items-home--active -->
+                <div class="item-start-common--nav-items-home--active">
+                  <!-- Icon/active-fullhome -->
+                  <a
+                    class="nav-item-box"
+                    href="/"
+                    aria-label="홈으로 이동"
+                    tabindex="0"
+                  >
+                    <svg
+                      width="14"
+                      height="16"
+                      viewBox="0 0 14 16"
+                      fill="var(--contents-primary-color)"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M0.333252 15.5V5.5L6.99992 0.5L13.6666 5.5V15.5H8.66658V9.66667H5.33325V15.5H0.333252Z"
+                        fill="var(--contents-primary-color)"
+                      />
+                    </svg>
+                    <span
+                      class="item-start-common--nav-items-home-text nav-item-text"
+                      >홈</span
+                    >
+                  </a>
+                </div>
+
+                <!-- Common/nav-items-file--inactive -->
+                <div class="item-start-common--nav-items-file--inactive">
+                  <!-- Icon/inactive-file -->
+                  <a
+                    class="nav-item-box"
+                    href="/"
+                    aria-label="전체 게시판으로 이동"
+                    tabindex="0"
+                  >
+                    <svg
+                      width="12"
+                      height="16"
+                      viewBox="0 0 12 16"
+                      fill="var(--contents-primary-color)"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H10C10.5304 16 11.0391 15.7893 11.4142 15.4142C11.7893 15.0391 12 14.5304 12 14V5.414C11.9996 5.01631 11.8414 4.63503 11.56 4.354L7.646 0.439C7.3648 0.157982 6.98355 8.48813e-05 6.586 0H2ZM1 2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H6V4.5C6 4.89782 6.15803 5.27936 6.43934 5.56066C6.72064 5.84196 7.10217 6 7.5 6H11V14C11 14.2652 10.8946 14.5196 10.7071 14.7071C10.5196 14.8946 10.2652 15 10 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2ZM10.793 5H7.5C7.36739 5 7.24021 4.94732 7.14645 4.85355C7.05268 4.75979 7 4.63261 7 4.5V1.207L10.793 5Z"
+                        fill="var(--contents-primary-color)"
+                      />
+                    </svg>
+                    <span
+                      class="item-start-common--nav-items-file-text nav-item-text"
+                      >게시판</span
+                    >
+                  </a>
+                </div>
+
+                <!-- Common/nav-items-map--inactive -->
+                <div class="item-start-common--nav-items-map--inactive">
+                  <!-- Icon/inactive-map -->
+                  <a
+                    class="nav-item-box"
+                    href="/"
+                    aria-label="우리 동네 게시판으로 이동"
+                    tabindex="0"
+                  >
+                    <svg
+                      width="14"
+                      height="18"
+                      viewBox="0 0 14 18"
+                      fill="var(--contents-primary-color)"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12.625 16.6562H8.34531C9.1065 16.0039 9.81956 15.2973 10.4789 14.5422C12.5984 12.1047 13.7188 9.54219 13.7188 7.125C13.7188 5.34308 13.0109 3.63414 11.7509 2.37413C10.4909 1.11412 8.78192 0.40625 7 0.40625C5.21808 0.40625 3.50914 1.11412 2.24913 2.37413C0.989117 3.63414 0.28125 5.34308 0.28125 7.125C0.28125 9.53984 1.40156 12.1047 3.52109 14.5422C4.18044 15.2973 4.8935 16.0039 5.65469 16.6562H1.375C1.25068 16.6562 1.13145 16.7056 1.04354 16.7935C0.955636 16.8815 0.90625 17.0007 0.90625 17.125C0.90625 17.2493 0.955636 17.3685 1.04354 17.4565C1.13145 17.5444 1.25068 17.5938 1.375 17.5938H12.625C12.7493 17.5938 12.8685 17.5444 12.9565 17.4565C13.0444 17.3685 13.0938 17.2493 13.0938 17.125C13.0938 17.0007 13.0444 16.8815 12.9565 16.7935C12.8685 16.7056 12.7493 16.6562 12.625 16.6562ZM1.21875 7.125C1.21875 5.59172 1.82784 4.12123 2.91204 3.03704C3.99623 1.95284 5.46672 1.34375 7 1.34375C8.53328 1.34375 10.0038 1.95284 11.088 3.03704C12.1722 4.12123 12.7812 5.59172 12.7812 7.125C12.7812 11.7828 8.17188 15.6352 7 16.5398C5.82812 15.6352 1.21875 11.7828 1.21875 7.125ZM9.96875 7.125C9.96875 6.53784 9.79464 5.96386 9.46842 5.47565C9.14221 4.98744 8.67856 4.60693 8.13609 4.38223C7.59362 4.15754 6.99671 4.09874 6.42083 4.21329C5.84494 4.32784 5.31596 4.61059 4.90078 5.02578C4.48559 5.44096 4.20284 5.96994 4.08829 6.54583C3.97374 7.12171 4.03254 7.71862 4.25723 8.26109C4.48193 8.80356 4.86244 9.26721 5.35065 9.59342C5.83886 9.91964 6.41284 10.0938 7 10.0938C7.78736 10.0938 8.54247 9.78097 9.09922 9.22422C9.65597 8.66747 9.96875 7.91236 9.96875 7.125ZM4.96875 7.125C4.96875 6.72326 5.08788 6.33054 5.31108 5.9965C5.53427 5.66246 5.85151 5.40211 6.22267 5.24837C6.59384 5.09463 7.00225 5.0544 7.39628 5.13278C7.7903 5.21116 8.15224 5.40461 8.43631 5.68869C8.72039 5.97276 8.91384 6.3347 8.99222 6.72872C9.0706 7.12275 9.03037 7.53116 8.87663 7.90233C8.72289 8.27349 8.46254 8.59073 8.1285 8.81392C7.79446 9.03712 7.40174 9.15625 7 9.15625C6.46128 9.15625 5.94462 8.94224 5.56369 8.56131C5.18276 8.18038 4.96875 7.66372 4.96875 7.125Z"
+                        fill="var(--contents-primary-color)"
+                      />
+                    </svg>
+                    <span
+                      class="item-start-common--nav-items-map-text nav-item-text"
+                      >내 근처</span
+                    >
+                  </a>
+                </div>
+
+                <!-- Common/nav-items-chat--inactive -->
+                <div class="item-start-common--nav-items-chat--inactive">
+                  <!-- Icon/inactive-chat -->
+                  <a
+                    class="nav-item-box"
+                    href="/"
+                    aria-label="채팅창으로 이동"
+                    tabindex="0"
+                  >
+                    <svg
+                      width="18"
+                      height="16"
+                      viewBox="0 0 18 16"
+                      fill="var(--contents-primary-color)"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M16.9422 12.6195C17.3866 11.7386 17.6105 10.7629 17.5946 9.77634C17.5787 8.78978 17.3235 7.82183 16.8509 6.9557C16.3783 6.08956 15.7024 5.35113 14.8814 4.80389C14.0604 4.25665 13.1188 3.91696 12.1375 3.81401C11.8259 3.05561 11.3646 2.36787 10.781 1.79198C10.1974 1.21608 9.50361 0.76388 8.74114 0.462441C7.97867 0.161003 7.16322 0.016529 6.3436 0.037671C5.52398 0.0588129 4.71706 0.245136 3.97114 0.585483C3.22523 0.92583 2.55567 1.4132 2.00255 2.01841C1.44943 2.62363 1.02414 3.33424 0.752124 4.10769C0.480111 4.88115 0.366978 5.70154 0.419498 6.51974C0.472018 7.33795 0.689112 8.13715 1.05778 8.86948L0.442936 11.0234C0.397128 11.1841 0.3951 11.3541 0.437063 11.5158C0.479025 11.6776 0.563453 11.8252 0.681606 11.9433C0.799759 12.0615 0.947344 12.1459 1.10908 12.1879C1.27082 12.2298 1.44084 12.2278 1.60153 12.182L3.75544 11.5671C4.41405 11.8981 5.12709 12.1072 5.86012 12.1843C6.17898 12.962 6.65516 13.6653 7.25876 14.2502C7.86237 14.835 8.58037 15.2888 9.36769 15.583C10.155 15.8772 10.9946 16.0054 11.8339 15.9597C12.6731 15.9139 13.4938 15.6952 14.2445 15.3171L16.3984 15.932C16.5591 15.9778 16.7291 15.9798 16.8909 15.9379C17.0526 15.8959 17.2002 15.8115 17.3183 15.6933C17.4365 15.5752 17.5209 15.4276 17.5629 15.2658C17.6048 15.1041 17.6028 14.9341 17.557 14.7734L16.9422 12.6195ZM3.807 10.596C3.76339 10.5958 3.71998 10.6019 3.67809 10.614L1.34372 11.2812L2.01012 8.9476C2.04416 8.82909 2.03012 8.70194 1.97106 8.5937C1.37838 7.5046 1.198 6.2384 1.46297 5.02712C1.72795 3.81584 2.42053 2.7406 3.41381 1.99844C4.40708 1.25628 5.63454 0.896894 6.87124 0.986141C8.10795 1.07539 9.27108 1.60729 10.1475 2.48438C11.0239 3.36147 11.555 4.525 11.6433 5.76178C11.7316 6.99855 11.3713 8.22573 10.6283 9.21845C9.88543 10.2112 8.80967 10.9029 7.59819 11.167C6.38671 11.431 5.12065 11.2497 4.032 10.6562C3.96313 10.6178 3.88582 10.5972 3.807 10.596ZM15.989 12.6968L16.6562 15.0312L14.3226 14.3648C14.2041 14.3308 14.077 14.3448 13.9687 14.4039C13.3625 14.7343 12.6961 14.9397 12.009 15.0077C11.322 15.0758 10.6282 15.0052 9.96896 14.8001C9.3097 14.595 8.69835 14.2595 8.17116 13.8137C7.64397 13.3679 7.2117 12.8207 6.89997 12.2046C7.77648 12.1476 8.63026 11.9016 9.4027 11.4834C10.1751 11.0652 10.8479 10.4849 11.3749 9.78215C11.9019 9.07943 12.2705 8.27098 12.4556 7.41233C12.6406 6.55368 12.6376 5.66515 12.4468 4.80776C13.247 4.95675 14.0005 5.29304 14.6457 5.78912C15.2909 6.28519 15.8096 6.92697 16.1592 7.66194C16.5088 8.39691 16.6795 9.20421 16.6572 10.0178C16.635 10.8314 16.4205 11.6281 16.0312 12.3429C15.9711 12.4507 15.9559 12.5779 15.989 12.6968Z"
+                        fill="var(--contents-primary-color)"
+                      />
+                    </svg>
+                    <span
+                      class="item-start-common--nav-items-chat-text nav-item-text"
+                      >채팅</span
+                    >
+                  </a>
+                </div>
+
+                <!-- Common/nav-items-my--inactive -->
+                <div class="item-start-common--nav-items-my--inactive">
+                  <!-- Icon/inactive-my -->
+                  <a
+                    class="nav-item-box"
+                    href="/"
+                    aria-label="개인 페이지로 이동"
+                    tabindex="0"
+                  >
+                    <svg
+                      width="14"
+                      height="16"
+                      viewBox="0 0 14 16"
+                      fill="var(--contents-primary-color)"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 0C5.93913 0 4.92172 0.421427 4.17157 1.17157C3.42143 1.92172 3 2.93913 3 4C3 5.06087 3.42143 6.07828 4.17157 6.82843C4.92172 7.57857 5.93913 8 7 8C8.06087 8 9.07828 7.57857 9.82843 6.82843C10.5786 6.07828 11 5.06087 11 4C11 2.93913 10.5786 1.92172 9.82843 1.17157C9.07828 0.421427 8.06087 0 7 0ZM4 4C4 3.20435 4.31607 2.44129 4.87868 1.87868C5.44129 1.31607 6.20435 1 7 1C7.79565 1 8.55871 1.31607 9.12132 1.87868C9.68393 2.44129 10 3.20435 10 4C10 4.79565 9.68393 5.55871 9.12132 6.12132C8.55871 6.68393 7.79565 7 7 7C6.20435 7 5.44129 6.68393 4.87868 6.12132C4.31607 5.55871 4 4.79565 4 4ZM2.009 9C1.74564 8.99895 1.48466 9.04989 1.24102 9.14992C0.997393 9.24994 0.775904 9.39708 0.589259 9.58289C0.402614 9.7687 0.254485 9.98952 0.153366 10.2327C0.0522479 10.4759 0.000129512 10.7366 0 11C0 12.691 0.833 13.966 2.135 14.797C3.417 15.614 5.145 16 7 16C8.855 16 10.583 15.614 11.865 14.797C13.167 13.967 14 12.69 14 11C14 10.4696 13.7893 9.96086 13.4142 9.58579C13.0391 9.21071 12.5304 9 12 9H2.009ZM1 11C1 10.447 1.448 10 2.009 10H12C12.2652 10 12.5196 10.1054 12.7071 10.2929C12.8946 10.4804 13 10.7348 13 11C13 12.309 12.378 13.284 11.327 13.953C10.257 14.636 8.735 15 7 15C5.265 15 3.743 14.636 2.673 13.953C1.623 13.283 1 12.31 1 11Z"
+                        fill="var(--contents-primary-color)"
+                      />
+                    </svg>
+                    <span
+                      class="item-start-common--nav-items-my-text nav-item-text"
+                      >나의 이듬</span
+                    >
+                  </a>
+                </div>
+              </nav>
+            </li>
+
+            <li class="component-organism-start-nav--list-item">
+              Common/back
+              <!-- Common/back -->
+              <header class="component-organism-list-start-previous">
+                <!-- Icon/left -->
+                <div class="icon-start-left">
+                  <a
+                    class="icon-start-left--link"
+                    href="javascript:history.back()"
+                    aria-label="이전 페이지로 이동"
+                    tabindex="0"
+                  >
+                    <svg
+                      width="9"
+                      height="14"
+                      viewBox="0 0 9 14"
+                      fill="var(--contents-primary-color)"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7.94219 12.8079C8.00026 12.866 8.04632 12.9349 8.07775 13.0108C8.10918 13.0867 8.12535 13.168 8.12535 13.2501C8.12535 13.3322 8.10918 13.4135 8.07775 13.4894C8.04632 13.5653 8.00026 13.6342 7.94219 13.6923C7.88412 13.7504 7.81518 13.7964 7.73931 13.8278C7.66344 13.8593 7.58213 13.8755 7.5 13.8755C7.41788 13.8755 7.33656 13.8593 7.26069 13.8278C7.18482 13.7964 7.11588 13.7504 7.05782 13.6923L0.807816 7.44229C0.749705 7.38425 0.703606 7.31531 0.672154 7.23944C0.640701 7.16357 0.624512 7.08224 0.624512 7.0001C0.624512 6.91797 0.640701 6.83664 0.672154 6.76077C0.703606 6.68489 0.749705 6.61596 0.807816 6.55792L7.05782 0.307916C7.17509 0.19064 7.33415 0.124756 7.5 0.124756C7.66586 0.124756 7.82492 0.19064 7.94219 0.307916C8.05947 0.425191 8.12535 0.584251 8.12535 0.750103C8.12535 0.915956 8.05947 1.07502 7.94219 1.19229L2.1336 7.0001L7.94219 12.8079Z"
+                        fill="var(--contents-primary-color)"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </header>
+            </li>
+
+            <li class="component-organism-start-nav--list-item">
+              Common/button
+              <!-- Common/button -->
+              <button
+                class="component-organism-list-start-button font-heading-sm"
+                aria-label="시작하기 버튼"
+              >
+                시작하기
+              </button>
+            </li>
+
+            <li class="component-organism-start-nav--list-item">
+              Common/category
+              <!-- Common/category -->
+              <button
+                class="btn-start-category--unchecked font-heading-sm"
+                aria-label="카테고리 미추가"
+              >
+                <div class="btn-text-category--wrapper">
+                  <p class="btn-text-category--subtitle">text</p>
+                  <p class="btn-text-category--title font-label-lg">text</p>
+                </div>
+                <span class="btn-status-category--uncheck">
+                  <!-- Icon/plus -->
+
+                  <div class="icon-start-plus">
+                    <svg
+                      class="icon-start--plus"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 12 12"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M11.8334 6.83171H6.83341V11.8317H5.16675V6.83171H0.166748V5.16504H5.16675V0.165039H6.83341V5.16504H11.8334V6.83171Z"
+                        fill="var(--contents-tertiary-color)"
+                      />
+                    </svg>
+                  </div>
+                </span>
+              </button>
+
+              <button
+                class="btn-start-category--checked font-heading-sm"
+                aria-label="카테고리 추가됨"
+              >
+                <div class="btn-text-category--wrapper">
+                  <p class="btn-text-category--subtitle">text</p>
+                  <p class="btn-text-category--title font-label-lg">text</p>
+                </div>
+                <span class="btn-status-category--check">
+                  <!-- Icon/check -->
+
+                  <div class="icon-start-check">
+                    <svg
+                      class="icon-start--checked"
+                      width="12"
+                      height="11"
+                      viewBox="0 0 12 11"
+                      fill="var(--foundation-primary-color)"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M4 10.8334L0 6.57805L1.4 5.08869L4 7.85465L10.6 0.833374L12 2.32274L4 10.8334Z"
+                        fill="var(--foundation-primary-color)"
+                      />
+                    </svg>
+                  </div>
+                </span>
+              </button>
+            </li>
+
+            <li class="component-organism-input-start-sigh-up--inactive">
+              Signup/number
+
+              <!-- Signup/number--inactive -->
+              <div class="input-start-sigh-up-wrapper">
+                <input
+                  class="input-start-sigh-up input-start-sigh-up--inactive"
+                  type="text"
+                  name="phone-number"
+                  id="phone-number"
+                  placeholder=" "
+                />
+                <label
+                  class="input-start-sigh-up-label font-paragraph-md label-inactive"
+                  for="phone-number"
+                  >휴대폰 번호 (-없이 숫자만 입력)</label
+                >
+              </div>
+
+              <!-- Signup/number--active -->
+              <div class="input-start-sigh-up-wrapper">
+                <input
+                  class="input-start-sigh-up input-start-sigh-up--active"
+                  type="text"
+                  name="phone-number"
+                  id="phone-number"
+                  placeholder=" "
+                />
+                <label
+                  class="input-start-sigh-up-label font-paragraph-md label-active"
+                  for="phone-number"
+                  >휴대폰 번호 (-없이 숫자만 입력)</label
+                >
+              </div>
+            </li>
+
+            <li class="component-organism-start-nav--list-item">
+              Signup/component
+              <!-- Signup/component -->
+              <button
+                class="button-sigh-up--inactive btn-sigh-up btn-inactive"
+                aria-label="text"
+              >
+                text</button
+              ><button
+                class="button-sigh-up--active btn-sigh-up btn-active"
+                aria-label="text"
+              >
+                text
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <!-- UI -->
-      <div class="group">
+      <!-- <div class="group">
         <h2>UI 예제</h2>
         <ul>
           <li>
@@ -515,136 +1166,9 @@
             <a href="/src/ui/09-sticky-header.html">09-헤더 스타일링(sticky)</a>
           </li>
           <li><a href="/src/ui/10-searchbar.html">10-검색 바 스타일링</a></li>
-          <li><a href="/src/ui/11-login.html">11-반응형 로그인 페이지</a></li>
-          <li><a href="/src/ui/12-grid-layout.html">12-그리드 레이아웃</a></li>
-          <li>
-            <a href="/src/ui/13-avatar-grid.html">13-아바타 그리드 레이아웃</a>
-          </li>
-          <li>
-            <a href="/src/ui/14-grid-linename.html">14-그리드 레이아웃(name)</a>
-          </li>
-          <li><a href="/src/ui/15-subgrid.html">15-서브 그리드</a></li>
-          <li><a href="/src/ui/16-masonry.html">16-Masonry 레이아웃</a></li>
         </ul>
       </div>
-      <!-- CSS -->
-      <div class="group">
-        <h2>CSS 스타일</h2>
-        <ul>
-          <li><a href="/src/css/01-css-basic.html">01-CSS 기초</a></li>
-          <li><a href="/src/css/02-selector.html">02-CSS 선택자</a></li>
-          <li>
-            <a href="/src/css/03-specificity.html">03-상속, 겹침, 우선순위</a>
-          </li>
-          <li><a href="/src/css/04-typography.html">04-Font 관련 속성</a></li>
-          <li><a href="/src/css/05-box-model.html">05-CSS 박스모델</a></li>
-          <li><a href="/src/css/06-reset.html">06-CSS Reset</a></li>
-          <li><a href="/src/css/07-nesting.html">07-CSS 중첩</a></li>
-          <li><a href="/src/css/08-position.html">08-Position</a></li>
-          <li><a href="/src/css/09-custom-properties.html">09-CSS 변수</a></li>
-          <li><a href="/src/css/10-background.html">10-CSS 배경</a></li>
-          <li><a href="/src/css/11-float.html">11-Float</a></li>
-          <li><a href="/src/css/12-media-query.html">12-미디어 쿼리</a></li>
-          <li>
-            <a href="/src/css/13-logical-properties.html">13-논리 속성</a>
-          </li>
-          <li><a href="/src/css/14-flexbox.html">14-플렉스 박스</a></li>
-          <li>
-            <a href="/src/css/15-stacking-context.html">15-스택킹 컨텍스트</a>
-          </li>
-          <li><a href="/src/css/16-gridbox.html">16-그리드 박스</a></li>
-          <li><a href="/src/css/17-multi-column.html">17-멀티 컬럼</a></li>
-          <li><a href="/src/css/18-light-dark.html">18-라이트/다크 모드</a></li>
-          <li><a href="/src/css/19-animation.html">19-애니메이션</a></li>
-          <li>
-            <a href="/src/css/20-container-query.html">20-컨테이너 퀘리</a>
-          </li>
-          <li><a href="/src/css/21-layer.html">21-@layer 규칙</a></li>
-        </ul>
-      </div>
-      <!-- HTML -->
-      <div class="group">
-        <h2>HTML 마크업</h2>
-        <ul>
-          <li>
-            <a href="/src/html/01-basic-structure.html">01-HTML 기본 명령어</a>
-          </li>
-          <li>
-            <a href="/src/html/02-heading-paragraph.html">02-제목과 단락</a>
-          </li>
-          <li>
-            <a href="/src/html/03-image-figure.html">03-이미지와 피규어</a>
-          </li>
-          <li><a href="/src/html/04-anchor.html">04-하이퍼링크</a></li>
-          <li>
-            <a href="/src/html/05-unordered-ordered-list.html"
-              >05-비순서형 목록</a
-            >
-          </li>
-          <li>
-            <a href="/src/html/06-definition-list.html">06-정의형 목록</a>
-          </li>
-          <li>
-            <a href="/src/html/07-phrasing-element.html">07-프레이징 요소</a>
-          </li>
-          <li>
-            <a href="/src/html/08-blockquote-br.html">08-인용문과 줄바꿈</a>
-          </li>
-          <li><a href="/src/html/09-table.html">09-테이블</a></li>
-          <li>
-            <a href="/src/html/10-container-element.html">10-컨테이너 요소</a>
-          </li>
-          <li>
-            <a href="/src/html/11-section-main.html">11-섹션과 메인 요소</a>
-          </li>
-          <li>
-            <a href="/src/html/12-text-level-element.html"
-              >12-텍스트 레벨 요소</a
-            >
-          </li>
-          <li><a href="/src/html/13-address.html">13-address 요소</a></li>
-          <li>
-            <a href="/src/html/14-picture-source.html"
-              >14-picture, source 요소</a
-            >
-          </li>
-          <li>
-            <a href="/src/html/15-video-track.html">15-video, track 요소</a>
-          </li>
-          <li>
-            <a href="/src/html/16-iframe-object.html">16-iframe, object 요소</a>
-          </li>
-          <li><a href="/src/html/17-map-area.html">17-이미지 맵 요소</a></li>
-          <li><a href="/src/html/18-form-input.html">18-폼 (input) 요소</a></li>
-          <li>
-            <a href="/src/html/19-form-button.html">19-폼 (button) 요소</a>
-          </li>
-          <li>
-            <a href="/src/html/20-form-select-textarea.html"
-              >20-폼 (select, textarea) 요소</a
-            >
-          </li>
-          <li>
-            <a href="/src/html/21-dialog-popover.html"
-              >21-dialog 요소, popover 속성</a
-            >
-          </li>
-          <li>
-            <a href="/src/html/22-details-summary.html"
-              >22-details, summary 요소</a
-            >
-          </li>
-          <li><a href="/src/html/23-script.html">23-script 요소</a></li>
-        </ul>
-      </div>
-      <!-- 연습 -->
-      <div class="group">
-        <h2>연습 공간</h2>
-        <ul>
-          <li><a href="/practice/test.html">연습장</a></li>
-          <li><a href="/practice/memo.md">14-grid-linename 수업메모</a></li>
-        </ul>
-      </div>
+       -->
     </div>
   </body>
 </html>

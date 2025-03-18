@@ -22,12 +22,11 @@
     --columns: 4;
   }
 }
-.icon-wrapper,
-.logo-wrapper,
+.wrapper,
 .group {
   padding: 1rem;
 
-  ul {
+  .component-start {
     columns: 2;
     column-rule: 1px solid currentColor;
     column-gap: 4rem;
@@ -52,9 +51,213 @@
   }
 }
 
-.icon-wrapper,
-.logo-wrapper {
+.wrapper {
   border: 1px solid var(--contents-primary-color);
   border-radius: var(--spacing-sm);
   margin: var(--spacing-sm);
+  width: 100%;
+}
+
+/* Common/nav-items CSS */
+.nav-item-box {
+  /* <a> */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+
+  .nav-item-text {
+    margin-top: var(--spacing-xs);
+  }
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+.component-organism-start-nav--list-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Common/nav CSS */
+.component-organism-list-start-nav {
+  align-items: center;
+  background: var(--foundation-background-color);
+  border: 1px solid var(--contents-primary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: var(--space-8) var(--space-12) var(--space-24) var(--space-12);
+  width: 320px;
+}
+
+/* Common/back CSS */
+.component-organism-list-start-previous {
+  align-items: center;
+  background: var(--foundation-background-color);
+  border: 1px solid var(--contents-primary-color);
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  height: var(--space-36);
+
+  .icon-start-left {
+    margin-inline-start: var(--space-12);
+    margin-left: var(--space-12);
+  }
+
+  .icon-start-left--link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Common/button--component-page CSS */
+.component-organism-start-nav--list-item {
+  gap: var(--spacing-xs);
+}
+
+/* Common/button CSS */
+.component-organism-list-start-button {
+  align-items: center;
+  background-color: var(--foundation-primary-color);
+  border: 0;
+  border-radius: var(--space-8);
+  color: var(--foundation-background-color);
+  display: inline-flex;
+  font-size: var(--space-12);
+  gap: var(--space-4);
+  justify-content: center;
+  padding: var(--space-8);
+  width: 301px;
+}
+
+/* Common/category CSS */
+.btn-start-category--unchecked {
+  align-items: center;
+  background: var(--contents-tertiary-color);
+  border: 0;
+  border-radius: var(--space-8);
+  color: var(--foundation-background-color);
+  display: inline-flex;
+  height: 61px;
+  justify-content: space-between;
+  padding: var(--space-12);
+  width: 96px;
+
+  .btn-text-category--wrapper {
+    justify-items: flex-start;
+
+    .btn-text-category--title {
+      color: var(--contents-primary-color);
+    }
+  }
+
+  .icon-start-plus {
+    align-items: center;
+    background-color: var(--contents-secondary-color);
+    display: inline-flex;
+    border-radius: 50%;
+    height: 18px;
+    justify-content: center;
+    width: 18px;
+
+    .icon-start--plus {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.btn-start-category--checked {
+  align-items: center;
+  background: var(--foundation-primary-color);
+  border: 0;
+  border-radius: var(--space-8);
+  color: var(--foundation-background-color);
+  display: inline-flex;
+  height: 61px;
+  justify-content: space-between;
+  padding: var(--space-12);
+  width: 96px;
+
+  .btn-text-category--wrapper {
+    justify-items: flex-start;
+  }
+
+  .icon-start-check {
+    align-items: center;
+    background-color: var(--foundation-background-color);
+    display: inline-flex;
+    border-radius: 50%;
+    height: 18px;
+    justify-content: center;
+    width: 18px;
+
+    .icon-start--checked {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+/* Signup/number CSS */
+.input-start-sigh-up-wrapper {
+  position: relative;
+  width: 100%;
+
+  .input-start-sigh-up {
+    background-color: var(--foundation-background-color);
+    border: 0.5px solid var(--contents-primary-color);
+    border-radius: var(--spacing-xs);
+    caret-color: var(--foundation-secondary-color);
+    color: var(--contents-primary-color);
+    height: 38px;
+    width: 295px;
+  }
+}
+/* 포커스되었거나 값이 있는 입력 필드에 대한 라벨 스타일 */
+.input-start-sigh-up:focus + .input-start-sigh-up-label,
+.input-start-sigh-up:not(:placeholder-shown) + .input-start-sigh-up-label {
+  transform: translateX(-10px) translateY(-7px) scale(0.5); /* 위로 이동하고 크기를 0.5배로 축소 */
+}
+
+.input-start-sigh-up-label {
+  position: absolute;
+  left: 0;
+
+  margin: var(--space-8) var(--space-12) var(--space-8) var(--space-12);
+  padding-left: var(--spacing-xs);
+  pointer-events: none;
+  top: 2px;
+  transform-origin: left top;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.label-inactive {
+  color: var(--contents-tertiary-color);
+}
+.label-active {
+  color: var(--contents-primary-color);
+}
+
+/* Signup/component CSS */
+.btn-sigh-up {
+  background-color: var(--foundation-background-color);
+  border-radius: 4px;
+  border: 0.5px solid var(--Contents-contentSecondary, #919191);
+  padding: var(--space-8) var(--space-16) var(--space-8) var(--space-16);
+}
+.btn-inactive {
+  color: var(--contents-secondary-color);
+}
+.btn-active {
+  color: var(--contents-primary-color);
 }
