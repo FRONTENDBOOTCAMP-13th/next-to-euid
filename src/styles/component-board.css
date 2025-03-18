@@ -2,6 +2,10 @@
 @import "/src/theme.css";
 @import "/public/common/a11y.css";
 
+.visually-hidden {
+  display: none;
+}
+
 .component-page {
   background-color: var(--contents-tertiary-color);
   margin: var(--space-20);
@@ -27,7 +31,7 @@ h1 {
 
   color: var(--contents-primary-color);
   display: grid;
-  grid-template-columns: repeat(var(--columns), minmax(350px, 1fr));
+  grid-template-columns: repeat(var(--columns), minmax(500px, 1fr));
   gap: var(--space-32);
 
   @media (min-width: 48rem) {
@@ -153,6 +157,7 @@ h1 {
       }
     }
 
+    /* board/theme 36x36 */
     .box-board-theme {
       display: flex;
       align-items: center;
@@ -161,11 +166,12 @@ h1 {
         width: var(--space-36);
         height: var(--space-36);
         border-radius: var(--space-4);
-        background: #525151;
+        background: var(--contents-secondary-color);
         margin: 0 var(--space-8) 0 0;
       }
     }
 
+    /* board/themever2 56x56 */
     .box-board-themever2 {
       display: flex;
       align-items: center;
@@ -174,27 +180,335 @@ h1 {
         width: var(--space-56);
         height: var(--space-56);
         border-radius: var(--space-4);
-        background: #525151;
+        background: var(--contents-secondary-color);
         margin: 0 var(--space-8) 0 0;
-      }
-    }
-
-    .emoji-board-emogi {
-      width: var(--space-56);
-      height: var(--space-56);
-      border-radius: var(--space-52);
-      background: var(--dark-contents-secondary-color);
-      display: grid;
-      padding: 0 var(--space-16);
-
-      >span {
-        grid-area: 1 / 1 / 2/ 2;
-        place-self: center;
       }
     }
   }
 }
 
-.visually-hidden {
-  display: none;
+/* board/emogi - only동그라미 */
+.emoji-board-emogi {
+  width: var(--space-56);
+  height: var(--space-56);
+  border-radius: var(--space-52);
+  background: var(--dark-contents-secondary-color);
+  display: grid;
+  padding: 0 var(--space-12);
+
+  >span {
+    grid-area: 1 / 1 / 2/ 2;
+    place-self: center;
+  }
+}
+
+/* board/allButton 조직체 checkbox 구현 예시 */
+fieldset {
+  border: none;
+}
+
+.box-board-allbutton {
+  display: grid;
+  grid-template-columns: minmax(6.75rem) 1fr;
+  gap: var(--space-4);
+  place-items: center;
+
+  .box-board-emogi {
+    width: var(--space-56);
+    text-align: center;
+  }
+
+  /* 체크박스 숨김 */
+  .box-board-emogi input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+
+  .emoji-board-emogi {
+    width: var(--space-56);
+    height: var(--space-56);
+    border-radius: var(--space-52);
+    background: var(--dark-contents-secondary-color);
+    padding: 0 var(--space-12);
+    border: 2px solid transparent;
+  }
+
+  /* Active 상태 스타일 */
+  .box-board-emogi input[type="radio"]:checked+.emoji-board-emogi {
+    border: 2px solid var(--foundation-secondary-color);
+    padding: 0 var(--space-12);
+  }
+
+  /* 같은 부모 내에서 input[type="radio"]:checked 뒤에 위치하는 모든 .text-board-emogi 요소를 선택 */
+  .box-board-emogi input[type="radio"]:checked~.text-board-emogi {
+    color: var(--foundation-secondary-color);
+  }
+}
+
+/* board/participation */
+.box-board-participation {
+  display: flex;
+  align-items: center;
+
+  .img-board-participation {
+    width: var(--space-20);
+    height: var(--space-20);
+    border-radius: var(--space-56);
+    background: var(--dark-contents-secondary-color);
+    margin: 0 var(--space-8) 0 0;
+  }
+
+  &>span {
+    color: var(--dark-contents-secondary-color);
+  }
+}
+
+/* board/participation&time */
+.box-board-participationntime {
+  display: flex;
+  align-items: center;
+  border: 0.05rem solid var(--dark-contents-secondary-color);
+  position: relative;
+
+  .img-board-participationntime {
+    width: var(--space-20);
+    height: var(--space-20);
+    border-radius: var(--space-56);
+    background: var(--dark-contents-secondary-color);
+    margin: 0 var(--space-8) 0 0;
+  }
+
+  &>span {
+    color: var(--dark-contents-secondary-color);
+  }
+
+  .time-board-participationntime {
+    position: absolute;
+    right: var(--space-2);
+  }
+}
+
+/* board/partIn */
+.box-board-partin {
+  margin: var(--space-8) 0 var(--space-4);
+
+  .button-board-partin {
+    width: 18.5rem;
+    height: var(--space-44);
+    border-radius: var(--space-12);
+    border: none;
+    background: var(--dark-foundation-secondary-color);
+    color: var(--foundation-background-color);
+
+
+    .img-board-themever2 {
+
+      border-radius: var(--space-4);
+      background: var(--contents-secondary-color);
+      margin: 0 var(--space-8) 0 0;
+    }
+  }
+}
+
+/* board/OrganizerProfile */
+.box-board-organizerprofile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: auto auto;
+  width: 7.125rem;
+  height: 100%;
+  height: var(--space-36);
+  padding: var(--space-2);
+  gap: var(--space-2);
+
+  &>span,
+  .text-board-organizerprofile--count {
+    padding-left: var(--space-8);
+  }
+
+  .img-board-organizerprofile {
+    width: var(--space-32);
+    height: var(--space-32);
+    border-radius: var(--space-56);
+    background: var(--contents-secondary-color);
+    grid-row: 1 / span 2;
+    text-align: center;
+    margin: var(--space-2) 0;
+  }
+
+  .text-board-organizerprofile--id {
+    align-self: last baseline;
+    line-height: 1.5;
+    /* 형석님 감사해요감사해요👍 */
+
+  }
+
+  .organizer-box-board {
+    display: flex;
+    justify-content: center;
+
+    .icon-board-organizer {
+      display: flex;
+      align-items: center;
+      align-self: last baseline;
+
+      &>p {
+        margin-left: var(--space-2);
+        color: var(--contents-secondary-color);
+      }
+    }
+  }
+
+  .text-board-organizerprofile--count {
+    line-height: normal;
+    color: var(--contents-secondary-color);
+  }
+}
+
+/* board/minusButton */
+.button-board-minusbutton {
+  width: var(--space-16);
+  height: var(--space-16);
+  border-radius: var(--space-52);
+  border: .0625rem solid var(--contents-primary-color);
+  display: grid;
+  padding: 0;
+
+  &>svg {
+    place-self: center;
+  }
+}
+
+/* board/toggle */
+.toggle-switch {
+  display: inline-flex;
+  width: var(--space-44);
+  inline-size: var(--space-24);
+  aspect-ratio: 2/1;
+  border: 1px solid var(--contents-secondary-color);
+  border-radius: calc(var(--space-44) / 2);
+  background: var(--contents-secondary-color);
+  position: relative;
+  transition: background 0.3s;
+
+  &:has(:checked) {
+    background: var(--foundation-secondary-color);
+    border: 1px solid var(--foundation-secondary-color);
+  }
+
+  &:has(:focus-visible) {
+    box-shadow: 0 0 0 1px var(--dark-foundation-secondary-color);
+  }
+
+  input {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    appearance: none;
+  }
+
+  label {
+    width: calc(50% - 1px);
+    aspect-ratio: 1/1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: var(--foundation-background-color);
+    border-radius: 50%;
+    transition: translate 0.3s;
+  }
+
+  input:checked+label {
+    translate: calc(100% + 2px) 0;
+  }
+}
+
+/* board/sendmessage */
+.box-board-sendmessage {
+  position: relative;
+
+  input {
+    width: 15.25rem;
+    height: var(--space-40);
+    border-radius: var(--space-56);
+    padding: var(--space-8) var(--space-12);
+    color: var(--contents-secondary-color);
+    border: none;
+    /* 예외 적용 */
+    background: #EBECF0;
+    /* 예외 적용 */
+
+    &:active {
+      border: .0437rem solid var(--dark-foundation-tertiary-color);
+    }
+  }
+
+  .icon-board-smile {
+    position: absolute;
+    right: var(--space-4);
+    top: .6563rem;
+
+  }
+}
+
+/* Q&A/info */
+.box-board-qnainfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: auto auto;
+  width: 7.1875rem;
+  height: var(--spacing-56);
+
+  &>span,
+  .text-board-qnainfo--policy,
+  .text-board-qnainfo--policy2 {
+    color: var(--contents-secondary-color);
+  }
+
+  .img-board-organizerprofile {
+    width: var(--space-32);
+    height: var(--space-32);
+    border-radius: var(--space-56);
+    background: var(--contents-secondary-color);
+    /* grid-row: 1 / span 2; */
+    text-align: center;
+    margin: var(--space-2) 0;
+  }
+
+  .text-board-organizerprofile--id {
+    align-self: last baseline;
+    line-height: 1.5;
+    /* 형석님 감사해요감사해요👍 */
+
+  }
+
+  .organizer-box-board {
+    display: flex;
+    justify-content: center;
+
+    .icon-board-organizer {
+      display: flex;
+      align-items: center;
+      align-self: last baseline;
+
+      &>p {
+        margin-left: var(--space-2);
+        color: var(--contents-secondary-color);
+      }
+    }
+  }
+
+  .text-board-organizerprofile--count {
+    line-height: normal;
+    color: var(--contents-secondary-color);
+  }
 }
