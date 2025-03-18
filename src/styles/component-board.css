@@ -1,7 +1,8 @@
 @import "/public/common/mini-reset.css";
 @import "/src/theme.css";
+@import "/public/common/a11y.css";
 
-body {
+.component-page {
   background-color: var(--contents-tertiary-color);
   margin: var(--space-20);
 }
@@ -21,7 +22,7 @@ h1 {
   }
 }
 
-.container {
+.board-section {
   --columns: 1;
 
   color: var(--contents-primary-color);
@@ -38,14 +39,14 @@ h1 {
   }
 
 
-  .group {
+  .wrapper {
     background-color: var(--foundation-background-color);
     padding: var(--space-16);
     border-radius: var(--space-8);
 
     h2 {
       margin-block: var(--space-16);
-      color: var(--contents-tertiary-color);
+      color: var(--contents-primary-color);
       font-size: var(--space-28);
 
       &::before {
@@ -65,48 +66,67 @@ h1 {
       margin-block: var(--space-8);
     }
 
-    .component-box--light {
+    .box-board-inforitems--fullpeople,
+    .box-board-inforitems--calendar,
+    .box-board-person {
       height: var(--space-16);
       display: flex;
       align-items: center;
       margin-bottom: var(--space-4);
 
-      .component-box--light__text {
+      .text-board-inforitems,
+      .text-board-person {
         height: 100%;
         color: var(--contents-tertiary-color);
         margin-left: var(--space-2);
       }
     }
 
-    .component-box--dark {
+    .box-board-personver2,
+    .box-board-personver3 {
       height: var(--space-16);
       display: flex;
       align-items: center;
+      overflow: hidden;
+      /* background: pink; */
 
-      .component-box--dark__text {
-        height: 100%;
+      .text-board-personver2,
+      .text-board-personver3 {
+        /* height: 100%; */
+        align-self: baseline;
         color: var(--contents-primary-color);
+        font: var(--font-lg-16);
         margin-left: var(--space-8);
+        /* background: blue; */
       }
     }
 
-    .text--light {
-      color: var(--dark-contents-secondary-color)
+    /* board/withUs */
+    .component-box--badge,
+    .box-board-withus--badge {
+      width: var(--space-56);
+      height: var(--space-16);
+      background: var(--contents-tertiary-color);
+      border-radius: var(--space-4);
+      padding: 0 var(--space-4);
+      color: var(--contents-color);
+      /* text-align: center; */
+
+      &>span>p {
+        display: inline-flex;
+      }
     }
 
-    .text--dark {
-      color: var(--dark-contents-color);
-    }
-
-    .card-component {
+    /* board/boardField */
+    .together-wrapper-board-boardField {
       width: 19.9375rem;
       height: 7.875rem;
       border: 1px solid var(--contents-primary-color);
-      margin: var(--space-8) 0;
+      margin: var(--space-8) 0 var(--space-4);
       padding: var(--space-12);
       position: relative;
 
-      .component-box--badge {
+      .badge-board-boardField {
         width: var(--space-56);
         height: var(--space-16);
         background: var(--contents-tertiary-color);
@@ -116,24 +136,65 @@ h1 {
         text-align: center;
       }
 
-      .card-component-text--wrapper {
+      .box-board-boardField {
         margin-top: var(--space-4);
       }
 
-      .people--count {
+      &>div.box-board-personver3 {
         position: absolute;
         bottom: var(--space-12);
         right: var(--space-12);
-        color: var(--dark-contents-secondary-color);
+        /* color: var(--contents-secondary-color); */
 
         &>span {
           margin-left: var(--space-8);
+          color: var(--contents-secondary-color);
         }
       }
+    }
 
-      .hide {
-        display: none;
+    .box-board-theme {
+      display: flex;
+      align-items: center;
+
+      .img-board-theme {
+        width: var(--space-36);
+        height: var(--space-36);
+        border-radius: var(--space-4);
+        background: #525151;
+        margin: 0 var(--space-8) 0 0;
+      }
+    }
+
+    .box-board-themever2 {
+      display: flex;
+      align-items: center;
+
+      .img-board-themever2 {
+        width: var(--space-56);
+        height: var(--space-56);
+        border-radius: var(--space-4);
+        background: #525151;
+        margin: 0 var(--space-8) 0 0;
+      }
+    }
+
+    .emoji-board-emogi {
+      width: var(--space-56);
+      height: var(--space-56);
+      border-radius: var(--space-52);
+      background: var(--dark-contents-secondary-color);
+      display: grid;
+      padding: 0 var(--space-16);
+
+      >span {
+        grid-area: 1 / 1 / 2/ 2;
+        place-self: center;
       }
     }
   }
+}
+
+.visually-hidden {
+  display: none;
 }
