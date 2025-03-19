@@ -191,7 +191,7 @@ h1 {
 .emoji-board-emogi {
   width: var(--space-56);
   height: var(--space-56);
-  border-radius: var(--space-52);
+  border-radius: var(--space-56);
   background: var(--dark-contents-secondary-color);
   display: grid;
   padding: 0 var(--space-12);
@@ -618,21 +618,6 @@ fieldset {
   }
 }
 
-/* board/emogi - only동그라미 */
-.emoji-board-emogi {
-  width: var(--space-56);
-  height: var(--space-56);
-  border-radius: var(--space-52);
-  background: var(--dark-contents-secondary-color);
-  display: grid;
-  padding: 0 var(--space-12);
-
-  >span {
-    grid-area: 1 / 1 / 2/ 2;
-    place-self: center;
-  }
-}
-
 /* Q&A/img&text */
 .box-board-imgntext {
   display: grid;
@@ -674,5 +659,51 @@ fieldset {
 
   .text-board-imgntext--content {
     line-height: normal;
+  }
+}
+
+/* Common/back CSS */
+.box-board-nav {
+  /* align-items: center; */
+  background: var(--foundation-background-color);
+  border: 0.0625rem solid var(--contents-primary-color);
+  width: 20rem;
+  height: var(--space-44) - 0.0625rem;
+  margin: var(--space-8) 0 var(--space-4);
+  align-items: center;
+  justify-content: center;
+
+  .icon-board-nav--left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline-start: var(--space-12);
+    margin-inline-end: var(--space-12);
+
+    .icon-start-left--link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box-board-nav--userinfo {
+      display: inline-flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      height: var(--space-40);
+      line-height: 1;
+    }
+
+    .box-board-callnmorebutton {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      .icon-board-call {}
+
+      .icon-board-morebutton {}
+    }
   }
 }
