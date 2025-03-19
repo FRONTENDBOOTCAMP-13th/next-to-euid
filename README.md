@@ -4,7 +4,7 @@
 
 ## 👥 팀원 정보
 
-| 이름 | MBTI | 지역 | 생일 | 이메일 |
+| 이름 | MBTI | 지역 | 생일 | githubID |
 |------|------|------|------|---------|
 | 김현지 | ENTJ | 경기/용인 | 1월 5일 | [hyunji1117](https://github.com/hyunji1117) |
 | 권도연 | INFP | 경기/분당 | 10월 23일 | [doyeon1111](https://github.com/doyeon1111) |
