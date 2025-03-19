@@ -359,20 +359,54 @@
             </svg>
           </div>
         </li>
-        <!-- Q&A/info -->
-        <li>Q&A/info
-          <div class="box-board-qnainfo">
-            <span class="text-board-qnainfo--guide font-paragraph-md">
-              1text
+        <!-- Q&A/finished  -->
+        <li>Q&A/finished
+          <div class="box-board-finished--switch">
+            <input class="input-board-finished" role="switch" type="checkbox" name="switch-1" id="switch-1" />
+            <label class="label-board-finished font-label-lg" for="switch-1">
+              <span class="sr-only">확인</span>
+            </label>
+          </div>
+        </li>
+        <!-- Q&A/profile&nickName -->
+        <li>Q&A/profile&nickName
+          <div class="box-board-profilennickname">
+            <!-- <figure>
+              <img class="img-board-profilennickname" src="/" alt="유저 프로필 이미지">
+              <figcaption class="sr-only">채팅하는 상대 유저의 프로필 이미지 입니다.</figcaption>
+            </figure> -->
+            <div class="img-board-profilennickname"></div>
+            <span class="text-board-profilennickname--id font-paragraph-lg">
+              text
             </span>
-            <span class="text-board-qnainfo--policy font-paragraph-md">
-              2text
+            <span class="text-board-profilennickname--info font-paragraph-md">
+              text
             </span>
-            <span class="text-board-qnainfo--policy2 font-paragraph-md">
-              3text
+            <span class="text-board-profilennickname--content font-paragraph-lg">
+              text
             </span>
           </div>
         </li>
+        <!-- Q&A/img&text -->
+        <li>Q&A/imgntext
+          <div class="box-board-imgntext">
+            <!-- <figure>
+              <img class="img-board-imgntext" src="/" alt="유저 프로필 이미지">
+              <figcaption class="sr-only">채팅하는 상대 유저의 프로필 이미지 입니다.</figcaption>
+            </figure> -->
+            <div class="img-board-imgntext"></div>
+            <span class="text-board-imgntext--id font-paragraph-md">
+              text
+            </span>
+            <span class="text-board-imgntext--info font-paragraph-md">
+              text
+            </span>
+            <span class="text-board-imgntext--content font-paragraph-md">
+              text
+            </span>
+          </div>
+        </li>
+
 
       </ul>
       <!-- board/boardField -->
@@ -446,6 +480,28 @@
         </div>
       </div>
       board/sendmessage
+      <!-- Q&A/info -->
+      <div class="box-board-qnainfo">
+        <p class="text-board-qnainfo--guide font-paragraph-md">
+          안내
+        </p>
+        <p class="text-board-qnainfo--policy font-paragraph-md">
+          중고거래 관련, 명예훼손, 광고/홍보 목적의 글은 올리실 수 없어요. Q&A글쓰기 운영정책
+        </p>
+      </div>
+      Q&A/info
+      <!-- Q&A/message -->
+      <div class="box-board-message">
+        <span class="time-board-message--right font-paragraph-md">오후 3:54</span>
+        <p class="text-board-message font-paragraph-lg">목요일 저녁 7시에 모각코 가능하세요?</p>
+      </div>
+      Q&A/message - right side
+      <!-- Q&A/message -->
+      <div class="box-board-message">
+        <p class="text-board-message font-paragraph-lg">목요일 저녁 7시에 모각코 가능하세요?</p>
+        <span class="time-board-message--left font-paragraph-md">오후 3:54</span>
+      </div>
+      Q&A/message - left side
     </div>
     <!-- //wrapper(group) -->
 
@@ -538,6 +594,8 @@
     </div>
   </div>
   <!-- board-section(container) -->
+
+  <div>
 </body>
 
 </html>
@@ -546,4 +604,7 @@
 - 조직체 checkbox 구현 예시 주석 추가 
 - component 기능 추가
 - svg 이미지 추가
+
+- repator: 
+- board/sendMessage smile 이모지 position 수정
 -->
