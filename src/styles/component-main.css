@@ -218,7 +218,7 @@ h1 {
     padding: 8px 14px;
   }
 
-  /* Atomic/button-main-with-hamberger */
+  /* Atomic/button-main-with-hamburger */
 
   .button-main--inactive {
     display: flex;
@@ -248,7 +248,7 @@ h1 {
     color: var(--foundation-background-color);
   }
 
-  .icon-main-header-hamberger--active {
+  .icon-main-header-hamburger--active {
     filter: invert(100%);
   }
 
