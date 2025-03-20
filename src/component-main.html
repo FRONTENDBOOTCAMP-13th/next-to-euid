@@ -2,9 +2,8 @@
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Component-Main</title>
-    <link rel="icon" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
     <link
       rel="preload"
       as="font"
@@ -12,76 +11,331 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
-    <script type="module" src="/src/main.js"></script>
-    <link rel="stylesheet" as="style" href="/src/styles/component-main.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="/src/styles/component-main.css" />
+    <!-- <script type="module" src="/src/main.js"></script> -->
+    <title></title>
   </head>
-  <body>
-    <h1>main/region&menu</h1>
+  <body class="component-page">
+    <h1>EUIM UI Project <strong>component</strong></h1>
+    <div class="main-section">
+      <!-- Components -->
+      <div class="wrapper">
+        <h2>Atomic-Main-Section</h2>
+        <ul>
+          <!-- Atomic/icon-main-header-hamberger -->
+          <li>
+            icon/hamburger-20x20
+            <div class="icon-main-header-hamberger">
+              <a href="/" aria-label="메뉴를 열고 닫는 아이콘" tabindex="0"
+                ><svg width="20" height="20" viewBox="0 0 20 20" fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.16675 14.1667H15.8334M4.16675 10H15.8334M4.16675 5.83334H15.8334" stroke="var(--contents-primary-color)" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </a>
+            </div>
+          </li>
+          <!-- Atomic/icon-main-header-share -->
+          <li>
+            icon/share-20x20
+            <div class="icon-main-header-share">
+              <a href="/" aria-label="공유하는 아이콘" tabindex="0"
+                ><svg width="20" height="20" viewBox="0 0 20 20" fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.4618 9.16668C16.6128 9.16668 16.7587 9.22138 16.8725 9.32065C16.9864 9.41992 17.0604 9.55705 17.0809 9.70668L17.0868 9.79168V15.625C17.087 16.3169 16.8224 16.9827 16.3473 17.4857C15.8722 17.9887 15.2226 18.2908 14.5318 18.33L14.3784 18.3342H5.21175C4.51997 18.3342 3.85439 18.0695 3.35156 17.5945C2.84872 17.1194 2.54675 16.4698 2.50758 15.7792L2.50342 15.6258V9.79168C2.50347 9.63332 2.56362 9.48089 2.67173 9.36518C2.77984 9.24948 2.92783 9.17912 3.08582 9.16832C3.2438 9.15753 3.39999 9.20711 3.52283 9.30704C3.64567 9.40697 3.726 9.5498 3.74758 9.70668L3.75342 9.79168V15.625C3.75322 15.9911 3.89076 16.344 4.1387 16.6134C4.38665 16.8828 4.72686 17.0491 5.09175 17.0792L5.21175 17.0842H14.3784C14.7445 17.0841 15.0973 16.9464 15.3665 16.6983C15.6358 16.4502 15.8018 16.1099 15.8318 15.745L15.8368 15.6258V9.79168C15.8368 9.62592 15.9026 9.46695 16.0198 9.34974C16.137 9.23253 16.296 9.16668 16.4618 9.16668ZM5.18258 6.01334L9.34675 1.85001C9.45257 1.74416 9.59287 1.67981 9.74213 1.66864C9.89139 1.65748 10.0397 1.70025 10.1601 1.78918L10.2301 1.84918L14.4009 6.01334C14.513 6.12472 14.5788 6.27444 14.585 6.43236C14.5911 6.59027 14.5372 6.74466 14.4341 6.86444C14.331 6.98423 14.1864 7.0605 14.0293 7.07793C13.8723 7.09535 13.7144 7.05262 13.5876 6.95834L13.5176 6.89751L10.4151 3.80084V13.5458C10.4151 13.6967 10.3605 13.8426 10.2614 13.9564C10.1623 14.0702 10.0254 14.1443 9.87592 14.165L9.79092 14.1708C9.63989 14.1708 9.49397 14.1161 9.38014 14.0169C9.26632 13.9176 9.19229 13.7805 9.17175 13.6308L9.16592 13.5458L9.16508 3.79834L6.06675 6.89751C5.96088 7.00358 5.82042 7.06807 5.67097 7.07924C5.52153 7.0904 5.37304 7.0475 5.25258 6.95834L5.18258 6.89751C5.07664 6.79153 5.0123 6.65102 5.00129 6.50158C4.99028 6.35213 5.03332 6.20371 5.12258 6.08334L5.18258 6.01334Z" fill="var(--contents-primary-color)"/>
+                  </svg>
+                  
+              </a>
+            </div>
+          </li>
+          <!-- Atomic/item-main-nav -->
+          <li>
+            main/nav-item
 
-    <div class="main-region">
-      <div class="region">
-        <select class="region-name font-label-lg">
-          <option class="region-name font-label-lg">남가좌제2동</option>
-          <option class="region-name font-label-lg">남가좌제1동</option>
-          <option class="region-name font-label-lg">홍제동</option>
-        </select>
+            <a
+              href="/"
+              aria-label="선택되지 않은 리스트"
+              tabindex="0"
+              class="navitem--inactive font-label-md"
+              >text</a
+            >
+
+            <a
+              href="/"
+              aria-label="선택된 리스트"
+              tabindex="0"
+              class="navitem--active font-label-md"
+              >text</a
+            >
+          </li>
+          <!-- Atomic/button-main--booking -->
+          <li>
+            main/button--booking
+            <button class="button-main--booking font-label-md">text</button>
+            <button class="button-main--booking--finished font-label-md">
+              text
+            </button>
+          </li>
+          <!-- Atomic/button-main-plusbutton -->
+          <li>
+            main/Plusbutton
+            <button class="button-main-plusbutton--unchecked">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="var(--foundation-background-color)" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.1666 15.1643H15.1666V22.1643H12.8333V15.1643H5.83325V12.831H12.8333V5.83099H15.1666V12.831H22.1666V15.1643Z" fill="var(--foundation-background-color)"/>
+                </svg>
+                
+            </button>
+
+            <button class="button-main-plusbutton--checked">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22.1666 15.1643H15.1666V22.1643H12.8333V15.1643H5.83325V12.831H12.8333V5.83099H15.1666V12.831H22.1666V15.1643Z" fill="var(--contents-primary-color)"/>
+                </svg>
+            </button>
+          </li>
+          <!-- Atomic/button-main-emoji-button -->
+          <li>
+            main/emoji-Button
+            <button class="button-main-emoji">
+              <span class="emoji-main-type">🎈</span>
+              <span class="text-object font-label-md">text</span>
+            </button>
+          </li>
+          <!-- Atomic/button-main-anchor--chatting -->
+          <li>
+            main/chatButton
+            <a
+              href="/"
+              aria-label="채팅하기 버튼"
+              tabindex="0"
+              class="button-main-anchor--chatting font-label-md"
+              >text</a
+            >
+          </li>
+          <!-- Atomic/button-main-with-hamberger -->
+          <li>
+            main/button-with-hamberger
+            <button class="button-main--inactive">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.16675 14.1667H15.8334M4.16675 10H15.8334M4.16675 5.83334H15.8334" stroke="var(--contents-primary-color)" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="text-button-main--inactive font-paragraph-md">text</span>
+            </button>
+        
+          
+            <button class="button-main--active">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="var(--foundation-background-color)" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4.16675 14.1667H15.8334M4.16675 10H15.8334M4.16675 5.83334H15.8334" stroke="var(--foundation-background-color)" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              <span class="text-button-main--active font-paragraph-md">text</span>
+          </li>
+          
+          
+        </ul>
       </div>
-      <div class="region-icons">
-        <img src="/src/asset/search.svg" alt="검색" class="region-icon" />
-        <img src="/src/asset/hamburger.svg" alt="메뉴" class="region-icon" />
-        <img src="/src/asset/alramBell.svg" alt="알림" class="region-icon" />
+      <!-- Molecule-Main-Section -->
+      <div class="wrapper">
+        <h2>Molecule-Main-Section</h2>
+        <ul>
+          <!-- Molecule/storyfield-main-text -->
+          <li>
+            main/storyField
+            <a href="/" aria-label="선배님 스토리필드 내용으로 이동" tabindex="0" class="anchor-main-list-storyfield">
+              <div class="main-list-storyfield">
+                <div class="thumbnail-storyfield-rounded-box"></div>
+                <div class="text-wrapper-storyfield font-paragraph-md">
+                  <div class="title-storyfield">
+                    <p class="text-storyfield">text</p>
+                    <p class="text-storyfield">text</p>
+                  </div>
+                  <p class="info-text-storyfield">text</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- Molecule/button-main--booking-price -->
+          <li>
+            main/state/button-booking-with-price
+            <div class="container-main-booking">
+              <button class="button-main--booking font-label-md">text</button>
+              <span class="price font-label-md">number</span>
+            </div>
+            <br />
+            <div class="container-main-booking--finished">
+              <button class="button-main--booking--finished font-label-md">
+                text
+              </button>
+              <span class="price font-label-md">number</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- Organsim-Main-Section -->
+      <div class="wrapper">
+        <h2>Organsim-Main-Section</h2>
+        <ul>
+           <!-- Organsim/header-main--region-items -->
+           <li>
+            main/region&menu
+            <div class="header-main--region-items">
+              <div class="items-region">
+                <label id="region-label" for="items-region" class="visually-hidden">지역을 선택하세요:</label>
+                <select id="items-region" name="items-region" class="region-wrapper font-label-lg">
+                  <option class="region-name font-label-lg">남가좌제2동</option>
+                  <option class="region-name font-label-lg">남가좌제1동</option>
+                  <option class="region-name font-label-lg">홍제동</option>
+                </select>
+              </div>
+              <div class="icon-wrapper-main-region">
+                <a href="/" aria-label="검색창으로 이동" tabindex="0"><svg width="26" height="26" viewBox="0 0 26 26" fill="var(--foundation-background-color)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.2272 3.25C9.64948 3.25 8.10717 3.71786 6.79532 4.59441C5.48347 5.47095 4.46101 6.71683 3.85723 8.17447C3.25346 9.63212 3.09548 11.2361 3.40328 12.7835C3.71109 14.3309 4.47084 15.7523 5.58648 16.868C6.70211 17.9836 8.12352 18.7434 9.67095 19.0512C11.2184 19.359 12.8223 19.201 14.28 18.5972C15.7376 17.9934 16.9835 16.971 17.8601 15.6591C18.7366 14.3473 19.2045 12.805 19.2045 11.2272C19.2043 9.11158 18.3638 7.08262 16.8678 5.58662C15.3718 4.09063 13.3429 3.25013 11.2272 3.25Z" stroke="var(--contents-primary-color)" stroke-width="1.25" stroke-miterlimit="10"/>
+                  <path d="M17.1787 17.1788L22.7499 22.75" stroke="var(--contents-primary-color)" stroke-width="1.25" stroke-miterlimit="10" stroke-linecap="round"/>
+                  </svg></a>
+                <a href="/" aria-label="메뉴창으로 이동" tabindex="0"><svg width="26" height="26" viewBox="0 0 20 20" fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.16675 14.1667H15.8334M4.16675 10H15.8334M4.16675 5.83334H15.8334" stroke="var(--contents-primary-color)" stroke-width="1.16667" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg></a>
+                <a href="/" aria-label="알림창으로 이동" tabindex="0"><svg width="26" height="26" viewBox="0 0 20 20" fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M17.3282 13.7453C16.8946 12.9984 16.2501 10.8852 16.2501 8.125C16.2501 6.4674 15.5916 4.87769 14.4195 3.70558C13.2474 2.53348 11.6577 1.875 10.0001 1.875C8.34247 1.875 6.75276 2.53348 5.58065 3.70558C4.40855 4.87769 3.75007 6.4674 3.75007 8.125C3.75007 10.8859 3.10476 12.9984 2.67116 13.7453C2.56044 13.9352 2.50174 14.1509 2.50098 14.3707C2.50023 14.5905 2.55745 14.8066 2.66687 14.9973C2.77629 15.1879 2.93404 15.3463 3.12422 15.4565C3.31439 15.5667 3.53027 15.6248 3.75007 15.625H6.93835C7.08255 16.3306 7.46603 16.9647 8.02392 17.4201C8.58182 17.8756 9.2799 18.1243 10.0001 18.1243C10.7202 18.1243 11.4183 17.8756 11.9762 17.4201C12.5341 16.9647 12.9176 16.3306 13.0618 15.625H16.2501C16.4698 15.6247 16.6856 15.5665 16.8757 15.4562C17.0657 15.346 17.2234 15.1875 17.3327 14.9969C17.442 14.8063 17.4992 14.5903 17.4984 14.3705C17.4976 14.1508 17.4389 13.9351 17.3282 13.7453ZM10.0001 16.875C9.61243 16.8749 9.23435 16.7546 8.91788 16.5308C8.60141 16.3069 8.3621 15.9905 8.23288 15.625H11.7673C11.638 15.9905 11.3987 16.3069 11.0823 16.5308C10.7658 16.7546 10.3877 16.8749 10.0001 16.875ZM3.75007 14.375C4.35163 13.3406 5.00007 10.9438 5.00007 8.125C5.00007 6.79892 5.52686 5.52715 6.46454 4.58947C7.40222 3.65178 8.67399 3.125 10.0001 3.125C11.3262 3.125 12.5979 3.65178 13.5356 4.58947C14.4733 5.52715 15.0001 6.79892 15.0001 8.125C15.0001 10.9414 15.6469 13.3383 16.2501 14.375H3.75007Z" fill="var(--contents-primary-color)"/>
+                  </svg>
+                  </a>
+              </div>
+            </div>
+          </li>
+          <!-- Organsim/nav-main-three-items -->
+
+          <li>
+            main/navItems
+              <div class="nav-main-items">
+                <div class="nav-three-items font-label-md">
+                  <a
+                    href="/"
+                    aria-label="선택된 리스트"
+                    tabindex="0"
+                    class="navitem--active font-label-md"
+                    >선배님 스토리</a
+                  > 
+                  <a
+                    href="/"
+                    aria-label="선택되지 않은 리스트"
+                    tabindex="0"
+                    class="navitem--inactive font-label-md"
+                    >질의 응답</a
+                  > 
+                  <a
+                    href="/"
+                    aria-label="선택되지 않은 리스트"
+                    tabindex="0"
+                    class="navitem--inactive font-label-md"
+                    >함께 해요</a
+                  >
+                </div>
+              </div>
+          </li>
+          <!-- Organsim/main-header-four-button-items -->
+          <li>
+            main/buttonItems
+            <div class="main-header-four-button-items">
+              <div class="button-main-header--leftpart">
+                <a href="/" aria-label="뒤페이지로 이동" tabindex="0" class="anchor-button-for-back"><svg width="18" height="18" viewBox="0 0 18 18" fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M11.6479 14.227C11.7002 14.2793 11.7416 14.3413 11.7699 14.4096C11.7982 14.4779 11.8128 14.5511 11.8128 14.625C11.8128 14.6989 11.7982 14.7721 11.7699 14.8404C11.7416 14.9087 11.7002 14.9707 11.6479 15.023C11.5957 15.0752 11.5336 15.1167 11.4653 15.145C11.397 15.1733 11.3239 15.1878 11.25 15.1878C11.176 15.1878 11.1029 15.1733 11.0346 15.145C10.9663 15.1167 10.9042 15.0752 10.852 15.023L5.22699 9.39798C5.17469 9.34574 5.1332 9.2837 5.10489 9.21541C5.07658 9.14713 5.06201 9.07393 5.06201 9.00001C5.06201 8.92609 5.07658 8.85289 5.10489 8.7846C5.1332 8.71632 5.17469 8.65428 5.22699 8.60204L10.852 2.97704C10.9575 2.87149 11.1007 2.81219 11.25 2.81219C11.3992 2.81219 11.5424 2.87149 11.6479 2.97704C11.7535 3.08259 11.8128 3.22574 11.8128 3.37501C11.8128 3.52427 11.7535 3.66743 11.6479 3.77298L6.42019 9.00001L11.6479 14.227Z" fill="var(--contents-primary-color)"/>
+                  </svg>
+                  </a>
+                <a href="/" aria-label="홈으로 이동" tabindex="0" class="anchor-button-for-home"><svg width="20" height="20" viewBox="0 0 20 20" fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M9.19167 2.15834C9.41757 1.96704 9.70399 1.86206 10 1.86206C10.296 1.86206 10.5824 1.96704 10.8083 2.15834L17.0583 7.46084C17.1967 7.57817 17.3079 7.72422 17.3842 7.88884C17.4605 8.05347 17.5 8.23273 17.5 8.41417V16.25C17.5 16.5815 17.3683 16.8995 17.1339 17.1339C16.8995 17.3683 16.5815 17.5 16.25 17.5H11.4583C11.2926 17.5 11.1336 17.4342 11.0164 17.3169C10.8992 17.1997 10.8333 17.0408 10.8333 16.875V11.6667H9.16667V16.875C9.16667 17.0408 9.10082 17.1997 8.98361 17.3169C8.8664 17.4342 8.70743 17.5 8.54167 17.5H3.75C3.41848 17.5 3.10054 17.3683 2.86612 17.1339C2.6317 16.8995 2.5 16.5815 2.5 16.25V8.41417C2.5 8.0475 2.66167 7.69834 2.94167 7.46084L9.19167 2.15834ZM10 3.11167L3.75 8.41417V16.25H7.91667V11.0417C7.91667 10.8759 7.98251 10.7169 8.09973 10.5997C8.21694 10.4825 8.37591 10.4167 8.54167 10.4167H11.4583C11.6241 10.4167 11.7831 10.4825 11.9003 10.5997C12.0175 10.7169 12.0833 10.8759 12.0833 11.0417V16.25H16.25V8.41417L10 3.11167Z" fill="var(--contents-primary-color)"/>
+                  </svg></a>
+              </div>
+              <div class="button-main-header--rightpart">
+                <svg class="icon-share-button" width="20" height="20" viewBox="0 0 20 20" fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.4618 9.16668C16.6128 9.16668 16.7587 9.22138 16.8725 9.32065C16.9864 9.41992 17.0604 9.55705 17.0809 9.70668L17.0868 9.79168V15.625C17.087 16.3169 16.8224 16.9827 16.3473 17.4857C15.8722 17.9887 15.2226 18.2908 14.5318 18.33L14.3784 18.3342H5.21175C4.51997 18.3342 3.85439 18.0695 3.35156 17.5945C2.84872 17.1194 2.54675 16.4698 2.50758 15.7792L2.50342 15.6258V9.79168C2.50347 9.63332 2.56362 9.48089 2.67173 9.36518C2.77984 9.24948 2.92783 9.17912 3.08582 9.16832C3.2438 9.15753 3.39999 9.20711 3.52283 9.30704C3.64567 9.40697 3.726 9.5498 3.74758 9.70668L3.75342 9.79168V15.625C3.75322 15.9911 3.89076 16.344 4.1387 16.6134C4.38665 16.8828 4.72686 17.0491 5.09175 17.0792L5.21175 17.0842H14.3784C14.7445 17.0841 15.0973 16.9464 15.3665 16.6983C15.6358 16.4502 15.8018 16.1099 15.8318 15.745L15.8368 15.6258V9.79168C15.8368 9.62592 15.9026 9.46695 16.0198 9.34974C16.137 9.23253 16.296 9.16668 16.4618 9.16668ZM5.18258 6.01334L9.34675 1.85001C9.45257 1.74416 9.59287 1.67981 9.74213 1.66864C9.89139 1.65748 10.0397 1.70025 10.1601 1.78918L10.2301 1.84918L14.4009 6.01334C14.513 6.12472 14.5788 6.27444 14.585 6.43236C14.5911 6.59027 14.5372 6.74466 14.4341 6.86444C14.331 6.98423 14.1864 7.0605 14.0293 7.07793C13.8723 7.09535 13.7144 7.05262 13.5876 6.95834L13.5176 6.89751L10.4151 3.80084V13.5458C10.4151 13.6967 10.3605 13.8426 10.2614 13.9564C10.1623 14.0702 10.0254 14.1443 9.87592 14.165L9.79092 14.1708C9.63989 14.1708 9.49397 14.1161 9.38014 14.0169C9.26632 13.9176 9.19229 13.7805 9.17175 13.6308L9.16592 13.5458L9.16508 3.79834L6.06675 6.89751C5.96088 7.00358 5.82042 7.06807 5.67097 7.07924C5.52153 7.0904 5.37304 7.0475 5.25258 6.95834L5.18258 6.89751C5.07664 6.79153 5.0123 6.65102 5.00129 6.50158C4.99028 6.35213 5.03332 6.20371 5.12258 6.08334L5.18258 6.01334Z" fill="var(--contents-primary-color)"/>
+                  </svg>
+                  <svg class="icon--button"width="20" height="20" viewBox="0 0 20 20" fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.0002 6.66668C10.9168 6.66668 11.6668 5.91668 11.6668 5.00001C11.6668 4.08334 10.9168 3.33334 10.0002 3.33334C9.0835 3.33334 8.3335 4.08334 8.3335 5.00001C8.3335 5.91668 9.0835 6.66668 10.0002 6.66668ZM10.0002 8.33334C9.0835 8.33334 8.3335 9.08334 8.3335 10C8.3335 10.9167 9.0835 11.6667 10.0002 11.6667C10.9168 11.6667 11.6668 10.9167 11.6668 10C11.6668 9.08334 10.9168 8.33334 10.0002 8.33334ZM10.0002 13.3333C9.0835 13.3333 8.3335 14.0833 8.3335 15C8.3335 15.9167 9.0835 16.6667 10.0002 16.6667C10.9168 16.6667 11.6668 15.9167 11.6668 15C11.6668 14.0833 10.9168 13.3333 10.0002 13.3333Z" fill="var(--contents-primary-color)"/>
+                    </svg>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- HTML -->
+      <div class="wrapper">
+        <h2>HTML 마크업</h2>
+        <ul>
+          <li>
+            <a href="/src/html/01-basic-structure.html">01-HTML 기본 명령어</a>
+          </li>
+          <li>
+            <a href="/src/html/02-heading-paragraph.html">02-제목과 단락</a>
+          </li>
+          <li>
+            <a href="/src/html/03-image-figure.html">03-이미지와 피규어</a>
+          </li>
+          <li><a href="/src/html/04-anchor.html">04-하이퍼링크</a></li>
+          <li>
+            <a href="/src/html/05-unordered-ordered-list.html"
+              >05-비순서형 목록</a
+            >
+          </li>
+          <li>
+            <a href="/src/html/06-definition-list.html">06-정의형 목록</a>
+          </li>
+          <li>
+            <a href="/src/html/07-phrasing-element.html">07-프레이징 요소</a>
+          </li>
+          <li>
+            <a href="/src/html/08-blockquote-br.html">08-인용문과 줄바꿈</a>
+          </li>
+          <li><a href="/src/html/09-table.html">09-테이블</a></li>
+          <li>
+            <a href="/src/html/10-container-element.html">10-컨테이너 요소</a>
+          </li>
+          <li>
+            <a href="/src/html/11-section-main.html">11-섹션과 메인 요소</a>
+          </li>
+          <li>
+            <a href="/src/html/12-text-level-element.html"
+              >12-텍스트 레벨 요소</a
+            >
+          </li>
+          <li><a href="/src/html/13-address.html">13-address 요소</a></li>
+          <li>
+            <a href="/src/html/14-picture-source.html"
+              >14-picture, source 요소</a
+            >
+          </li>
+          <li>
+            <a href="/src/html/15-video-track.html">15-video, track 요소</a>
+          </li>
+          <li>
+            <a href="/src/html/16-iframe-object.html">16-iframe, object 요소</a>
+          </li>
+          <li><a href="/src/html/17-map-area.html">17-이미지 맵 요소</a></li>
+          <li><a href="/src/html/18-form-input.html">18-폼 (input) 요소</a></li>
+          <li>
+            <a href="/src/html/19-form-button.html">19-폼 (button) 요소</a>
+          </li>
+          <li>
+            <a href="/src/html/20-form-select-textarea.html"
+              >20-폼 (select, textarea) 요소</a
+            >
+          </li>
+          <li>
+            <a href="/src/html/21-dialog-popover.html"
+              >21-dialog 요소, popover 속성</a
+            >
+          </li>
+          <li>
+            <a href="/src/html/22-details-summary.html"
+              >22-details, summary 요소</a
+            >
+          </li>
+          <li><a href="/src/html/23-script.html">23-script 요소</a></li>
+        </ul>
+      </div>
+      <!-- 연습 -->
+      <div class="wrapper">
+        <h2>연습 공간</h2>
+        <ul>
+          <li><a href="/practice/test.html">연습장</a></li>
+          <li><a href="/practice/memo.md">14-grid-linename 수업메모</a></li>
+        </ul>
       </div>
     </div>
-
-    <hr class="line" />
-
-    <h1>main/navItems</h1>
-
-    <div class="main-navitems">
-      <ul class="nav-list font-label-md">
-        <li class="nav-item-story">선배님 스토리</li>
-        <li class="nav-item">기기 거래</li>
-        <li class="nav-item">질의 응답</li>
-        <li class="nav-item">함께 해요</li>
-      </ul>
-    </div>
-
-    <hr class="line" />
-
-    <h1>main/storyField</h1>
-
-    <div class="main-storyfield">
-      <div class="storyfield-rounded-box"></div>
-      <div class="storyfield-texts font-paragraph-sm">
-        <div class="storyfield-no-faded-text">
-          <p class="storyfield-text">text</p>
-          <p class="storyfield-text">text</p>
-        </div>
-        <p class="storyfield-faded-text">text</p>
-      </div>
-    </div>
-
-    <hr class="line" />
-
-    <h1>main/navItem</h1>
-
-    <div class="main-navitem">
-      <div class="navitem-box">
-        <span class="navitem-text font-label-md">text</span>
-      </div>
-      <div class="navitem-box">
-        <span class="navitem-text font-label-md">text</span>
-      </div>
-    </div>
-
-    <h1>main/booking</h1>
-    <h1>main/state</h1>
-    <h1>main/Plusbutton</h1>
-    <h1>main/listItem</h1>
-    <h1>main/like</h1>
-    <h1>main/plusButton</h1>
-    <h1>main/chatButton</h1>
-    <h1>main/buttonItems</h1>
-    <h1>main/button</h1>
   </body>
 </html>
