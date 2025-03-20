@@ -12,7 +12,7 @@
 .start-section {
   --columns: 1;
   display: grid;
-  grid-template-columns: repeat(var(--columns), minmax(280px, 1fr));
+  grid-template-columns: repeat(var(--columns), minmax(17.5rem, 1fr));
 
   @media (min-width: 48rem) {
     --columns: 2;
@@ -22,14 +22,13 @@
     --columns: 4;
   }
 }
-.icon-wrapper,
-.logo-wrapper,
+.wrapper,
 .group {
   padding: 1rem;
 
-  ul {
+  .component-start {
     columns: 2;
-    column-rule: 1px solid currentColor;
+    column-rule: 0.0625rem solid currentColor;
     column-gap: 4rem;
     list-style-type: none;
   }
@@ -52,9 +51,212 @@
   }
 }
 
-.icon-wrapper,
-.logo-wrapper {
-  border: 1px solid var(--contents-primary-color);
+.wrapper {
+  border: 0.0625rem solid var(--contents-primary-color);
   border-radius: var(--spacing-sm);
   margin: var(--spacing-sm);
+  width: 100%;
+}
+
+/* Common/nav-items CSS */
+.nav-item-box {
+  /* <a> */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+
+  .nav-item-text {
+    margin-top: var(--spacing-xs);
+  }
+
+  &:visited {
+    color: inherit;
+  }
+}
+
+.component-organism-start-nav--list-item {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Common/nav CSS */
+.nav-start-common--list-item {
+  align-items: center;
+  background: var(--foundation-background-color);
+  border: 0.0625rem solid var(--contents-primary-color);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: var(--space-8) var(--space-12) var(--space-24) var(--space-12);
+  width: 20rem;
+}
+
+/* Common/back CSS */
+.header-start-common--previous {
+  align-items: center;
+  background: var(--foundation-background-color);
+  border: 0.0625rem solid var(--contents-primary-color);
+  display: flex;
+  flex-direction: row;
+  width: 20rem;
+  height: var(--space-36);
+
+  .icon-start-left {
+    margin-inline-start: var(--space-12);
+    margin-left: var(--space-12);
+  }
+
+  .icon-start-left--link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Common/button--component-page CSS */
+.component-organism-start-nav--list-item {
+  gap: var(--spacing-xs);
+}
+
+/* Common/button CSS */
+.button-start-common {
+  align-items: center;
+  background-color: var(--foundation-primary-color);
+  border: 0;
+  border-radius: var(--space-8);
+  color: var(--foundation-background-color);
+  display: inline-flex;
+  font-size: var(--space-12);
+  gap: var(--space-4);
+  justify-content: center;
+  padding: var(--space-8);
+  width: 18.8125rem;
+}
+
+/* Common/category CSS */
+.button-start-category--unchecked {
+  align-items: center;
+  background: var(--contents-tertiary-color);
+  border: 0;
+  border-radius: var(--space-8);
+  color: var(--foundation-background-color);
+  display: inline-flex;
+  height: 3.8125rem;
+  justify-content: space-between;
+  padding: var(--space-12);
+  width: 6rem;
+
+  .btn-text-category--wrapper {
+    justify-items: flex-start;
+
+    .btn-text-category--title {
+      color: var(--contents-primary-color);
+    }
+  }
+
+  .icon-start-plus {
+    align-items: center;
+    background-color: var(--contents-secondary-color);
+    display: inline-flex;
+    border-radius: 50%;
+    height: var(--space-20);
+    justify-content: center;
+    width: var(--space-20);
+
+    .icon-start--plus {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+
+.button-start-category--checked {
+  align-items: center;
+  background: var(--foundation-primary-color);
+  border: 0;
+  border-radius: var(--space-8);
+  color: var(--foundation-background-color);
+  display: inline-flex;
+  height: 3.8125rem;
+  justify-content: space-between;
+  padding: var(--space-12);
+  width: 6rem;
+
+  .btn-text-category--wrapper {
+    justify-items: flex-start;
+  }
+
+  .icon-start-check {
+    align-items: center;
+    background-color: var(--foundation-background-color);
+    border-radius: 50%;
+    display: inline-flex;
+    height: var(--space-20);
+    justify-content: center;
+    width: var(--space-20);
+
+    .icon-start--checked {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+/* Signup/number CSS */
+.input-start-sign-up-wrapper {
+  position: relative;
+  width: 100%;
+
+  .input-start-sign-up {
+    background-color: var(--foundation-background-color);
+    border: 0.0313rem solid var(--contents-primary-color);
+    border-radius: var(--spacing-xs);
+    caret-color: var(--foundation-secondary-color);
+    color: var(--contents-primary-color);
+    height: 2.375rem;
+    width: 18.4375rem;
+  }
+}
+/* 포커스되었거나 값이 있는 입력 필드에 대한 라벨 스타일 */
+.input-start-sign-up:focus + .input-start-sign-up-label,
+.input-start-sign-up:not(:placeholder-shown) + .input-start-sign-up-label {
+  transform: translateX(-0.625rem) translateY(-0.4375rem) scale(0.5); /* 위로 이동하고 크기를 0.5배로 축소 */
+}
+
+.input-start-sign-up-label {
+  position: absolute;
+  left: 0;
+  margin: var(--space-8) var(--space-12) var(--space-8) var(--space-12);
+  padding-left: var(--spacing-xs);
+  pointer-events: none;
+  top: 0.125rem;
+  transform-origin: left top;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.label-inactive {
+  color: var(--contents-tertiary-color);
+}
+.label-active {
+  color: var(--contents-primary-color);
+}
+
+/* Signup/component CSS */
+.btn-sign-up {
+  background-color: var(--foundation-background-color);
+  border-radius: 0.25rem;
+  border: 0.0313rem solid var(--Contents-contentSecondary, #919191);
+  padding: var(--space-8) var(--space-16) var(--space-8) var(--space-16);
+}
+.btn-inactive {
+  color: var(--contents-secondary-color);
+}
+.btn-active {
+  color: var(--contents-primary-color);
 }

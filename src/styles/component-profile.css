@@ -1,0 +1,60 @@
+/* src/styles/component-profile.css */
+@import "/src/style.css";
+
+/* component page style */
+.component-page,
+.start-section {
+  background-color: var(--foundation-background-color);
+  color: var(--contents-secondary-color);
+  font: var(--font-family);
+}
+
+.start-section {
+  --columns: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(17.5rem, 1fr));
+
+  @media (min-width: 48rem) {
+    --columns: 2;
+  }
+
+  @media (min-width: 80rem) {
+    --columns: 4;
+  }
+}
+
+.wrapper,
+.group {
+  padding: 1rem;
+
+  .component-start {
+    columns: 2;
+    column-rule: 0.0625rem solid currentColor;
+    column-gap: 4rem;
+    list-style-type: none;
+  }
+  li {
+    margin-block: 0.5rem;
+  }
+}
+
+.page-title {
+  margin: var(--space-12);
+  font-size: var(--font-2xl-32);
+}
+
+.title-section {
+  font-size: var(--font-xl-24);
+
+  &::before {
+    content: "🍄";
+    margin-inline-end: 0.5rem;
+  }
+}
+
+.wrapper {
+  border: 0.0625rem solid var(--contents-primary-color);
+  border-radius: var(--spacing-sm);
+  margin: var(--spacing-sm);
+  width: 100%;
+}

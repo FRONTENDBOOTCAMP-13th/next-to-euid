@@ -3,22 +3,40 @@
 :root {
   /* Spacing 간격 설정 */
   /* 숫자 스케일 시스템 적용 */
-  --space-4: 0.25rem; /* 4px */
-  --space-8: 0.5rem; /* 8px */
-  --space-12: 0.75rem; /* 12px */
-  --space-16: 1rem; /* 16px */
-  --space-20: 1.25rem; /* 20px */
-  --space-24: 1.5rem; /* 24px */
-  --space-28: 1.75rem; /* 28px */
-  --space-32: 2rem; /* 32px */
-  --space-36: 2.25rem; /* 36px */
-  --space-40: 2.5rem; /* 40px */
-  --space-44: 2.75rem; /* 44px */
-  --space-48: 3rem; /* 48px */
-  --space-52: 3.25rem; /* 52px */
-  --space-56: 3.5rem; /* 56px */
-  --space-60: 3.75rem; /* 60px */
-  --space-64: 4rem; /* 64px */
+  --space-2: 0.125rem;
+  /* 4px */
+  --space-4: 0.25rem;
+  /* 4px */
+  --space-8: 0.5rem;
+  /* 8px */
+  --space-12: 0.75rem;
+  /* 12px */
+  --space-16: 1rem;
+  /* 16px */
+  --space-20: 1.25rem;
+  /* 20px */
+  --space-24: 1.5rem;
+  /* 24px */
+  --space-28: 1.75rem;
+  /* 28px */
+  --space-32: 2rem;
+  /* 32px */
+  --space-36: 2.25rem;
+  /* 36px */
+  --space-40: 2.5rem;
+  /* 40px */
+  --space-44: 2.75rem;
+  /* 44px */
+  --space-48: 3rem;
+  /* 48px */
+  --space-52: 3.25rem;
+  /* 52px */
+  --space-56: 3.5rem;
+  /* 56px */
+  --space-60: 3.75rem;
+  /* 60px */
+  --space-64: 4rem;
+  /* 64px */
 
   /* 의미론적 별칭(semantic aliases) - 필요에 따라 사용 */
   --spacing-xs: var(--space-4);
@@ -43,6 +61,8 @@
   --contents-primary-color: #000000;
   --contents-secondary-color: #919191;
   --contents-tertiary-color: #9da1b4;
+  --contents-color: #ffffff;
+  /* 새로 추가 */
 
   /* 다크모드 색상 (변수만 정의) */
   /* Foundation */
@@ -56,6 +76,8 @@
   --dark-contents-primary-color: #ffffff;
   --dark-contents-secondary-color: #b0b0b0;
   --dark-contents-tertiary-color: #c8cce0;
+  --dark-contents-color: #000000;
+  /* 새로 추가 */
 
   /* 다크모드 미디어 쿼리 사용을 위한 설정 */
   --color-scheme: light;
@@ -113,73 +135,87 @@
   line-height: var(--line-height-heading);
   font-size: var(--font-3xl-48);
 }
+
 .font-heading-2xl {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-heading);
   font-size: var(--font-2xl-32);
 }
+
 .font-heading-xl {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-heading);
   font-size: var(--font-xl-24);
 }
+
 .font-heading-lg {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-heading);
   font-size: var(--font-lg-16);
 }
+
 .font-heading-md {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-heading);
   font-size: var(--font-md-12);
 }
+
 .font-heading-sm {
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-heading);
   font-size: var(--font-sm-8);
 }
+
 /* font-label */
 .font-label-2xl {
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-label);
   font-size: var(--font-2xl-32);
 }
+
 .font-label-xl {
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-label);
   font-size: var(--font-xl-24);
 }
+
 .font-label-lg {
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-label);
   font-size: var(--font-lg-16);
 }
+
 .font-label-md {
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-label);
   font-size: var(--font-md-12);
 }
+
 .font-label-sm {
   font-weight: var(--font-weight-semibold);
   line-height: var(--line-height-label);
   font-size: var(--font-sm-8);
 }
+
 /* font-paragraph */
 .font-paragraph-xl {
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-paragraph);
   font-size: var(--font-xl-24);
 }
+
 .font-paragraph-lg {
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-paragraph);
   font-size: var(--font-lg-16);
 }
+
 .font-paragraph-md {
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-paragraph);
   font-size: var(--font-md-12);
 }
+
 .font-paragraph-sm {
   font-weight: var(--font-weight-regular);
   line-height: var(--line-height-paragraph);
@@ -203,6 +239,8 @@
     --contents-primary-color: var(--dark-contents-primary-color);
     --contents-secondary-color: var(--dark-contents-secondary-color);
     --contents-tertiary-color: var(--dark-contents-tertiary-color);
+    --contents-color: var(--dark-contents-color);
+    /* 새로 추가 */
   }
 }
 
