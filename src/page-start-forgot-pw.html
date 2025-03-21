@@ -17,15 +17,15 @@
 
     <!-- <script type="module" src="/src/main.js"></script> -->
     <script type="module">
-      document.addEventListener("DOMContentLoaded", () => {
+      document.addEventListener('DOMContentLoaded', () => {
         // DOM 선택 부분
-        const emailDialogButton = document.querySelector(".show-email-dialog");
+        const emailDialogButton = document.querySelector('.show-email-dialog');
         const passwordDialogButton = document.querySelector(
-          ".show-password-dialog"
+          '.show-password-dialog'
         );
-        const closeDialogButtons = document.querySelectorAll(".close-dialog");
-        const emailDialog = document.querySelector(".email-dialog");
-        const passwordDialog = document.querySelector(".password-dialog");
+        const closeDialogButtons = document.querySelectorAll('.close-dialog');
+        const emailDialog = document.querySelector('.email-dialog');
+        const passwordDialog = document.querySelector('.password-dialog');
 
         // 페이지 로드 시 모든 다이얼로그 닫기
         emailDialog.close();
@@ -37,14 +37,14 @@
         const closeDialog = (dialog) => dialog.close();
 
         // 이벤트 바인딩 부분
-        emailDialogButton.addEventListener("click", openEmailDialog);
-        passwordDialogButton.addEventListener("click", openPasswordDialog);
+        emailDialogButton.addEventListener('click', openEmailDialog);
+        passwordDialogButton.addEventListener('click', openPasswordDialog);
 
         // 모든 닫기 버튼에 이벤트 리스너 추가
         closeDialogButtons.forEach((button) => {
-          button.addEventListener("click", () => {
+          button.addEventListener('click', () => {
             // 부모 다이얼로그 찾아서 닫기
-            const dialog = button.closest("dialog");
+            const dialog = button.closest('dialog');
             if (dialog) {
               dialog.close();
             }

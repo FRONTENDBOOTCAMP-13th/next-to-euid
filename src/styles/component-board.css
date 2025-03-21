@@ -1,6 +1,6 @@
-@import "/public/common/mini-reset.css";
-@import "/src/theme.css";
-@import "/public/common/a11y.css";
+@import '/public/common/mini-reset.css';
+@import '/src/theme.css';
+@import '/public/common/a11y.css';
 
 .visually-hidden {
   display: none;
@@ -16,13 +16,12 @@ h1 {
   margin-block: var(--space-32);
 
   &::before {
-    content: "🎁";
+    content: '🎁';
     margin-inline-end: var(--space-8);
   }
 
   strong {
     font-size: var(--space-16);
-
   }
 }
 
@@ -42,7 +41,6 @@ h1 {
     --columns: 4;
   }
 
-
   .wrapper {
     background-color: var(--foundation-background-color);
     padding: var(--space-16);
@@ -54,7 +52,7 @@ h1 {
       font-size: var(--space-28);
 
       &::before {
-        content: "🍄";
+        content: '🍄';
         margin-inline-end: var(--space-8);
       }
     }
@@ -116,7 +114,7 @@ h1 {
       color: var(--contents-color);
       /* text-align: center; */
 
-      &>span>p {
+      & > span > p {
         display: inline-flex;
       }
     }
@@ -144,13 +142,13 @@ h1 {
         margin-top: var(--space-4);
       }
 
-      &>div.box-board-personver3 {
+      & > div.box-board-personver3 {
         position: absolute;
         bottom: var(--space-12);
         right: var(--space-12);
         /* color: var(--contents-secondary-color); */
 
-        &>span {
+        & > span {
           margin-left: var(--space-8);
           color: var(--contents-secondary-color);
         }
@@ -196,7 +194,7 @@ h1 {
   display: grid;
   padding: 0 var(--space-12);
 
-  >span {
+  > span {
     grid-area: 1 / 1 / 2/ 2;
     place-self: center;
   }
@@ -219,7 +217,7 @@ fieldset {
   }
 
   /* 체크박스 숨김 */
-  .box-board-emogi input[type="radio"] {
+  .box-board-emogi input[type='radio'] {
     position: absolute;
     width: 1px;
     height: 1px;
@@ -240,13 +238,13 @@ fieldset {
   }
 
   /* Active 상태 스타일 */
-  .box-board-emogi input[type="radio"]:checked+.emoji-board-emogi {
+  .box-board-emogi input[type='radio']:checked + .emoji-board-emogi {
     border: 2px solid var(--foundation-secondary-color);
     padding: 0 var(--space-12);
   }
 
   /* 같은 부모 내에서 input[type="radio"]:checked 뒤에 위치하는 모든 .text-board-emogi 요소를 선택 */
-  .box-board-emogi input[type="radio"]:checked~.text-board-emogi {
+  .box-board-emogi input[type='radio']:checked ~ .text-board-emogi {
     color: var(--foundation-secondary-color);
   }
 }
@@ -264,7 +262,7 @@ fieldset {
     margin: 0 var(--space-8) 0 0;
   }
 
-  &>span {
+  & > span {
     color: var(--dark-contents-secondary-color);
   }
 }
@@ -284,7 +282,7 @@ fieldset {
     margin: 0 var(--space-8) 0 0;
   }
 
-  &>span {
+  & > span {
     color: var(--dark-contents-secondary-color);
   }
 
@@ -306,9 +304,7 @@ fieldset {
     background: var(--dark-foundation-secondary-color);
     color: var(--foundation-background-color);
 
-
     .img-board-themever2 {
-
       border-radius: var(--space-4);
       background: var(--contents-secondary-color);
       margin: 0 var(--space-8) 0 0;
@@ -327,7 +323,7 @@ fieldset {
   padding: var(--space-2);
   gap: var(--space-2);
 
-  &>span,
+  & > span,
   .text-board-organizerprofile--count {
     padding-left: var(--space-8);
   }
@@ -346,7 +342,6 @@ fieldset {
     align-self: last baseline;
     line-height: 1.5;
     /* 형석님 감사해요감사해요👍 */
-
   }
 
   .organizer-box-board {
@@ -358,7 +353,7 @@ fieldset {
       align-items: center;
       align-self: last baseline;
 
-      &>p {
+      & > p {
         margin-left: var(--space-2);
         color: var(--contents-secondary-color);
       }
@@ -376,11 +371,11 @@ fieldset {
   width: var(--space-16);
   height: var(--space-16);
   border-radius: var(--space-52);
-  border: .0625rem solid var(--contents-primary-color);
+  border: 0.0625rem solid var(--contents-primary-color);
   display: grid;
   padding: 0;
 
-  &>svg {
+  & > svg {
     place-self: center;
   }
 }
@@ -427,7 +422,7 @@ fieldset {
     transition: translate 0.3s;
   }
 
-  input:checked+label {
+  input:checked + label {
     translate: calc(100% + 2px) 0;
   }
 }
@@ -446,19 +441,18 @@ fieldset {
     color: var(--contents-secondary-color);
     border: none;
     /* 예외 적용 */
-    background: #EBECF0;
+    background: #ebecf0;
     /* 예외 적용 */
 
     &:active {
-      border: .0437rem solid var(--dark-foundation-tertiary-color);
+      border: 0.0437rem solid var(--dark-foundation-tertiary-color);
     }
   }
 
   .icon-board-smile {
     position: absolute;
     right: var(--space-16);
-    top: .6563rem;
-
+    top: 0.6563rem;
   }
 }
 
@@ -469,14 +463,14 @@ fieldset {
   grid-template-rows: auto auto; */
   /* width: 18.5rem; */
   width: 18.5rem;
-  height: var(--space-60)/2;
+  height: var(--space-60) / 2;
   background: var(--foundation-tertiary-color);
   opacity: 0.7;
   border-radius: var(--space-12);
   padding: var(--space-12) var(--space-16);
   margin: var(--space-8) 0 var(--space-4);
 
-  &>p,
+  & > p,
   .text-board-qnainfo--guide,
   .text-board-qnainfo--policy {
     color: var(--foundation-background-color);
@@ -526,7 +520,7 @@ fieldset {
     }
   }
 
-  input:checked+label::after {
+  input:checked + label::after {
     content: '확인';
     color: var(--switch-active-color);
   }
@@ -543,7 +537,7 @@ fieldset {
   /* padding: var(--space-2); */
   gap: var(--space-2);
 
-  &>span,
+  & > span,
   .text-board-profilennickname--content {
     padding-left: var(--space-8);
   }
@@ -630,7 +624,7 @@ fieldset {
   gap: var(--space-2);
   line-height: 0;
 
-  &>span,
+  & > span,
   .text-board-imgntext--content {
     padding-left: var(--space-8);
   }
@@ -701,9 +695,11 @@ fieldset {
       align-items: center;
       justify-content: center;
 
-      .icon-board-call {}
+      .icon-board-call {
+      }
 
-      .icon-board-morebutton {}
+      .icon-board-morebutton {
+      }
     }
   }
 }
