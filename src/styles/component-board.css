@@ -694,12 +694,6 @@ fieldset {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-
-      .icon-board-call {
-      }
-
-      .icon-board-morebutton {
-      }
     }
   }
 }
