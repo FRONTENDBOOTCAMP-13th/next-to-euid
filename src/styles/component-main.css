@@ -1,6 +1,6 @@
-@import "../theme.css";
-@import "../../public/common/mini-reset.css";
-@import "../../public/common/a11y.css";
+@import '../theme.css';
+@import '../../public/common/mini-reset.css';
+@import '../../public/common/a11y.css';
 
 .component-page {
   background-color: #778899;
@@ -12,7 +12,7 @@ h1 {
   margin-block: 2rem;
 
   &::before {
-    content: "🎁";
+    content: '🎁';
     margin-inline-end: 0.5rem;
   }
 
@@ -48,7 +48,7 @@ h1 {
       font-size: 1.8rem;
 
       &::before {
-        content: "🍄";
+        content: '🍄';
         margin-inline-end: 0.5rem;
       }
     }

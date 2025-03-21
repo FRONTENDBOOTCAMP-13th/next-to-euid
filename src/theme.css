@@ -84,7 +84,7 @@
 
   /* Typography 글꼴 설정 */
   /* font 스타일 */
-  --font-family: "Pretendard", sans-serif;
+  --font-family: 'Pretendard', sans-serif;
   /* font size */
   --font-3xl-48: var(--space-48);
   --font-2xl-32: var(--space-32);
