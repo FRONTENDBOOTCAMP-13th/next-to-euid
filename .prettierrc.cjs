@@ -3,7 +3,7 @@ module.exports = {
   htmlWhitespaceSensitivity: 'css',
   bracketSameLine: false,
   bracketSpacing: true,
-  printWidth: 10,
+  printWidth: 80,
   proseWrap: 'preserve',
   quoteProps: 'as-needed',
   semi: true,
