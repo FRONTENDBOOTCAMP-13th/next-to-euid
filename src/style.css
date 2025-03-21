@@ -1,10 +1,9 @@
 /* src/style.css */
 /* CSS 스타일을 작성해 주세요. */
-@import "../public/common/mini-reset.css";
-@import "./theme.css";
-@import "./styles/component-start.css";
-@import "../public/common/a11y.css";
-
+@import '../public/common/mini-reset.css';
+@import './theme.css';
+@import './styles/component-start.css';
+@import '../public/common/a11y.css';
 
 /* main page style */
 .main-page {

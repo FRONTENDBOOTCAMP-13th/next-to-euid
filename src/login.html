@@ -1,66 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/styles/login.css" />
+    <!-- <script type="module" src="/src/main.js"></script> -->
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Login Page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
-  <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
-  <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
-  <link rel="stylesheet" href="/src/styles/login.css" />
-  <!-- <script type="module" src="/src/main.js"></script> -->
+  <body>
+    <main class="container">
+      <header class="header">
+        <a href="/" class="back-btn" aria-label="Go back">&larr;</a>
+      </header>
 
-<body>
+      <section class="account-section">
+        <h1 class="account-title">Account</h1>
+        <form class="login-form">
+          <div class="input-group">
+            <label for="email" class="sr-only">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="Enter email"
+              required
+              aria-required="true"
+            />
+          </div>
+          <div class="input-group">
+            <label for="password" class="sr-only">Password</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Enter password"
+              required
+              aria-required="true"
+            />
+          </div>
+          <button type="submit" class="btn dark-btn" aria-label="Sign in">
+            Sign In
+          </button>
+        </form>
 
-  <main class="container">
-    <header class="header">
-      <a href="/" class="back-btn" aria-label="Go back">&larr;</a>
-    </header>
-
-    <section class="account-section">
-      <h1 class="account-title">Account</h1>
-      <form class="login-form">
-        <div class="input-group">
-          <label for="email" class="sr-only">Email</label>
-          <input id="email" type="email" placeholder="Enter email" required aria-required="true">
+        <div class="account-actions">
+          <button class="text-btn">Find account</button>
+          <button class="text-btn">Forgot password</button>
         </div>
-        <div class="input-group">
-          <label for="password" class="sr-only">Password</label>
-          <input id="password" type="password" placeholder="Enter password" required aria-required="true">
+
+        <div class="divider">
+          <div class="line"></div>
+          <span>or</span>
+          <div class="line"></div>
         </div>
-        <button type="submit" class="btn dark-btn" aria-label="Sign in">Sign In</button>
-      </form>
 
-      <div class="account-actions">
-        <button class="text-btn">Find account</button>
-        <button class="text-btn">Forgot password</button>
-      </div>
+        <div class="social-login">
+          <button class="social-btn google" aria-label="Sign in with Google">
+            G
+          </button>
+          <button
+            class="social-btn facebook"
+            aria-label="Sign in with Facebook"
+          >
+            f
+          </button>
+          <button class="social-btn kakao" aria-label="Sign in with Kakao">
+            K
+          </button>
+          <button class="social-btn naver" aria-label="Sign in with Naver">
+            N
+          </button>
+          <button class="social-btn apple" aria-label="Sign in with Apple">
+            
+          </button>
+        </div>
+      </section>
 
-      <div class="divider">
+      <div class="spacer"></div>
+
+      <footer class="footer">
         <div class="line"></div>
-        <span>or</span>
-        <div class="line"></div>
-      </div>
-
-      <div class="social-login">
-        <button class="social-btn google" aria-label="Sign in with Google">G</button>
-        <button class="social-btn facebook" aria-label="Sign in with Facebook">f</button>
-        <button class="social-btn kakao" aria-label="Sign in with Kakao">K</button>
-        <button class="social-btn naver" aria-label="Sign in with Naver">N</button>
-        <button class="social-btn apple" aria-label="Sign in with Apple"></button>
-      </div>
-    </section>
-
-    <div class="spacer"></div>
-
-    <footer class="footer">
-      <div class="line"></div>
-    </footer>
-  </main>
-
-</body>
-
+      </footer>
+    </main>
+  </body>
 </html>
 
 <!-- commit 내용
