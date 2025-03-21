@@ -1,0 +1,229 @@
+/* src/styles/page-start-forgot-pw.css */
+@import "/src/style.css";
+
+/* forgot-pw page 적응형 세팅 */
+.page-start-forgot-pw--main {
+  min-height: 100vh;
+  background-color: var(--foundation-background-color);
+}
+
+.page-start-forgot-pw--contents {
+  align-items: center;
+  color: var(--foundation-primary-color);
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  width: 100%;
+}
+
+/* forgot-pw page--header 세팅 */
+.header-start-common--previous {
+  border: 0;
+  height: var(--spacing-4xl);
+  width: inherit;
+  position: relative;
+
+  .icon-start-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: 37.5rem) {
+    display: none;
+  }
+}
+
+.page-start-forgot-pw-icon {
+  position: absolute;
+  left: var(--space-12);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-start-left--link {
+  display: block;
+  height: var(--spacing-2xl);
+  width: 100%;
+  position: relative;
+}
+
+/* forgot-pw page--title 세팅 */
+.page-forgot-pw--title {
+  font-size: var(--space-48);
+  margin: 12.5rem var(--spacing-xl) 0 var(--spacing-xl);
+  text-align: center;
+}
+
+/* forgot-pw-page--contents 세팅 */
+.page-forgot-button-wrapper {
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  width: 100%;
+  margin-top: 6.25rem;
+  padding: 0 var(--spacing-3xl);
+}
+
+/* Common/button CSS */
+.button-start-forgot-pw--email {
+  align-items: center;
+  background-color: var(--foundation-background-color);
+  border: 0;
+  border-radius: var(--space-8);
+
+  color: var(--foundation-primary-color);
+
+  justify-content: center;
+  margin: var(--spacing-xl) var(--spacing-xl) var(--spacing-xl) 0;
+  padding: var(--space-8);
+  width: auto;
+
+  &:focus {
+    box-shadow: 0 0 0.125rem 0.125rem var(--foundation-secondary-color);
+  }
+
+  @media (min-width: 37.5rem) {
+    display: inline-flex;
+    width: 100%;
+    gap: 15rem;
+  }
+
+  @media (min-width: 71rem) {
+    margin-inline: auto;
+  }
+}
+
+/* forgot-pw-page--modal-page dialog 세팅 */
+.panel-dialog {
+  background-color: var(--foundation-background-color);
+  border-color: var(--foundation-secondary-color);
+  border-radius: var(--spacing-sm);
+  height: 80%;
+  width: 80%;
+}
+
+/* dialog가 열려 있을 때만 적용할 스타일 */
+.panel-dialog[open] {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr 1fr;
+}
+
+.dialog-text-wrapper {
+  margin: var(--spacing-md);
+  text-align: center;
+  background-color: blue;
+}
+
+.dialog-content-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.dialog--title {
+  color: var(--foundation-primary-color);
+  font-size: var(--space-48);
+  margin-block: var(--spacing-xl);
+}
+
+.dialog--text {
+  color: var(--contents-primary-color);
+}
+
+.dialog-button-start-common {
+  align-items: center;
+  background-color: var(--foundation-primary-color);
+  border: 0.0625rem solid var(--contents-secondary-color);
+  border-radius: var(--spacing-sm);
+  color: var(--foundation-background-color);
+  display: inline-flex;
+  gap: var(--space-4);
+  height: var(--spacing-2xl);
+  justify-content: center;
+  padding: var(--space-8);
+  width: 7.625rem;
+}
+
+/* Profile/choice-btn--save CSS */
+.dialog-btn-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin: var(--spacing-lg) var(--spacing-2xl);
+
+  @media (min-width: 37.5rem) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.dialog-choice-btn-save {
+  align-items: center;
+  background: var(--foundation-tertiary-color);
+  border: 0.0625rem solid var(--contents-secondary-color);
+  border-radius: var(--spacing-sm);
+  color: var(--contents-primary-color);
+  height: var(--spacing-2xl);
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  width: 7.625rem;
+
+  .btn-contents-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: var(--spacing-xs);
+  }
+}
+
+/* Signup/modal-page--active CSS */
+.dialog-input-start-sign-up-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: var(--spacing-lg) var(--spacing-3xl);
+  position: relative;
+  width: 100%;
+
+  .input-start-sign-up {
+    background-color: var(--foundation-background-color);
+    border: 0.0313rem solid var(--contents-primary-color);
+    border-radius: var(--spacing-xs);
+    caret-color: var(--foundation-secondary-color);
+    color: var(--contents-primary-color);
+    height: 2.375rem;
+    width: 18.4375rem;
+  }
+}
+/* 포커스되었거나 값이 있는 입력 필드에 대한 라벨 스타일 */
+.input-start-sign-up:focus + .input-start-sign-up-label,
+.input-start-sign-up:not(:placeholder-shown) + .input-start-sign-up-label {
+  transform: translateX(-0.625rem) translateY(-0.4375rem) scale(0.5); /* 위로 이동하고 크기를 0.5배로 축소 */
+}
+
+/* 예외 변수 */
+.input-start-sign-up-label {
+  margin: var(--space-8) var(--space-12) var(--space-8) var(--space-12);
+  padding-left: var(--spacing-xs);
+  pointer-events: none;
+
+  transform-origin: left top;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+.panel-dialog[open] .input-start-sign-up-label {
+  left: 8.125rem;
+  position: absolute;
+  top: 0.125rem;
+}
+
+.label-active {
+  color: var(--contents-primary-color);
+}
