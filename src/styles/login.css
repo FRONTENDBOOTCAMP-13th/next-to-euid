@@ -1,0 +1,232 @@
+/* 기본 스타일 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* 컨테이너 */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+/* 로그인 섹션 */
+.login-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  width: 100%;
+  text-align: center;
+}
+
+/* 로고 */
+.logo-container {
+  position: relative;
+  width: 64px;
+  height: 64px;
+  margin-bottom: 20px;
+}
+
+.triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-bottom: 25px solid transparent;
+  border-left: 40px solid #ff8f40;
+}
+
+.stick {
+  position: absolute;
+  right: 38px;
+  top: -5px;
+  width: 12px;
+  height: 40px;
+  background: black;
+  border-radius: 6px 0 0 6px;
+}
+
+/* 제목 */
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* 로그인 옵션 */
+.login-options {
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.light-btn {
+  background-color: #f8f3ec;
+  color: #ff8f40;
+}
+
+.dark-btn {
+  background-color: #f07b3f;
+  color: white;
+}
+
+/* 구분선 */
+.separator {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.separator p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.line {
+  width: 80px;
+  height: 2px;
+  background: black;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+/* 계정 페이지 */
+.header {
+  width: 100%;
+  padding: 10px;
+}
+
+.back-btn {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: gray;
+}
+
+.account-section {
+  width: 100%;
+  padding: 20px;
+}
+
+.account-title {
+  color: #f07b3f;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* 입력 필드 */
+.input-group {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 2px solid gray;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus {
+  border-bottom: 2px solid #f07b3f;
+}
+
+/* 계정 복구 */
+.account-actions {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.text-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: gray;
+}
+
+.text-btn:focus {
+  text-decoration: underline;
+}
+
+/* 소셜 로그인 */
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+}
+
+.google {
+  background: white;
+  color: #4285F4;
+  border: 1px solid #ddd;
+}
+
+.facebook {
+  background: #1877F2;
+  color: white;
+}
+
+.kakao {
+  background: #FAE100;
+  color: black;
+}
+
+.naver {
+  background: #03C75A;
+  color: white;
+}
+
+.apple {
+  background: black;
+  color: white;
+}
+
+/* 푸터 */
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.spacer {
+  flex-grow: 1;
+}
