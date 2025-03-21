@@ -99,7 +99,7 @@ nav .button-index-nav {
 .profile-grid {
   display: flex;
   gap: 20px;
-  justify-content: right;
+  justify-content: center;
   margin-top: 2.5rem;
   /* border: 0.8px solid #121212; */
 }
