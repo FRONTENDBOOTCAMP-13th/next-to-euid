@@ -1,10 +1,19 @@
 /* src/styles/page-start-forgot-pw.css */
-@import '/src/style.css';
+@import "/src/style.css";
 
 /* forgot-pw page 적응형 세팅 */
+/* 예외 변수 */
 .page-start-forgot-pw--main {
-  min-height: 100vh;
   background-color: var(--foundation-background-color);
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 500px) {
+  .page-start-forgot-pw--main > * {
+    min-width: 500px;
+    /* 500px 이하로 더 축소되는 것을 방지합니다 */
+    width: 500px;
+  }
 }
 
 .page-start-forgot-pw--contents {
@@ -20,7 +29,7 @@
 /* forgot-pw page--header 세팅 */
 .header-start-common--previous {
   border: 0;
-  height: var(--spacing-4xl);
+  height: var(--spacing-2xl);
   width: inherit;
   position: relative;
 
@@ -31,6 +40,7 @@
   }
 
   @media (min-width: 37.5rem) {
+    position: absolute;
     display: none;
   }
 }
@@ -52,7 +62,7 @@
 /* forgot-pw page--title 세팅 */
 .page-forgot-pw--title {
   font-size: var(--space-48);
-  margin: 12.5rem var(--spacing-xl) 0 var(--spacing-xl);
+  margin: 15vh var(--spacing-xl) 0 var(--spacing-xl);
   text-align: center;
 }
 
@@ -101,7 +111,7 @@
   background-color: var(--foundation-background-color);
   border-color: var(--foundation-secondary-color);
   border-radius: var(--spacing-sm);
-  height: 80%;
+  height: 95%;
   width: 80%;
 }
 
@@ -115,7 +125,6 @@
 .dialog-text-wrapper {
   margin: var(--spacing-md);
   text-align: center;
-  background-color: blue;
 }
 
 .dialog-content-wrapper {
@@ -126,7 +135,7 @@
 }
 .dialog--title {
   color: var(--foundation-primary-color);
-  font-size: var(--space-48);
+  font-size: var(--space-40);
   margin-block: var(--spacing-xl);
 }
 
@@ -190,7 +199,6 @@
   justify-content: center;
   margin: var(--spacing-lg) var(--spacing-3xl);
   position: relative;
-  width: 100%;
 
   .input-start-sign-up {
     background-color: var(--foundation-background-color);
@@ -198,14 +206,9 @@
     border-radius: var(--spacing-xs);
     caret-color: var(--foundation-secondary-color);
     color: var(--contents-primary-color);
-    height: 2.375rem;
-    width: 18.4375rem;
+    height: 3.125rem;
+    width: 18.75rem;
   }
-}
-/* 포커스되었거나 값이 있는 입력 필드에 대한 라벨 스타일 */
-.input-start-sign-up:focus + .input-start-sign-up-label,
-.input-start-sign-up:not(:placeholder-shown) + .input-start-sign-up-label {
-  transform: translateX(-0.625rem) translateY(-0.4375rem) scale(0.5); /* 위로 이동하고 크기를 0.5배로 축소 */
 }
 
 /* 예외 변수 */
@@ -213,17 +216,38 @@
   margin: var(--space-8) var(--space-12) var(--space-8) var(--space-12);
   padding-left: var(--spacing-xs);
   pointer-events: none;
-
   transform-origin: left top;
   transition: all 0.3s ease;
   z-index: 10;
 }
 .panel-dialog[open] .input-start-sign-up-label {
-  left: 8.125rem;
   position: absolute;
-  top: 0.125rem;
+  width: 18.75rem;
+}
+
+/* 적응형 구현 (499px ~ 1135px) */
+@media screen and (max-width: 1136px) {
+  .input-start-sign-up:focus + .input-start-sign-up-label,
+  .input-start-sign-up:not(:placeholder-shown) + .input-start-sign-up-label {
+    transform: translateY(-20%) scale(0.5);
+  }
 }
 
 .label-active {
-  color: var(--contents-primary-color);
+  color: var(--contents-tertiary-color);
+}
+
+.panel-dialog[open] .input-sign-up__error-message {
+  color: var(--foundation-negative-color);
+  display: none;
+  inline-size: 100%;
+  position: absolute;
+  inset-inline-start: 10px;
+  inset-block-end: -20px;
+  translate: 0 0.75rem;
+  width: 100%;
+}
+
+.input-start-sign-up:user-invalid ~ .input-sign-up__error-message {
+  display: block;
 }
