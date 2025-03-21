@@ -10,4 +10,391 @@
   background-color: var(--foundation-background-color);
   color: var(--contents-secondary-color);
   font: var(--font-family);
+  line-height: 1.6;
+  letter-spacing: var(--spacing-4);
+}
+
+/* 기본 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #121212;
+  margin: var(--space-52) var(--space-52) 0;
+  padding: 0;
+}
+
+/* Header */
+.title-index-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  h1 {
+    font-size: 1.875rem;
+  }
+}
+
+/* 네비게이션 */
+nav {
+  display: flex;
+  gap: 10px;
+  padding: 1rem;
+  background: var(--dark-foundation-background-color);
+  border-radius: var(--space-12) var(--space-12) var(--space-2) var(--space-2);
+  /* margin-bottom: 1.25rem; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav .button-index-nav {
+  padding: 10px 15px;
+  border-radius: var(--space-12);
+  border: none;
+  background: #ddd;
+  color: var(--dark-contents-color);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: var(--space-2);
+  min-width: 10.4569rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #121212;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 팀원 소개 */
+.profile-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 2.5rem;
+  /* border: 0.8px solid #121212; */
+}
+
+.profile-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background: var(--dark-foundation-background-color);
+  text-align: center;
+  width: 18.75rem;
+  height: 23.75rem;
+}
+
+.profile-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* 카테고리 제목 */
+.category-title {
+  display: flex;
+  justify-content: left;
+  gap: 5px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 할 일 목록 */
+.task-list {
+  /* display: inline-block; */
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.incomplete {
+  color: red;
+}
+
+.ongoing {
+  color: blue;
+}
+
+.completed {
+  color: green;
+}
+
+/* 진행률 바 */
+.progress-container {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background: #ddd;
+  border-radius: 5px;
+  margin-top: 5px;
+  position: relative;
+}
+
+.progress {
+  height: 5px;
+  background: green;
+  border-radius: 5px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .category-grid,
+  .profile-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 프로젝트 개요 + 스크럼 과정 공유 묶음 */
+.container-index {
+  display: flex;
+}
+
+/* 프로젝트 개요 */
+.project-overview {
+  border-radius: 10px;
+  margin: 2.5rem 0.625rem 80px;
+  padding: 0.9375rem;
+  width: 30%;
+  /* max-height: 100%; */
+  height: 32.375rem;
+  background-color: #1e1e1e;
+  /* max-width: 518px; */
+  /* margin: auto; */
+}
+
+/* 스크럼 과정 공유 */
+.todo-container {
+  background: #121212;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 1.25rem 0.625rem;
+  /* max-width: 1000px; */
+  width: 70%;
+  height: 32.375rem;
+  /* max-height: 32.5rem; */
+  margin: auto;
+}
+
+/* 그리드 레이아웃 */
+.todo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* 카테고리 스타일 */
+.category {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 카테고리 헤더 */
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* 아이콘 */
+.icon {
+  font-size: 24px;
+}
+
+/* 개별 할 일 카드 */
+.task-card {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-task {
+  border: 2px solid #333;
+}
+
+/* 태그 스타일 */
+.task-tags {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.task-tags span {
+  font-size: 12px;
+  padding: 4px 6px;
+  border-radius: 4px;
+  color: black;
+}
+
+/* 상태별 색상 */
+.high-impact {
+  background: #f2c75c;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.low-effort {
+  background: #8dd1e6;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.moderate-effort {
+  background: orange;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.high-effort {
+  background: red;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+/* 할 일 목록 */
+.task-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+/* 개별 할 일 */
+.task {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.task-title {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.task-status {
+  font-size: 12px;
+  color: gray;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .todo-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 테이블 컨테이너 */
+.table-container {
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto var(--space-48);
+  background-color: #1e1e1e;
+}
+
+/* UI 프로젝트 소감 */
+.table-header {
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* 테이블 스타일 */
+.table-wrapper {
+  overflow-x: auto;
+  /* 가로 스크롤 적용 */
+}
+
+.narrative-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* 테이블 헤더 스타일 */
+.narrative-table thead tr {
+  background-color: #333;
+  color: white;
+}
+
+.narrative-table th {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 2px solid #555;
+}
+
+.narrative-title {
+  width: 25%;
+}
+
+.summary-title {
+  width: 75%;
+}
+
+/* 테이블 본문 스타일 */
+.narrative-table tbody tr {
+  background-color: #222;
+  border-bottom: 1px solid #444;
+}
+
+.narrative-table td {
+  padding: 12px;
+  text-align: center;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .table-container {
+    width: 95%;
+  }
+
+  .narrative-table th,
+  .narrative-table td {
+    padding: 8px;
+  }
 }
