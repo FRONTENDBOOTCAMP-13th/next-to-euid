@@ -1,5 +1,5 @@
 /* src/styles/component-profile.css */
-@import "/src/style.css";
+@import '/src/style.css';
 
 /* component page style */
 .component-page,
@@ -54,7 +54,7 @@
   font-size: var(--font-xl-24);
 
   &::before {
-    content: "🍄";
+    content: '🍄';
     margin-inline-end: 0.5rem;
   }
 }
