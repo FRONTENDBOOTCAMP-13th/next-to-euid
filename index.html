@@ -1,24 +1,318 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>UI 프로젝트 - CSS</title>
-    <link rel="icon" href="/vite.svg" />
-    <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" /> 
-    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
-		<script type="module" src="/src/main.js"></script>
-  </head>
-  <body>
-		<h1>Vite + CSS</h1>
-    <ul>
-      <li>컴포넌트를 분리해서 구현해주세요.</li>
-      <li>컴포넌트의 코드 리뷰를 AI를 통해 받은 후 개선해보세요.</li>
-      <li>개선점을 문서화하여 정리해 보세요</li>
-      <li>구현한 컴포넌트를 기반으로 페이지를 만들어주세요.</li>
-      <li>접근성과 성능을 신경써주세요</li>
-      <li>소통하고 화합하며 프로젝트 즐겨주세요.</li>
-      <li>결과보다 과정이 중요합니다.‼️</li>
-    </ul>
-  </body>
-</html> 
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
+  <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
+  <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="module" src="/src/main.js"></script>
+  <title>UI 프로젝트 - CSS</title>
+</head>
+
+<body class="main-page">
+  <!-- <h1>Vite + CSS</h1>
+  <ul>
+    <li>컴포넌트를 분리해서 구현해주세요.</li>
+    <li>컴포넌트의 코드 리뷰를 AI를 통해 받은 후 개선해보세요.</li>
+    <li>개선점을 문서화하여 정리해 보세요</li>
+    <li>구현한 컴포넌트를 기반으로 페이지를 만들어주세요.</li>
+    <li>접근성과 성능을 신경써주세요</li>
+    <li>소통하고 화합하며 프로젝트 즐겨주세요.</li>
+    <li>결과보다 과정이 중요합니다.‼️</li>
+  </ul> -->
+
+  <!-- 헤더 -->
+  <header>
+    <div class="title-index-header">
+      <h1>UI Project 3팀 - Tripple oil</h1>
+      <svg width="24" height="24" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto"
+        preserveAspectRatio="xMidYMid meet">
+        <path
+          d="M39.92 75.22s.47 6.72.28 10.14c-.2 3.42-.61 6.28-.61 6.28l3.2 25.85l.17 2.7s5.63 3.25 17.33 3.25c17.54 0 25.28-2.78 27.9-8.35c2.11-4.51-1.57-14.73-2.32-18.25c-2.47-11.6-1.04-19.98-1.04-19.98l-44.91-1.64z"
+          fill="#c4a878"></path>
+        <path
+          d="M34.91 112.88c1.23 5.47 8.67 7.59 8.67 7.59s10.83.61 17.69-.32c7.04-.96 12.84-2.62 13.44-6.72c.6-4.1.44-6.86.16-11.2c-.12-1.92-.32-7.2-.32-7.2s-7.99.41-18.67-.44c-10.52-.84-16.22-3.34-16.22-3.34s-1.51 6.93-2.57 9.71c-1.07 2.77-3.41 6.45-2.18 11.92z"
+          fill="#e8d4af"></path>
+        <path
+          d="M62.66 3.98C23.48 3.93 5.89 30.38 6.57 56.76c.61 23.71 36.82 26.65 54.89 26.91c26.97.39 59.19-5.08 59.81-27.59c.71-26.16-18.3-52.06-58.61-52.1z"
+          fill="#ff521a"></path>
+        <path
+          d="M61.51 9.51c-8.4-.27-15.19 4.05-14.94 11.59c.25 7.71 10.66 9.22 14.75 9.14c5.54-.11 14.35-2.2 14.79-9.06c.42-6.55-6.2-11.4-14.6-11.67z"
+          fill="#ffffff"></path>
+        <path
+          d="M27.9 19.92c-2.88 2.35-4.42 6.82-2.16 8.91c2.12 1.95 5.93.45 8.54-1.8s5.14-5.19 3.67-7.76c-1.8-3.15-6.78-2.02-10.05.65z"
+          fill="#ffffff"></path>
+        <path
+          d="M16.4 46.28c-2.53 7.27-1.66 14.82 4.67 17.97s15.1-.89 17.58-7.98c2.49-7.09 1.1-16.29-5.06-18.75c-6.16-2.46-14.66 1.49-17.19 8.76z"
+          fill="#ffffff"></path>
+        <path
+          d="M53.91 57.64c-.13 8.94 7.27 16.93 16.77 16.4c9.5-.53 15.21-6.14 15.41-15.5c.22-10.52-8.43-16.32-16.9-16.09s-15.15 6.26-15.28 15.19z"
+          fill="#ffffff"></path>
+        <path
+          d="M83.63 24.71c-4.59 6.36-.81 13.33 4.02 17.09c5.87 4.56 13.46 5.31 17.07-.23c4.08-6.27.88-12.36-3.31-16.65s-13.2-6.57-17.78-.21z"
+          fill="#ffffff"></path>
+        <path
+          d="M103.14 53.32c-3.44 1.4-3.01 5.62-1.88 7.85c1.12 2.21 4.14 4.13 6.7 3.23c2.66-.94 3.62-3.94 2.69-6.84c-.94-2.9-3.61-5.82-7.51-4.24z"
+          fill="#ffffff"></path>
+      </svg>
+    </div>
+
+    <!-- 네비게이션 -->
+    <nav>
+      <a class="button-index-nav font-label-lg" href="https://triple-oil.netlify.app/">배포 링크</a>
+      <a class="button-index-nav font-label-lg"
+        href="https://www.notion.so/3-Triple-Oil-1b573873401a80828024cfc4be24eb90?pvs=4">노션
+        링크</a>
+      <div class="dropdown">
+        <!-- 컴포넌트 all in one 페이지 합치고 링크 기재 예정 -->
+        <a class="button-index-nav dropbtn font-label-lg" href="#">Component Page 🔽</a>
+        <ul class="dropdown-content">
+          <li><a href="/src/component-start.html">start section</a></li>
+          <li><a href="/src/component-board.html">board section</a></li>
+          <li><a href="/src/component-main.html">main section</a></li>
+          <li><a href="/src/component-profile.html">profile section</a></li>
+        </ul>
+      </div>
+      <div class="dropdown">
+        <!-- 컴포넌트 all in one 페이지 합치고 링크 기재 예정 -->
+        <a class="button-index-nav dropbtn font-label-lg" href="#">Sub Page 🔽</a>
+        <ul class="dropdown-content">
+          <li><a href="login.html">로그인 / 회원가입</a></li>
+          <li><a href="story.html">선배님 스토리</a></li>
+          <li><a href="community.html">같이해요 커뮤니티</a></li>
+          <li><a href="study.html">스터디 모집</a></li>
+          <li><a href="qna.html">질의응답</a></li>
+          <li><a href="profile.html">프로필</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- 팀원 소개 -->
+    <div class="profile-grid">
+      <div class="profile-card">
+        <img src="https://avatars.githubusercontent.com/u/180376076?v=4" alt="김태우 프로필">
+        <div class="category-title">
+          <span>😝 [팀장] 김태우</span>
+        </div>
+        <div class="task-list">
+          <p class="incomplete">• 1 Incomplete Task</p>
+          <p class="ongoing">• 1 Ongoing Task</p>
+          <p class="completed">• 1 Completed Task</p>
+        </div>
+        <div class="progress-container">
+          <span>진행률: <strong>85%</strong></span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 85%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="https://avatars.githubusercontent.com/u/151576407?v=4" alt="김현지 프로필">
+        <div class="category-title">
+          <span>😋 [팀원] 김현지</span>
+        </div>
+        <div class="task-list">
+          <p class="incomplete">• 2 Incomplete Tasks</p>
+          <p class="ongoing">• 1 Ongoing Task</p>
+          <p class="completed">• 0 Completed Tasks</p>
+        </div>
+        <div class="progress-container">
+          <span>진행률: <strong>60%</strong></span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 60%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="profile-card">
+        <img src="https://avatars.githubusercontent.com/u/196942388?v=4" alt="박형석 프로필">
+        <div class="category-title">
+          <span>🤩 [팀원] 박형석</span>
+        </div>
+        <div class="task-list">
+          <p class="incomplete">• 1 Incomplete Task</p>
+          <p class="ongoing">• 1 Ongoing Task</p>
+          <p class="completed">• 0 Completed Tasks</p>
+        </div>
+        <div class="progress-container">
+          <span>진행률: <strong>60%</strong></span>
+          <div class="progress-bar">
+            <div class="progress" style="width: 60%;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-index">
+      <!-- 프로젝트 개요 -->
+      <section class="project-overview">
+        <h2>⭐️ 프로젝트 개요</h2>
+        <p><strong>개발 기간:</strong> 2024.03.14 - 2024.03.25</p>
+        <p>
+          EUID - 함께 배우고 적용하며 성장하는 개발자 커뮤니티 플랫폼<br />
+          - 개발 기간: 2024.03.14 - 2024.03.25<br /><br />
+
+          ▶️ 기술 스택<br />
+          - Frontend: HTML, CSS<br />
+          - Deployment: Netlify<br />
+          - Editor: Vscode<br /><br />
+
+          ▶️ 주요 기능<br />
+          - 라이트/다크 모드, 색상반전은 radio 버튼으로 구현 (e.g. 라이트 + 색상 반전, 다크 + 색상 반전은 구현 불가)<br />
+          - 확대 / 축소 버튼은 button 으로 구현 (click 일회 당 10% 확대)<br />
+          - 돋보기는 checkbox로 구현 (해당 버튼 check시 활성화, uncheck 시 비활성)
+        </p>
+      </section>
+
+      <!-- 스크럼 과정 공유 -->
+      <section class="todo-container">
+        <div class="todo-grid">
+          <!-- 데일리 스크럼 방향 -->
+          <div class="category">
+            <div class="category-header">
+              <span class="icon">
+                <svg width="25" height="25" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto"
+                  preserveAspectRatio="xMidYMid meet">
+                  <path
+                    d="M39.92 75.22s.47 6.72.28 10.14c-.2 3.42-.61 6.28-.61 6.28l3.2 25.85l.17 2.7s5.63 3.25 17.33 3.25c17.54 0 25.28-2.78 27.9-8.35c2.11-4.51-1.57-14.73-2.32-18.25c-2.47-11.6-1.04-19.98-1.04-19.98l-44.91-1.64z"
+                    fill="#c4a878"></path>
+                  <path
+                    d="M34.91 112.88c1.23 5.47 8.67 7.59 8.67 7.59s10.83.61 17.69-.32c7.04-.96 12.84-2.62 13.44-6.72c.6-4.1.44-6.86.16-11.2c-.12-1.92-.32-7.2-.32-7.2s-7.99.41-18.67-.44c-10.52-.84-16.22-3.34-16.22-3.34s-1.51 6.93-2.57 9.71c-1.07 2.77-3.41 6.45-2.18 11.92z"
+                    fill="#e8d4af"></path>
+                  <path
+                    d="M62.66 3.98C23.48 3.93 5.89 30.38 6.57 56.76c.61 23.71 36.82 26.65 54.89 26.91c26.97.39 59.19-5.08 59.81-27.59c.71-26.16-18.3-52.06-58.61-52.1z"
+                    fill="#ff521a"></path>
+                  <path
+                    d="M61.51 9.51c-8.4-.27-15.19 4.05-14.94 11.59c.25 7.71 10.66 9.22 14.75 9.14c5.54-.11 14.35-2.2 14.79-9.06c.42-6.55-6.2-11.4-14.6-11.67z"
+                    fill="#ffffff"></path>
+                  <path
+                    d="M27.9 19.92c-2.88 2.35-4.42 6.82-2.16 8.91c2.12 1.95 5.93.45 8.54-1.8s5.14-5.19 3.67-7.76c-1.8-3.15-6.78-2.02-10.05.65z"
+                    fill="#ffffff"></path>
+                  <path
+                    d="M16.4 46.28c-2.53 7.27-1.66 14.82 4.67 17.97s15.1-.89 17.58-7.98c2.49-7.09 1.1-16.29-5.06-18.75c-6.16-2.46-14.66 1.49-17.19 8.76z"
+                    fill="#ffffff"></path>
+                  <path
+                    d="M53.91 57.64c-.13 8.94 7.27 16.93 16.77 16.4c9.5-.53 15.21-6.14 15.41-15.5c.22-10.52-8.43-16.32-16.9-16.09s-15.15 6.26-15.28 15.19z"
+                    fill="#ffffff"></path>
+                  <path
+                    d="M83.63 24.71c-4.59 6.36-.81 13.33 4.02 17.09c5.87 4.56 13.46 5.31 17.07-.23c4.08-6.27.88-12.36-3.31-16.65s-13.2-6.57-17.78-.21z"
+                    fill="#ffffff"></path>
+                  <path
+                    d="M103.14 53.32c-3.44 1.4-3.01 5.62-1.88 7.85c1.12 2.21 4.14 4.13 6.7 3.23c2.66-.94 3.62-3.94 2.69-6.84c-.94-2.9-3.61-5.82-7.51-4.24z"
+                    fill="#ffffff"></path>
+                </svg>
+              </span>
+              <h3>프로젝트 논의 방향</h3>
+            </div>
+            <div class="task-card main-task">
+              <span class="icon">📋</span>
+              <div>
+                <p class="task-title">총평 : AI 코딩 도구를 활용하면 코드 생성 및 자동화, 개발 워크플로우와의 통합 등이 가능하며 기존 개발 환경 대비 생산성을 높일 수 있습니다.
+                  그러나 개발자를 꿈꾸며 학습을하는 예비 개발자에게 AI 코딩 도구는 양날의 검이 될 수 있습니다. AI 코딩 도구에만 의존하는 주니어 개발자는 경쟁력을 갖출 수 없기 때문입니다.
+                  오히려
+                  더 깊이 있게 언어를 학습하고 좋은 질문을 할 수 있도록 문해력(Literacy)을 기르는 것이 필요합니다. 다만 AI 도구를 완전히 배제하는 것이 아닌 학습을 위한 파트너로서 활용할
+                  것을 추천합니다.</p>
+              </div>
+            </div>
+            <div class="task-list">
+              <div class="task">
+                <p class="task-title">▶️ 데일리 스크럼 기획 방향</p>
+                <div class="task-tags">
+                  <span class="high-impact">키워드</span>
+                  <span class="low-effort">키워드</span>
+                </div>
+                <p class="task-status">❌ Not started</p>
+                <p class="task-status">✅ Done</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero quas, quod dolorum veniam et
+                  voluptatem quos, tempora reprehenderit doloremque inventore aperiam optio quasi quae illo suscipit eos
+                  perspiciatis iusto. Illum.
+                </p>
+              </div>
+              <div class="task">
+                <p class="task-title">▶️ 문서 기록</p>
+                <div class="task-tags">
+                  <span class="high-impact">키워드</span>
+                  <span class="low-effort">키워드</span>
+                </div>
+                <p class="task-status">❌ Not started</p>
+                <p class="task-status">✅ Done</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam nisi alias dolorem dignissimos,
+                  harum accusantium veniam animi porro perferendis ducimus quas labore illo. Vitae omnis cum modi
+                  ducimus optio dolore!
+                </p>
+              </div>
+              <div class="task">
+                <p class="task-title">▶️ 개발 기능 논의</p>
+                <div class="task-tags">
+                  <span class="high-impact">키워드</span>
+                  <span class="low-effort">키워드</span>
+                </div>
+                <p class="task-status">❌ Not started</p>
+                <p class="task-status">✅ Done</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dolor quaerat molestiae nisi corporis
+                  impedit numquam, dolores amet atque culpa molestias adipisci debitis voluptatum iure qui, modi
+                  dolorem, iste incidunt!
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- UI 프로젝트 소감 -->
+    <section class="table-container">
+      <div class="table-wrapper">
+        <table class="narrative-table">
+          <thead>
+            <tr>
+              <th class="narrative-title">이름</th>
+              <th class="summary-title">UI Project 마무리 소감</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>김태우</td>
+              <td>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam ad fugiat ipsum ipsa eaque labore hic
+                ab libero sequi. Eaque delectus pariatur rerum cum praesentium omnis soluta excepturi iure esse?
+              </td>
+            </tr>
+            <tr>
+              <td>김현지</td>
+              <td>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio libero quo nemo nisi. Id quod esse odio.
+                Modi a dolorem impedit, rem aliquam, cumque libero hic corrupti nam molestias cum!er issues.
+              </td>
+            </tr>
+            <tr>
+              <td>박형석</td>
+              <td>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit facilis atque fugit saepe voluptates
+                pariatur, architecto blanditiis dignissimos minima, totam temporibus sit quas illo omnis incidunt ipsum
+                tempora vel impedit!
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 LikeLion 13th Generation UI Project Team 3 | All Rights Reserved</p>
+  </footer>
+</body>
+
+</html>
+
+<!-- commit 내용 
+- 버섯 logo 추가
+-->

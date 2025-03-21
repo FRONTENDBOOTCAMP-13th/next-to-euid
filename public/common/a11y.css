@@ -1,0 +1,22 @@
+/* 스크린리더 사용자를 위한 클래스 */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* 기본 Focus 스타일링 */
+*:focus {
+  outline: 0;
+}
+
+*:focus-visible {
+  box-shadow: 0 0 0 2px #373f67;
+  border-radius: 4px;
+}
