@@ -2,25 +2,15 @@
 @import "/src/style.css";
 
 /* forgot-pw page 적응형 세팅 */
-/* 예외 변수 */
 .page-start-forgot-pw--main {
   background-color: var(--foundation-background-color);
   min-height: 100vh;
-}
-
-@media screen and (max-width: 500px) {
-  .page-start-forgot-pw--main > * {
-    min-width: 500px;
-    /* 500px 이하로 더 축소되는 것을 방지합니다 */
-    width: 500px;
-  }
 }
 
 .page-start-forgot-pw--contents {
   align-items: center;
   color: var(--foundation-primary-color);
   display: grid;
-  height: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   width: 100%;
@@ -83,9 +73,7 @@
   background-color: var(--foundation-background-color);
   border: 0;
   border-radius: var(--space-8);
-
   color: var(--foundation-primary-color);
-
   justify-content: center;
   margin: var(--spacing-xl) var(--spacing-xl) var(--spacing-xl) 0;
   padding: var(--space-8);
@@ -106,7 +94,7 @@
   }
 }
 
-/* forgot-pw-page--modal-page dialog 세팅 */
+/* forgot-pw-page--modal-page dialog 전체 세팅 */
 .panel-dialog {
   background-color: var(--foundation-background-color);
   border-color: var(--foundation-secondary-color);
@@ -119,7 +107,7 @@
 .panel-dialog[open] {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
 }
 
 .dialog-text-wrapper {
@@ -131,16 +119,22 @@
   align-items: center;
   display: flex;
   flex-direction: column;
+  grid-row: 2 / 4;
   justify-content: center;
+  height: 100%;
+  gap: var(--spacing-md);
 }
 .dialog--title {
   color: var(--foundation-primary-color);
   font-size: var(--space-40);
-  margin-block: var(--spacing-xl);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
 }
-
 .dialog--text {
   color: var(--contents-primary-color);
+  text-align: center;
 }
 
 .dialog-button-start-common {
@@ -159,15 +153,19 @@
 
 /* Profile/choice-btn--save CSS */
 .dialog-btn-wrapper {
-  align-items: center;
+  align-items: start;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  /* flex-direction: column; */
   gap: var(--spacing-md);
   margin: var(--spacing-lg) var(--spacing-2xl);
 
-  @media (min-width: 37.5rem) {
-    flex-direction: row;
-    justify-content: space-between;
+  @media (max-width: 37.5rem) {
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -197,8 +195,13 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: var(--spacing-lg) var(--spacing-3xl);
+  margin: var(--spacing-lg) 0;
   position: relative;
+  width: 100%;
+
+  @media (max-width: 1000px) {
+    padding: 0 var(--spacing-xl);
+  }
 
   .input-start-sign-up {
     background-color: var(--foundation-background-color);
@@ -207,7 +210,11 @@
     caret-color: var(--foundation-secondary-color);
     color: var(--contents-primary-color);
     height: 3.125rem;
-    width: 18.75rem;
+    width: 100%;
+
+    @media (max-width: 600px) {
+      border: 0;
+    }
   }
 }
 
@@ -222,14 +229,15 @@
 }
 .panel-dialog[open] .input-start-sign-up-label {
   position: absolute;
-  width: 18.75rem;
+  width: inherit;
+  text-align: center;
 }
 
 /* 적응형 구현 (499px ~ 1135px) */
 @media screen and (max-width: 1136px) {
   .input-start-sign-up:focus + .input-start-sign-up-label,
   .input-start-sign-up:not(:placeholder-shown) + .input-start-sign-up-label {
-    transform: translateY(-20%) scale(0.5);
+    transform: translateX(23%) translateY(-20%) scale(0.5);
   }
 }
 
@@ -237,17 +245,43 @@
   color: var(--contents-tertiary-color);
 }
 
-.panel-dialog[open] .input-sign-up__error-message {
+.panel-dialog[open] .input-sign-up--error-message {
   color: var(--foundation-negative-color);
   display: none;
+  font-size: var(--font-md-12);
   inline-size: 100%;
   position: absolute;
-  inset-inline-start: 10px;
-  inset-block-end: -20px;
+  inset-inline-start: 0.625rem;
+  inset-block-end: -0.5rem;
   translate: 0 0.75rem;
   width: 100%;
 }
 
-.input-start-sign-up:user-invalid ~ .input-sign-up__error-message {
+.input-start-sign-up:user-invalid ~ .input-sign-up--error-message {
   display: block;
+}
+
+/* forgot-pw-page--modal-page dialog--email-dialog 세팅 */
+.content-wrapper-email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* forgot-pw-page--modal-page dialog--password-dialog 세팅 */
+.dialog-info-wrapper {
+  align-items: center;
+  color: var(--contents-primary-color);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  width: 100%;
+}
+
+.dialog-info-btn {
+  background-color: var(--foundation-background-color);
+  border-radius: 0.25rem;
+  border: 0.0313rem solid var(--Contents-contentSecondary, #919191);
+  color: var(--contents-secondary-color);
+  padding: var(--space-8) var(--space-16) var(--space-8) var(--space-16);
 }
