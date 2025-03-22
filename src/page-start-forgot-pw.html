@@ -176,33 +176,24 @@
           <div class="dialog-input-start-sign-up-wrapper">
             <input
               class="input-start-sign-up input-start-sign-up--active sign-up-pw"
-              type="text"
-              name="confirm-number"
-              id="confirm-number"
-              pattern="^\d{1,6}$"
-              maxlength="6"
+              type="email"
+              name="user-email"
+              id="user-email"
               placeholder=" "
               aria-errormessage="error-message-confirm-number"
             />
             <label
               class="input-start-sign-up-label font-paragraph-lg label-active"
-              for="confirm-number"
-              >메일 주소로 전송된 인증 번호를 입력해주세요</label
+              for="user-email"
+              >가입 시 사용한 이메일 주소를 입력해주세요</label
             >
             <p
               class="input-sign-up--error-message font-paragraph-xs"
-              id="error-message-confirm-number"
+              id="error-message-user-email"
               aria-live="polite"
             >
-              <span>6자리 이하의 숫자를 입력해주세요</span>
+              <span>알맞는 이메일 주소를 입력해주세요</span>
             </p>
-          </div>
-
-          <div class="dialog-info-wrapper">
-            <p class="font-paragraph-sm">혹시 인증 메일을 못 받으셨나요?</p>
-            <button class="dialog-info-btn" aria-label="인증 메일 다시 전송">
-              인증 메일 다시 전송하기
-            </button>
           </div>
         </div>
         <div class="dialog-btn-wrapper">
@@ -217,7 +208,7 @@
           <!-- choice-btn-save -->
           <a
             class="dialog-choice-btn-save"
-            href="/"
+            href="/src/page-start-forgot-pw-number.html"
             aria-label="확인, 다음 단계로 이동"
             tabindex="0"
           >
