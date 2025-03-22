@@ -4,15 +4,15 @@ const loginBtn = document.getElementById("loginBtn");
 loginBtn.addEventListener("click", function (e) {
   e.preventDefault(); // 기본 제출 막기
 
-  const id = document.getElementById("id");
+  // const id = document.getElementById("id");회원가입
   const email = document.getElementById("email");
   const password = document.getElementById("password");
 
   // 각 필드 유효성 검사 + reportValidity로 경고 및 포커스 처리
-  if (!id.checkValidity()) {
-    id.reportValidity(); // 경고 메시지 + 포커스 + 자동 스크롤
-    return;
-  }
+  // if (!id.checkValidity()) {
+  //   id.reportValidity(); // 경고 메시지 + 포커스 + 자동 스크롤
+  //   return;
+  // }
 
   if (!email.checkValidity()) {
     email.reportValidity(); // 이메일 유효성 검사 실패 시

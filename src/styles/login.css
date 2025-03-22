@@ -207,14 +207,9 @@ button,
   color: var(--foundation-background-color);
   margin: var(--space-8) 0 var(--space-8);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  border: .0625rem solid var(--dark-foundation-secondary-color);
 
   &:hover {
     box-shadow: 0 2px 2.2px rgba(0, 0, 0, 0.2);
-  }
-
-  &:focus {
-    outline: 1px solid var(--dark-foundation-secondary-color);
   }
 
   &:active {
@@ -222,6 +217,31 @@ button,
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   }
 }
+
+/* 모달창 */
+.modal.hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--contents-primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
 
 /* 간편 로그인 */
 .divider {
