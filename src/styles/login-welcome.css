@@ -1,6 +1,6 @@
-@import "../theme.css";
-@import "/public/common/a11y.css";
-@import "/public/common/mini-reset.css";
+@import '../theme.css';
+@import '/public/common/a11y.css';
+@import '/public/common/mini-reset.css';
 
 /* 기본 스타일 */
 body {
@@ -114,7 +114,7 @@ header {
   }
 
   /* hover 시에만 보이게 하기 */
-  &:hover+.text-start-guidbox {
+  &:hover + .text-start-guidbox {
     /* 3초 회원가입 문구 부드러운 효과 */
     opacity: 0.9;
   }

@@ -4,6 +4,12 @@
 
 /* Header */
 
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 .header-main--region-items {
   display: flex;
   align-items: center;
@@ -42,6 +48,12 @@
   border: 0;
 }
 
+/* 웹접근성 버튼 */
+
+.dropbtn {
+  padding: 30px;
+}
+
 /* Banner */
 .main-banner {
   background: url('https://via.placeholder.com/400x200') center/cover;
@@ -49,9 +61,9 @@
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 20px 153px 45px 20px;
+  padding: 20px 153px 0px 20px;
   color: var(--foundation-background-color);
-  /* position: relative; */
+  position: relative;
 }
 
 .text-box-main {
@@ -62,10 +74,19 @@
 .text-box-final {
   margin-top: var(--space-64);
 }
+
+.banner-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 /* Navigation */
 
 .main-nav {
   padding: 0px;
+  position: sticky;
+  top: 37px;
 }
 
 .nav-main-items {
@@ -83,8 +104,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-16);
+  gap: var(--space-48);
 }
+
+/* @media (min-width: 600px) {
+  .nav-three-items {
+    gap: 170px;
+  }
+} */
 
 .navitem--inactive {
   background-color: var(--foundation-primary-color);
@@ -157,7 +184,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 138px;
+  /* width: 138px; */
 }
 
 .main-list-storyfield {
