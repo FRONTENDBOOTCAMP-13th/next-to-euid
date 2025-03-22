@@ -251,7 +251,7 @@
   font-size: var(--font-md-12);
   inline-size: 100%;
   position: absolute;
-  inset-inline-start: 0.625rem;
+  inset-inline-start: 10vw;
   inset-block-end: -0.5rem;
   translate: 0 0.75rem;
   width: 100%;
