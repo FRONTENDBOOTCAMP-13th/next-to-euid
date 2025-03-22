@@ -1,0 +1,132 @@
+/* src/styles/page-start-forgot-pw-number.css */
+
+.forgot-pw-number--contents-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 100vh;
+}
+
+/* title CSS */
+.page-forgot-number--title {
+  align-items: center;
+  color: var(--foundation-primary-color);
+  display: flex;
+  flex-direction: column;
+  font-size: var(--space-48);
+  justify-content: center;
+  text-align: center;
+}
+
+/* Signup/active-PW row */
+.page-forgot-pw--contents {
+  display: contents;
+}
+
+/* 인증창 wrapper */
+.dialog-input-start-sign-up-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+
+  @media (max-width: 1000px) {
+    padding: 0 var(--spacing-xl);
+  }
+}
+
+.input-start-sign-up-pw {
+  background-color: var(--foundation-background-color);
+  border: 0.0313rem solid var(--contents-primary-color);
+  border-radius: var(--spacing-xs);
+  caret-color: var(--foundation-secondary-color);
+  color: var(--contents-primary-color);
+  height: 3.125rem;
+  width: 100%;
+  @media (max-width: 600px) {
+    border: 0;
+  }
+}
+
+.label-forgot {
+  position: absolute;
+  margin: var(--space-8) var(--space-12);
+  padding-left: var(--spacing-xs);
+  pointer-events: none;
+  text-align: center;
+  transform-origin: left top;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+/* 적응형 구현 (499px ~ 1135px) */
+@media screen and (max-width: 1136px) {
+  .input-start-sign-up-pw:focus + .label-forgot,
+  .input-start-sign-up-pw:not(:placeholder-shown) + .label-forgot {
+    transform: translateX(23%) translateY(-20%) scale(0.5);
+  }
+}
+
+.label-forgot {
+  color: var(--contents-tertiary-color);
+}
+
+.forgot--error-message {
+  position: absolute;
+  left: 2rem;
+  top: 140%;
+  transform: translateY(-50%);
+  color: var(--foundation-negative-color);
+  transition: all 0.2s ease-out;
+  pointer-events: none;
+  padding: 0 0.25rem;
+  display: none;
+}
+
+.input-start-sign-up-pw:user-invalid ~ .forgot--error-message {
+  display: block;
+}
+
+/* 버튼 컨텐츠 래퍼 공통 스타일 */
+.btn-contents-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding-inline: var(--spacing-2xl);
+}
+
+/* 버튼 공통 스타일 */
+.dialog-choice-btn-save--cancel,
+.dialog-choice-btn-save--next {
+  text-decoration: none;
+}
+
+/* 취소 버튼 텍스트 스타일 */
+.choice-btn-save-text--cancel {
+  align-items: center;
+  background-color: var(--foundation-primary-color);
+  border: 0.0625rem solid var(--contents-secondary-color);
+  border-radius: var(--spacing-sm);
+  color: var(--foundation-background-color);
+  display: inline-flex;
+  gap: var(--space-4);
+  height: var(--spacing-2xl);
+  justify-content: center;
+  padding: var(--space-8);
+  width: 7.625rem;
+}
+
+/* 확인 버튼 텍스트 스타일 */
+.choice-btn-save-text {
+  align-items: center;
+  background: var(--foundation-tertiary-color);
+  border: 0.0625rem solid var(--contents-secondary-color);
+  border-radius: var(--spacing-sm);
+  color: var(--contents-primary-color);
+  height: var(--spacing-2xl);
+  display: flex;
+  justify-content: center;
+  width: 7.625rem;
+}
