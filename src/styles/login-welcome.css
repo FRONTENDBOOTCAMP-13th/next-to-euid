@@ -1,26 +1,78 @@
+@import "../theme.css";
+@import "/public/common/a11y.css";
+@import "/public/common/mini-reset.css";
+
 /* 기본 스타일 */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: white;
+  background-color: var(--foundation-background-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  min-width: 500px;
+
+  /* 500px 미만 width값 지정으로 자연스러운 반응형 구현 목적 */
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
+
+  @media (min-width: 500px) {
+    justify-content: center;
+  }
+
+  @media (min-width: 1136px) {
+    justify-content: center;
+  }
 }
 
-/* 컨테이너 */
-.container {
+a {
+  text-decoration: none;
+  color: var(--contents-primary-color);
+}
+
+/** 헤더 **/
+header {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+/* 로고 이미지 */
+.image-start-logo {
+  margin: 0 auto;
+  width: 18.75rem;
+  height: 4rem;
+}
+
+/* 제목 */
+.text-start-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--contents-primary-color);
+}
+
+/** 메인 **/
+/* 전체 컨테이너 */
+.container-start {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
   max-width: 400px;
-  padding: 20px;
+  padding: 0 var(--space-16) var(--space-16);
+}
+
+/* 문구 */
+.box-start-content {
+  display: block;
+  text-align: center;
+  padding: var(--space-8) 0 var(--space-32);
+  color: var(--contents-primary-color);
+  font-weight: var(--font-weight-regular);
 }
 
 /* 로그인 섹션 */
-.login-section {
+.section-start-login {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,48 +82,15 @@ body {
   text-align: center;
 }
 
-/* 로고 */
-.logo-container {
-  position: relative;
-  width: 64px;
-  height: 64px;
-  margin-bottom: 20px;
-}
-
-.triangle {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-top: 25px solid transparent;
-  border-bottom: 25px solid transparent;
-  border-left: 40px solid #ff8f40;
-}
-
-.stick {
-  position: absolute;
-  right: 38px;
-  top: -5px;
-  width: 12px;
-  height: 40px;
-  background: black;
-  border-radius: 6px 0 0 6px;
-}
-
-/* 제목 */
-.title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 40px;
-}
-
 /* 로그인 옵션 */
 .login-options {
   width: 100%;
   max-width: 300px;
   text-align: center;
+  position: relative;
 }
 
-.btn {
+.button {
   display: block;
   width: 100%;
   padding: 14px;
@@ -80,153 +99,83 @@ body {
   font-weight: 600;
   text-align: center;
   cursor: pointer;
-  text-decoration: none;
 }
 
-.light-btn {
-  background-color: #f8f3ec;
-  color: #ff8f40;
+/* 로그인 버튼 */
+.button--login {
+  background-color: var(--dark-foundation-secondary-color);
+  color: var(--foundation-background-color);
+  margin: var(--space-8) 0 var(--space-8);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    box-shadow: 0 2px 2.2px rgba(0, 0, 0, 0.2);
+    display: block;
+  }
+
+  /* hover 시에만 보이게 하기 */
+  &:hover+.text-start-guidbox {
+    /* 3초 회원가입 문구 부드러운 효과 */
+    opacity: 0.9;
+  }
+
+  &:active {
+    transform: scale(0.999);
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  }
 }
 
-.dark-btn {
-  background-color: #f07b3f;
-  color: white;
-}
+.text-start-guidbox {
+  width: 130px;
+  height: 25px;
 
-/* 구분선 */
-.separator {
-  margin-top: 20px;
+  position: absolute;
+  top: -25px;
+  right: -20px;
+  background: var(--foundation-primary-color);
+  border-radius: var(--space-8);
+  padding: var(--space-4);
+  color: var(--foundation-background-color);
   text-align: center;
-}
-
-.separator p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.line {
-  width: 80px;
-  height: 2px;
-  background: black;
-  margin: 10px auto;
-  border-radius: 2px;
-}
-
-/* 계정 페이지 */
-.header {
-  width: 100%;
-  padding: 10px;
-}
-
-.back-btn {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: gray;
-}
-
-.account-section {
-  width: 100%;
-  padding: 20px;
-}
-
-.account-title {
-  color: #f07b3f;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-/* 입력 필드 */
-.input-group {
-  margin-bottom: 20px;
-}
-
-input {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-bottom: 2px solid gray;
-  font-size: 1rem;
-  outline: none;
-}
-
-input:focus {
-  border-bottom: 2px solid #f07b3f;
-}
-
-/* 계정 복구 */
-.account-actions {
-  display: flex;
-  justify-content: space-between;
-  font-size: 0.9rem;
-  color: gray;
-}
-
-.text-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: gray;
-}
-
-.text-btn:focus {
-  text-decoration: underline;
-}
-
-/* 소셜 로그인 */
-.social-login {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
-}
-
-.social-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 1.2rem;
-  font-weight: bold;
   display: flex;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  border: none;
+  /* 3초 회원가입 문구 부드러운 효과 */
+  transition: opacity 0.25s ease-out;
+  opacity: 0;
 }
 
-.google {
-  background: white;
-  color: #4285F4;
-  border: 1px solid #ddd;
+.text-start-guidbox:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 0.625em solid transparent;
+  border-top-color: #373f67;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -0.312em;
+  margin-bottom: -0.625em;
 }
 
-.facebook {
-  background: #1877F2;
-  color: white;
+/* 회원가입 버튼 */
+.text-start-firsttime {
+  color: var(--dark-foundation-secondary-color);
+  font-weight: var(--font-weight-regular);
 }
 
-.kakao {
-  background: #FAE100;
-  color: black;
+.button--signup {
+  background-color: var(--dark-contents-tertiary-color);
+  color: var(--dark-foundation-background-color);
 }
 
-.naver {
-  background: #03C75A;
-  color: white;
-}
+/* 링크 정보 */
+.box-start-infolinks {
+  width: 100%;
+  padding: var(--space-32) 0 var(--space-16);
 
-.apple {
-  background: black;
-  color: white;
-}
-
-/* 푸터 */
-.footer {
-  padding: 20px;
-  text-align: center;
-}
-
-.spacer {
-  flex-grow: 1;
+  .text-start-deletecash {
+    margin: 0 var(--space-16);
+  }
 }
