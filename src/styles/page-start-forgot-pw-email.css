@@ -1,0 +1,47 @@
+/* src/styles/page-start-forgot-pw-email.css */
+@import '/src/style.css';
+
+/* forgot-pw page--header 세팅 */
+.header-start-common--previous {
+  border: 0;
+  height: var(--spacing-2xl);
+  width: inherit;
+  position: relative;
+
+  .icon-start-left {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  @media (min-width: 37.5rem) {
+    position: absolute;
+    display: none;
+  }
+}
+
+.page-start-forgot-pw--contents {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+/* forgot-pw-email--contents-wrapper 세팅 */
+.pw-email-text {
+  color: var(--contents-secondary-color);
+  margin: 9.375rem var(--spacing-3xl);
+  text-align: center;
+}
+
+.dialog-choice-btn-save {
+  padding-inline: var(--spacing-4xl);
+  width: 100%;
+}
+
+.forgot-pw-email--contents-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: inherit;
+  justify-content: start;
+}

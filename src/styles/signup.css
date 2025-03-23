@@ -45,7 +45,6 @@ header {
 .image-start-logo {
   width: 5rem;
   height: var(--space-38);
-  margin: 0 auto var(--space-12);
 
   & > a {
     width: 100%;
@@ -58,7 +57,7 @@ header {
 .text-start-title {
   width: 100%;
   color: var(--contents-primary-color);
-  text-align: center;
+  text-align: left;
 }
 
 /** 메인 **/
@@ -89,6 +88,7 @@ input {
   border-radius: var(--space-4) var(--space-4) 0 0;
   border-bottom: 0.05rem solid gray;
   font-size: 1.0625rem;
+  position: relative;
 }
 
 input:focus {
@@ -129,8 +129,8 @@ input:invalid + .error-message {
 
 /** 로그인 옵션 **/
 .box-start-loginoptions {
-  width: 21.875rem;
-  padding: var(--space-8) 0 var(--space-24);
+  width: 18.75rem;
+  padding: 0 0 var(--space-24);
   display: flex;
   justify-content: space-between;
 }
@@ -141,6 +141,7 @@ input:invalid + .error-message {
   align-items: center;
   column-gap: 0.375rem;
   position: relative;
+  padding: var(--space-8) 0;
 
   input {
     position: absolute;
@@ -176,6 +177,21 @@ input:invalid + .error-message {
   fill: var(--foundation-background-color);
 }
 
+/* 약관동의 */
+.text-start-signup {
+  white-space: nowrap;
+
+  .text-start-infolink {
+    text-decoration: underline;
+    color: var(--dark-foundation-secondary-color);
+  }
+
+  &:focus {
+    width: 21.875rem;
+    outline: 0.0938rem solid var(--contents-primary-color);
+  }
+}
+
 /* 아이디, 비밀번호 찾기 */
 .box-start-findidpw {
   & > :first-child {
@@ -203,8 +219,8 @@ button,
   cursor: pointer;
 }
 
-/* 로그인 버튼 */
-.button--login {
+/* 회원가입 버튼 */
+.button--policy {
   background-color: var(--dark-foundation-secondary-color);
   color: var(--foundation-background-color);
   margin: var(--space-8) 0 var(--space-8);
@@ -225,12 +241,12 @@ button,
 .divider {
   display: flex;
   align-items: center;
-  margin: var(--space-16) 0;
+  margin: var(--space-20) 0;
 }
 
 .divider div {
   flex: 1;
-  height: 5px;
+  height: var(--space-8);
   background-color: var(--contents-secondary-color);
 }
 
