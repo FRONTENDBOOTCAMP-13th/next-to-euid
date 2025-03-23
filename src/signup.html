@@ -2,7 +2,7 @@
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
-    <title>Login Page</title>
+    <title>Sign up Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
     <link
@@ -16,8 +16,8 @@
       as="style"
       href="../public/font/pretendardvariable.css"
     />
-    <link rel="stylesheet" href="/src/styles/login-welcome copy.css" />
-    <script type="module" src="/src/login.js"></script>
+    <link rel="stylesheet" href="/src/styles/signup.css" />
+    <script type="module" src="/src/signup.js"></script>
   </head>
 
   <body>
@@ -25,7 +25,11 @@
     <header>
       <!-- 로고 이미지 -->
       <h1 class="image-start-logo">
-        <a href="./login-welcome.html">
+        <a
+          href="./login-welcome.html"
+          aria-label="시작 화면으로 돌아가려면 해당 로그 이미지를 클릭해주세요."
+          tabindex="0"
+        >
           <svg
             width="80"
             height="30"
@@ -60,8 +64,12 @@
         </a>
       </h1>
       <!-- 제목 -->
-      <p class="text-start-title font-paragraph-lg">
-        당신만을 위한 커뮤니티에 참여해보세요.
+      <p
+        class="text-start-title font-paragraph-xl"
+        aria-label="회원가입 페이지입니다."
+        tabindex="0"
+      >
+        회원가입
       </p>
     </header>
 
@@ -88,6 +96,7 @@
             required
             autofocus
             aria-required="true"
+            aria-label="아이디를 입력해주세요."
           />
           <label class="font-paragraph-lg" for="id">아이디</label>
           <!-- 아이디 에러 안내 문구 -->
@@ -96,7 +105,7 @@
           </div>
         </div>
 
-        <!-- 비밀번호 입력창 -->
+        <!-- 이메일 입력창 -->
         <div class="input-group">
           <input
             id="email"
@@ -108,6 +117,7 @@
             autocomplete="email"
             required
             aria-required="true"
+            aria-label="이메일을 입력해주세요."
           />
           <label class="font-paragraph-lg" for="email">이메일</label>
           <!-- 이메일 에러 안내 문구 -->
@@ -124,6 +134,7 @@
             title="영문, 숫자, 특수문자를 포함하여 8~12자 사이로 입력"
             required
             aria-required="true"
+            aria-label="비밀번호를 입력해주세요."
           />
           <label class="font-paragraph-lg" for="password"
             >비밀번호 (8~12자, 영문+숫자+특수문자)</label
@@ -141,6 +152,11 @@
               type="checkbox"
               name="checkbox-2"
               id="checkbox-2"
+              aria-label="
+
+회원가입을 진행하면 개인정보 처리방침 및 이용약관에 동의합니다. 동의하신다면 체크해주세요.
+
+"
             />
             <label class="checkbox__label svg-tag" for="checkbox-2">
               <svg
@@ -171,34 +187,36 @@
                   fill="white"
                 />
               </svg>
-              자동 로그인
+              <!-- 약관동의 -->
+              <p class="text-start-signup">
+                회원가입을 진행하면
+                <a href="#" class="text-start-infolink">개인정보 처리방침</a> 및
+                <a href="#" class="text-start-infolink">이용약관</a>에
+                동의합니다.
+              </p>
             </label>
           </div>
-          <!-- 아이디, 비밀번호 찾기 -->
-          <div class="box-start-findidpw">
-            <a href="#">
-              <span>아이디 찾기</span>
-            </a>
-            <span class="text-start-verticalbar">|</span>
-            <a class="text-start-deletecash" href="#">
-              <span>비밀번호 찾기</span>
-            </a>
-          </div>
         </div>
-        <!-- 로그인 버튼 -->
+        <!-- 회원가입 버튼 -->
         <button
           href="./page-main.html"
-          class="button button--login"
-          id="loginBtn"
+          class="button button--policy"
+          id="signup-policy"
           type="submit"
-          aria-label="로그인 버튼"
+          aria-label="회원가입 버튼입니다."
+          aria-disabled="true"
+          tabindex="0"
         >
-          로그인
+          회원가입
         </button>
       </form>
 
       <!-- 간편 로그인 -->
-      <div class="divider">
+      <div
+        class="divider"
+        aria-label="SNS로 간편 회원가입은 아래 버튼 확인해주세요."
+        tabindex="0"
+      >
         <div></div>
         <span>or</span>
         <div></div>
@@ -210,7 +228,7 @@
           class="button-start-sns sns-google"
           href="https://accounts.google.com"
           target="_blank"
-          aria-label="Sign in with Google"
+          aria-label="구글로 회원가입하기"
         >
           <svg viewBox="0 0 24 24">
             <path
@@ -236,7 +254,7 @@
           class="button-start-sns sns-facebook"
           href="https://www.facebook.com"
           target="_blank"
-          aria-label="Sign in with Facebook"
+          aria-label="페이스북으로 회원가입 하기"
           >f</a
         >
         <!-- 카카오 로그인 -->
@@ -244,7 +262,7 @@
           class="button-start-sns sns-kakao"
           href="https://kauth.kakao.com"
           target="_blank"
-          aria-label="Sign in with Kakao"
+          aria-label="카카오로 회원가입 하기"
           >K</a
         >
         <!-- 네이버 로그인 -->
@@ -252,7 +270,7 @@
           class="button-start-sns sns-naver"
           href="https://nid.naver.com"
           target="_blank"
-          aria-label="Sign in with Naver"
+          aria-label="네이버로 회원가입 하기"
           >N</a
         >
         <!-- 애플 로그인 -->
@@ -260,7 +278,7 @@
           class="button-start-sns sns-apple"
           href="https://appleid.apple.com"
           target="_blank"
-          aria-label="Sign in with Apple"
+          aria-label="애플로 회원가입 하기"
         >
           <svg viewBox="0 0 384 512" width="20" height="20">
             <path
@@ -270,8 +288,13 @@
           </svg>
         </a>
       </div>
-
-      <!-- 푸터 -->
     </main>
+    <!-- 푸터 -->
+    <footer>
+      <cite class="font-paragraph-sm"
+        >&copy; 2025 LikeLion Corp. Bootcamp 13th Generation, Triple-Oil Team 3.
+        All rights reserved.</cite
+      >
+    </footer>
   </body>
 </html>
