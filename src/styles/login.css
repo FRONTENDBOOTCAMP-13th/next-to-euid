@@ -1,27 +1,47 @@
-@import '../theme.css';
+@import '/src/theme.css';
 @import '/public/common/a11y.css';
 @import '/public/common/mini-reset.css';
 
 /* 기본 스타일 */
 body {
   background-color: var(--foundation-background-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* min-width: 500px; */
+
+
+  width: 100%;
+  height: 100%;
   min-height: 100vh;
-  min-width: 500px;
+  place-items: center;
+  /* 가로,세로 중앙정렬 */
+  padding: var(--space-28);
 
   /* 500px 미만 width값 지정으로 자연스러운 반응형 구현 목적 */
-  @media (max-width: 500px) {
+  /* @media (max-width: 360px) {
     justify-content: center;
   }
 
-  @media (min-width: 500px) {
+  @media (min-width: 768px) {
     justify-content: center;
   }
 
   @media (min-width: 1136px) {
     justify-content: center;
+  } */
+
+  --columns: 1;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(360px, 1fr));
+  gap: 2rem;
+
+  @media (min-width: 48rem) {
+    --columns: 1;
+  }
+
+  @media (min-width: 80rem) {
+    --columns: 1;
   }
 }
 
@@ -32,6 +52,18 @@ a {
   &:focus {
     outline: 0.0938rem solid var(--contents-primary-color);
   }
+}
+
+/* 전체 컨테이너 */
+.container-start {
+  /* width: 100%;
+  height: 100%; */
+  /* margin: 0 auto; */
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+
+
 }
 
 /** 헤더 **/
@@ -47,7 +79,7 @@ header {
   height: var(--space-38);
   margin: 0 auto var(--space-12);
 
-  & > a {
+  &>a {
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -106,8 +138,8 @@ label {
   pointer-events: none;
 }
 
-input:focus + label,
-input:not(:placeholder-shown) + label {
+input:focus+label,
+input:not(:placeholder-shown)+label {
   top: 45%;
   font-size: var(--space-12);
   transform: translateY(-100%);
@@ -123,7 +155,7 @@ input:not(:placeholder-shown) + label {
   display: none;
 }
 
-input:invalid + .error-message {
+input:invalid+.error-message {
   display: block;
 }
 
@@ -167,22 +199,22 @@ input:invalid + .error-message {
   }
 }
 
-.checkbox.svg input:not(:checked) + label .svg--area,
-.checkbox.svg input:not(:checked) + label .svg--border {
+.checkbox.svg input:not(:checked)+label .svg--area,
+.checkbox.svg input:not(:checked)+label .svg--border {
   fill: var(--contents-tertiary-color);
 }
 
-.checkbox.svg input:not(:checked) + label .svg--mark {
+.checkbox.svg input:not(:checked)+label .svg--mark {
   fill: var(--foundation-background-color);
 }
 
 /* 아이디, 비밀번호 찾기 */
 .box-start-findidpw {
-  & > :first-child {
+  &> :first-child {
     margin: 0 var(--space-2) 0 0;
   }
 
-  & > :nth-child(3) {
+  &> :nth-child(3) {
     margin: 0 0 0 var(--space-2);
   }
 

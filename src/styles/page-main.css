@@ -1,4 +1,4 @@
-@import '../theme.css';
+@import '/src/theme.css';
 @import '../../public/common/mini-reset.css';
 @import '../../public/common/a11y.css';
 
@@ -229,6 +229,7 @@
   line-height: 15px;
   font-size: 8.5px;
 }
+
 /* Footer */
 .main-footer {
   display: flex;
