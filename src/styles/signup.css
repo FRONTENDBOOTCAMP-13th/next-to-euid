@@ -1,6 +1,6 @@
-@import "../theme.css";
-@import "/public/common/a11y.css";
-@import "/public/common/mini-reset.css";
+@import '../theme.css';
+@import '/public/common/a11y.css';
+@import '/public/common/mini-reset.css';
 
 /* 기본 스타일 */
 body {
@@ -28,26 +28,36 @@ body {
 a {
   text-decoration: none;
   color: var(--contents-primary-color);
+
+  &:focus {
+    outline: 0.0938rem solid var(--contents-primary-color);
+  }
 }
 
 /** 헤더 **/
 header {
-  width: 100%;
+  width: 21.875rem;
   padding: 10px;
   margin: 0 0 var(--space-16);
-  text-align: center;
 }
 
 /* 로고 이미지 */
 .image-start-logo {
-  width: 18.75rem;
+  width: 5rem;
   height: var(--space-38);
-  margin: 0 auto var(--space-12);
+
+  & > a {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
 }
 
 /* 제목 */
 .text-start-title {
+  width: 100%;
   color: var(--contents-primary-color);
+  text-align: left;
 }
 
 /** 메인 **/
@@ -63,11 +73,11 @@ header {
 
 /* 아이디, 비밀번호 입력창 */
 .login-form {
-  width: 300px;
+  width: 21.875rem;
 }
 
 .input-group {
-  margin-bottom: 20px;
+  margin-bottom: var(--space-12);
   position: relative;
 }
 
@@ -75,52 +85,52 @@ input {
   width: 100%;
   padding: var(--space-28) var(--space-20) var(--space-8);
   border: none;
-  border-bottom: 1px solid gray;
-  font-size: 1rem;
+  border-radius: var(--space-4) var(--space-4) 0 0;
+  border-bottom: 0.05rem solid gray;
+  font-size: 1.0625rem;
+  position: relative;
 }
 
 input:focus {
-  border-bottom: 1px solid var(--dark-foundation-secondary-color);
+  border-bottom: 0.0938rem solid var(--foundation-secondary-color);
   outline: none;
 }
 
 label {
   position: absolute;
-  bottom: 10px;
-  /* var(--space-28) */
-  left: 20px;
-  /* var(--space-20) */
+  top: var(--space-16);
+  left: var(--space-20);
   color: var(--contents-secondary-color);
-  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s cubic-bezier(0.1, 0, 0.8, 1);
   /* transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); 귀엽운 버전 */
   pointer-events: none;
 }
 
-input:focus+label,
-input:not(:placeholder-shown)+label {
-  top: 35%;
+input:focus + label,
+input:not(:placeholder-shown) + label {
+  top: 45%;
   font-size: var(--space-12);
-  transform: translateY(-50%);
+  transform: translateY(-100%);
   color: var(--contents-secondary-color);
   opacity: 1;
 }
 
 /* 에러 안내 문구 */
 .error-message {
-  padding: var(--space-8) 0 0;
+  padding: var(--space-4) var(--space-2) 0;
   color: red;
   font-size: 13px;
   display: none;
 }
 
-input:invalid+.error-message {
+input:invalid + .error-message {
   display: block;
 }
 
 /** 로그인 옵션 **/
 .box-start-loginoptions {
   width: 18.75rem;
-  padding: var(--space-16) 0 var(--space-8);
+  padding: 0 0 var(--space-24);
   display: flex;
   justify-content: space-between;
 }
@@ -129,8 +139,9 @@ input:invalid+.error-message {
 .checkbox.svg {
   display: inline-flex;
   align-items: center;
-  column-gap: .375rem;
+  column-gap: 0.375rem;
   position: relative;
+  padding: var(--space-8) 0;
 
   input {
     position: absolute;
@@ -139,14 +150,15 @@ input:invalid+.error-message {
     left: 0;
     inset-inline-start: 0;
     margin: 0;
-    width: var(--space-24);
-    inline-size: var(--space-24);
-    height: var(--space-24);
-    block-size: var(--space-24);
+    width: var(--space-20);
+    inline-size: var(--space-20);
+    height: var(--space-20);
+    block-size: var(--space-20);
     appearance: none;
+    border-radius: var(--space-4);
 
     /* 자동 로그인 input 체크박스 하단 border 제거 */
-    &[type="checkbox"] {
+    &[type='checkbox'] {
       border-bottom: none;
     }
   }
@@ -154,33 +166,39 @@ input:invalid+.error-message {
   label {
     display: contents;
   }
-
-  input:checked+label .svg--area,
-  input:checked+label .svg--border {
-    fill: var(--green-500);
-  }
-
-  input:checked+label .svg--mark {
-    fill: var(--white);
-  }
 }
 
-.checkbox__input:checked+.checkbox__label .unchecked {
-  display: none;
+.checkbox.svg input:not(:checked) + label .svg--area,
+.checkbox.svg input:not(:checked) + label .svg--border {
+  fill: var(--contents-tertiary-color);
 }
 
-.checkbox__input:not(:checked)+.checkbox__label .checked {
-  display: none;
+.checkbox.svg input:not(:checked) + label .svg--mark {
+  fill: var(--foundation-background-color);
+}
+
+/* 약관동의 */
+.text-start-signup {
+  white-space: nowrap;
+
+  .text-start-infolink {
+    text-decoration: underline;
+    color: var(--dark-foundation-secondary-color);
+  }
+
+  &:focus {
+    width: 21.875rem;
+    outline: 0.0938rem solid var(--contents-primary-color);
+  }
 }
 
 /* 아이디, 비밀번호 찾기 */
 .box-start-findidpw {
-
-  &>:first-child {
+  & > :first-child {
     margin: 0 var(--space-2) 0 0;
   }
 
-  &>:nth-child(3) {
+  & > :nth-child(3) {
     margin: 0 0 0 var(--space-2);
   }
 
@@ -201,20 +219,16 @@ button,
   cursor: pointer;
 }
 
-/* 로그인 버튼 */
-.button--login {
+/* 회원가입 버튼 */
+.button--policy {
   background-color: var(--dark-foundation-secondary-color);
   color: var(--foundation-background-color);
   margin: var(--space-8) 0 var(--space-8);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  border: .0625rem solid var(--dark-foundation-secondary-color);
-
-  &:hover {
-    box-shadow: 0 2px 2.2px rgba(0, 0, 0, 0.2);
-  }
+  border: 0.0625rem solid var(--dark-foundation-secondary-color);
 
   &:focus {
-    outline: 1px solid var(--dark-foundation-secondary-color);
+    outline: 0.125rem solid var(--contents-primary-color);
   }
 
   &:active {
@@ -227,12 +241,12 @@ button,
 .divider {
   display: flex;
   align-items: center;
-  margin: var(--space-16) 0;
+  margin: var(--space-20) 0;
 }
 
 .divider div {
   flex: 1;
-  height: 5px;
+  height: var(--space-8);
   background-color: var(--contents-secondary-color);
 }
 
@@ -245,7 +259,7 @@ button,
 .sns-buttons {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  gap: var(--space-20);
 
   .button-start-sns {
     width: var(--space-40);
@@ -260,7 +274,7 @@ button,
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #e5e7eb;
+  border: 0.0437rem solid var(--contents-tertiary-color);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
@@ -271,20 +285,20 @@ button,
 }
 
 .sns-facebook {
-  background-color: #1877F2;
+  background-color: #1877f2;
   color: white;
-  font-size: 1.25rem;
+  font-size: var(--space-20);
   font-weight: bold;
 }
 
 .sns-kakao {
-  background-color: #FAE100;
+  background-color: #fae100;
   color: black;
   font-weight: bold;
 }
 
 .sns-naver {
-  background-color: #03C75A;
+  background-color: #03c75a;
   color: white;
   font-weight: bold;
 }
@@ -295,3 +309,8 @@ button,
 }
 
 /* 푸터 */
+cite {
+  color: var(--contents-secondary-color);
+  justify-content: left;
+  display: none;
+}

@@ -4,7 +4,8 @@ const loginBtn = document.getElementById("loginBtn");
 loginBtn.addEventListener("click", function (e) {
   e.preventDefault(); // 기본 제출 막기
 
-  // const id = document.getElementById("id");회원가입
+
+  // const id = document.getElementById("id");
   const email = document.getElementById("email");
   const password = document.getElementById("password");
 
