@@ -1,6 +1,6 @@
-@import "../theme.css";
-@import "/public/common/a11y.css";
-@import "/public/common/mini-reset.css";
+@import '../theme.css';
+@import '/public/common/a11y.css';
+@import '/public/common/mini-reset.css';
 
 /* 기본 스타일 */
 body {
@@ -30,7 +30,7 @@ a {
   color: var(--contents-primary-color);
 
   &:focus {
-    outline: .0938rem solid var(--contents-primary-color);
+    outline: 0.0938rem solid var(--contents-primary-color);
   }
 }
 
@@ -46,7 +46,7 @@ header {
   width: 5rem;
   height: var(--space-38);
 
-  &>a {
+  & > a {
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -86,13 +86,13 @@ input {
   padding: var(--space-28) var(--space-20) var(--space-8);
   border: none;
   border-radius: var(--space-4) var(--space-4) 0 0;
-  border-bottom: .05rem solid gray;
+  border-bottom: 0.05rem solid gray;
   font-size: 1.0625rem;
   position: relative;
 }
 
 input:focus {
-  border-bottom: .0938rem solid var(--foundation-secondary-color);
+  border-bottom: 0.0938rem solid var(--foundation-secondary-color);
   outline: none;
 }
 
@@ -104,11 +104,10 @@ label {
   transition: 0.3s cubic-bezier(0.1, 0, 0.8, 1);
   /* transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); 귀엽운 버전 */
   pointer-events: none;
-
 }
 
-input:focus+label,
-input:not(:placeholder-shown)+label {
+input:focus + label,
+input:not(:placeholder-shown) + label {
   top: 45%;
   font-size: var(--space-12);
   transform: translateY(-100%);
@@ -124,7 +123,7 @@ input:not(:placeholder-shown)+label {
   display: none;
 }
 
-input:invalid+.error-message {
+input:invalid + .error-message {
   display: block;
 }
 
@@ -140,7 +139,7 @@ input:invalid+.error-message {
 .checkbox.svg {
   display: inline-flex;
   align-items: center;
-  column-gap: .375rem;
+  column-gap: 0.375rem;
   position: relative;
   padding: var(--space-8) 0;
 
@@ -159,7 +158,7 @@ input:invalid+.error-message {
     border-radius: var(--space-4);
 
     /* 자동 로그인 input 체크박스 하단 border 제거 */
-    &[type="checkbox"] {
+    &[type='checkbox'] {
       border-bottom: none;
     }
   }
@@ -169,12 +168,12 @@ input:invalid+.error-message {
   }
 }
 
-.checkbox.svg input:not(:checked)+label .svg--area,
-.checkbox.svg input:not(:checked)+label .svg--border {
+.checkbox.svg input:not(:checked) + label .svg--area,
+.checkbox.svg input:not(:checked) + label .svg--border {
   fill: var(--contents-tertiary-color);
 }
 
-.checkbox.svg input:not(:checked)+label .svg--mark {
+.checkbox.svg input:not(:checked) + label .svg--mark {
   fill: var(--foundation-background-color);
 }
 
@@ -189,18 +188,17 @@ input:invalid+.error-message {
 
   &:focus {
     width: 21.875rem;
-    outline: .0938rem solid var(--contents-primary-color);
+    outline: 0.0938rem solid var(--contents-primary-color);
   }
 }
 
 /* 아이디, 비밀번호 찾기 */
 .box-start-findidpw {
-
-  &>:first-child {
+  & > :first-child {
     margin: 0 var(--space-2) 0 0;
   }
 
-  &>:nth-child(3) {
+  & > :nth-child(3) {
     margin: 0 0 0 var(--space-2);
   }
 
@@ -227,10 +225,10 @@ button,
   color: var(--foundation-background-color);
   margin: var(--space-8) 0 var(--space-8);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  border: .0625rem solid var(--dark-foundation-secondary-color);
+  border: 0.0625rem solid var(--dark-foundation-secondary-color);
 
   &:focus {
-    outline: .125rem solid var(--contents-primary-color);
+    outline: 0.125rem solid var(--contents-primary-color);
   }
 
   &:active {
@@ -276,7 +274,7 @@ button,
   display: flex;
   align-items: center;
   justify-content: center;
-  border: .0437rem solid var(--contents-tertiary-color);
+  border: 0.0437rem solid var(--contents-tertiary-color);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
@@ -287,20 +285,20 @@ button,
 }
 
 .sns-facebook {
-  background-color: #1877F2;
+  background-color: #1877f2;
   color: white;
   font-size: var(--space-20);
   font-weight: bold;
 }
 
 .sns-kakao {
-  background-color: #FAE100;
+  background-color: #fae100;
   color: black;
   font-weight: bold;
 }
 
 .sns-naver {
-  background-color: #03C75A;
+  background-color: #03c75a;
   color: white;
   font-weight: bold;
 }

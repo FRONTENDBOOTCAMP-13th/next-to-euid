@@ -84,7 +84,6 @@ a {
   background-color: #4a7ddf;
 }
 
-
 /** 헤더 **/
 header {
   width: 100%;
@@ -162,10 +161,10 @@ header {
   color: var(--foundation-background-color);
   margin: 0 0 var(--space-8);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-  border: .0625rem solid var(--dark-foundation-secondary-color);
+  border: 0.0625rem solid var(--dark-foundation-secondary-color);
 
   &:focus {
-    outline: .125rem solid var(--contents-primary-color);
+    outline: 0.125rem solid var(--contents-primary-color);
   }
 
   &:active {
