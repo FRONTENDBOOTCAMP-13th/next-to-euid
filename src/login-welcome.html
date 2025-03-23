@@ -2,7 +2,7 @@
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
-    <title>Login Page</title>
+    <title>Login welcome Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
     <link
@@ -13,14 +13,48 @@
     />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <link rel="stylesheet" href="/src/styles/login-welcome.css" />
-    <!-- <script type="module" src="/src/main.js"></script> -->
+    <script type="module" src="/src/login-welcome.js"></script>
   </head>
 
   <body>
+    <!-- 모달창 -->
+    <div
+      id="disclaimer-modal"
+      class="modal-overlay"
+      role="dialog"
+      aria-labelledby="modal-title"
+      aria-describedby="modal-desc"
+    >
+      <div class="modal-content">
+        <h2 id="modal-title">📢 안내</h2>
+        <p id="modal-desc">
+          본 사이트는 부트캠프 교육과정의 일환으로 제작된 프로젝트이며,<br />
+          상업적 용도로 사용하지 않을 것을 확인합니다.
+        </p>
+        <button
+          id="modal-confirm-btn"
+          class="confirm-btn"
+          aria-label="확인하고 메인 페이지로 진입"
+        >
+          확인
+        </button>
+      </div>
+    </div>
+
     <!--- 헤더 --->
     <header>
       <!-- 로고 이미지 -->
-      <h1 class="image-start-logo">
+      <span
+        class="sr-only"
+        aria-label="이듬에 오신 것을 환영합니다."
+        tabindex="0"
+        >이듬에 오신 것을 환영합니다.</span
+      >
+      <h1
+        class="image-start-logo"
+        aria-label="함께 성장하는 개발자 커뮤니티 이듬의 로고 이미지입니다."
+        tabindex="0"
+      >
         <svg
           width="80"
           height="30"
@@ -54,14 +88,24 @@
         </svg>
       </h1>
       <!-- 제목 -->
-      <p class="text-start-title font-paragraph-xl">당신 곁에 엔터이듬</p>
+      <p
+        class="text-start-title font-paragraph-xl"
+        aria-label="당신 곁에 엔터이듬"
+        tabindex="0"
+      >
+        당신 곁에 엔터이듬
+      </p>
     </header>
 
     <!--- 메인 --->
     <!-- 전체 컨테이너 -->
     <main class="container-start">
       <!-- 문구 -->
-      <span class="box-start-content font-paragraph-lg">
+      <span
+        class="box-start-content font-paragraph-lg"
+        aria-label="이듬과 함께 성장하기. 함께 배우고 적용하며 성장해보세요!"
+        tabindex="0"
+      >
         <p>With EUID's 함께 성장하기</p>
         <p>함께 배우고 적용하며 성장해보세요!</p>
       </span>
@@ -70,41 +114,59 @@
       <section class="section-start-login">
         <!-- 로그인 옵션 -->
         <div class="login-options">
-          <!-- 로그인 버튼 -->
-          <a
-            href="./login.html"
-            class="button button--login"
-            aria-label="로그인 버튼"
+          <div
+            class="text-start-guidbox font-paragraph-md"
+            aria-label="3초만에 빠른 회원가입을 원하시다면 회원가입 버튼을 클릭해주세요."
+            tabindex="0"
           >
-            로그인
-          </a>
-          <div class="text-start-guidbox font-paragraph-md">
             ⚡️3초만에 빠른 회원가입
           </div>
           <!-- 회원가입 버튼 -->
-          <a class="text-start-firsttime font-paragraph-lg" href="#"
-            >처음이신가요?</a
+          <a
+            href="./signup.html"
+            aria-label="회원가입 버튼 입니다."
+            class="text-start-firsttime font-paragraph-lg"
+            >처음이신가요?
+            <span class="sr-only"
+              >함께 성장하는 개발자 커뮤니티 이듬의 로고 이미지입니다.</span
+            >
+          </a>
+          <!-- 로그인 버튼 -->
+          <a
+            href="./login.html"
+            aria-label="로그인 버튼입니다."
+            class="button button--login"
           >
-          <!-- <a class="button button--signup" aria-label="회원가입 버튼">
-          회원가입
-        </a> -->
+            로그인
+          </a>
           <!-- 링크 정보 -->
           <div class="box-start-infolinks font-paragraph-md">
-            <a href="#">
+            <a aria-label="최신 버전으로 업데이트하기" href="#">
               <span>ver 1.0.1 업데이트</span>
             </a>
-            <a class="text-start-deletecash" href="#">
+            <a
+              href="#"
+              aria-label="캐시 데이터를 삭제하기"
+              class="text-start-deletecash"
+            >
               <span>캐시 데이터 삭제</span>
             </a>
-            <a href="#">
+            <a href="#" aria-label="오픈 라이선스 정보 보기">
               <span>오픈 라이선스</span>
             </a>
-            <a href="#">
-              <p>고객센터﹒공지사항</p>
+            <a href="#" aria-label="고객센터 및 공지사항으로 이동하기">
+              <span>고객센터﹒공지사항</span>
             </a>
           </div>
         </div>
       </section>
     </main>
+
+    <footer>
+      <cite class="font-paragraph-sm"
+        >&copy; 2025 LikeLion Corp. Bootcamp 13th Generation, Triple-Oil Team 3.
+        All rights reserved.</cite
+      >
+    </footer>
   </body>
 </html>
