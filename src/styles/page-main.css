@@ -54,6 +54,36 @@
   padding: 30px;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  border-radius: var(--space-2);
+  min-width: 10.4569rem;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #121212;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
 /* Banner */
 .main-banner {
   background: url('https://via.placeholder.com/400x200') center/cover;
@@ -107,12 +137,6 @@
   gap: var(--space-48);
 }
 
-/* @media (min-width: 600px) {
-  .nav-three-items {
-    gap: 170px;
-  }
-} */
-
 .navitem--inactive {
   background-color: var(--foundation-primary-color);
   color: var(--contents-tertiary-color);
@@ -123,6 +147,7 @@
   cursor: pointer;
   text-decoration: none;
   padding: 9px;
+  white-space: nowrap;
 }
 
 .navitem--active {
@@ -136,6 +161,7 @@
   text-decoration: none;
   padding: 9px;
   border-bottom: 1px solid var(--foundation-background-color);
+  white-space: nowrap;
 }
 
 /* Main Content */
@@ -145,6 +171,7 @@
   display: grid;
   justify-content: center;
   align-content: center;
+  background-color: var(--foundation-background-color);
 }
 
 .main-grid {
