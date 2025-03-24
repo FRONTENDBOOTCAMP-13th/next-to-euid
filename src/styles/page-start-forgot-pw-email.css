@@ -1,5 +1,15 @@
 /* src/styles/page-start-forgot-pw-email.css */
-@import '/src/style.css';
+@import "/src/style.css";
+
+/* forgot-pw page--body 세팅 */
+.page-start-forgot-pw--main {
+  background-color: var(--foundation-background-color);
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
 
 /* forgot-pw page--header 세팅 */
 .header-start-common--previous {
@@ -20,23 +30,39 @@
   }
 }
 
+.page-login-forgot-pw--title {
+  color: var(--foundation-primary-color);
+  font-size: var(--font-xl-24);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+
 .page-start-forgot-pw--contents {
-  display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 수직 중앙 정렬 */
+  align-items: center; /* 수평 중앙 정렬 */
+  flex: 1;
 }
 
 /* forgot-pw-email--contents-wrapper 세팅 */
 .pw-email-text {
   color: var(--contents-secondary-color);
-  margin: 9.375rem var(--spacing-3xl);
+  margin: 5rem var(--spacing-3xl);
   text-align: center;
 }
 
 .dialog-choice-btn-save {
+  color: var(--foundation-background-color);
   padding-inline: var(--spacing-4xl);
+  height: 3.0938rem;
   width: 100%;
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .forgot-pw-email--contents-wrapper {
