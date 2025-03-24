@@ -9,7 +9,8 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  min-width: 500px;
+  padding: var(--space-28);
+  /* min-width: 500px; */
 
   /* 500px 미만 width값 지정으로 자연스러운 반응형 구현 목적 */
   @media (max-width: 500px) {
@@ -28,6 +29,60 @@ body {
 a {
   text-decoration: none;
   color: var(--contents-primary-color);
+}
+
+/* 모달창 */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem 1.5rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  font-family: sans-serif;
+}
+
+.modal-content h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.modal-content p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* 확인 버튼 */
+.confirm-btn {
+  padding: 0.75rem 1.5rem;
+  background-color: #699afe;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.confirm-btn:hover {
+  background-color: #4a7ddf;
 }
 
 /** 헤더 **/
@@ -66,7 +121,7 @@ header {
 .box-start-content {
   display: block;
   text-align: center;
-  padding: var(--space-8) 0 var(--space-32);
+  padding: var(--space-8) 0 var(--space-44);
   color: var(--contents-primary-color);
   font-weight: var(--font-weight-regular);
 }
@@ -85,7 +140,7 @@ header {
 /* 로그인 옵션 */
 .login-options {
   width: 100%;
-  max-width: 300px;
+  max-width: 21.875rem;
   text-align: center;
   position: relative;
 }
@@ -105,24 +160,29 @@ header {
 .button--login {
   background-color: var(--dark-foundation-secondary-color);
   color: var(--foundation-background-color);
-  margin: var(--space-8) 0 var(--space-8);
+  margin: 0 0 var(--space-8);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  border: 0.0625rem solid var(--dark-foundation-secondary-color);
 
-  &:hover {
-    box-shadow: 0 2px 2.2px rgba(0, 0, 0, 0.2);
-    display: block;
-  }
-
-  /* hover 시에만 보이게 하기 */
-  &:hover + .text-start-guidbox {
-    /* 3초 회원가입 문구 부드러운 효과 */
-    opacity: 0.9;
+  &:focus {
+    outline: 0.125rem solid var(--contents-primary-color);
   }
 
   &:active {
     transform: scale(0.999);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
   }
+
+  /* &:hover {
+    box-shadow: 0 2px 2.2px rgba(0, 0, 0, 0.2);
+    display: block;
+  } */
+
+  /* hover 시에만 보이게 하기
+  &:hover+.text-start-guidbox {
+    3초 회원가입 문구 부드러운 효과
+    opacity: 0.9;
+  } */
 }
 
 .text-start-guidbox {
@@ -130,8 +190,8 @@ header {
   height: 25px;
 
   position: absolute;
-  top: -25px;
-  right: -20px;
+  top: -32px;
+  right: 20px;
   background: var(--foundation-primary-color);
   border-radius: var(--space-8);
   padding: var(--space-4);
@@ -140,15 +200,15 @@ header {
   display: flex;
   align-items: center;
   /* 3초 회원가입 문구 부드러운 효과 */
-  transition: opacity 0.25s ease-out;
-  opacity: 0;
+  /* transition: opacity 0.25s ease-out;
+  opacity: 0; */
 }
 
 .text-start-guidbox:after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 20%;
   width: 0;
   height: 0;
   border: 0.625em solid transparent;
@@ -163,6 +223,7 @@ header {
 .text-start-firsttime {
   color: var(--dark-foundation-secondary-color);
   font-weight: var(--font-weight-regular);
+  margin: 0 0 var(--space-8);
 }
 
 .button--signup {
@@ -172,10 +233,18 @@ header {
 
 /* 링크 정보 */
 .box-start-infolinks {
-  width: 100%;
+  width: 80%;
   padding: var(--space-32) 0 var(--space-16);
+  margin: 0 auto;
+  white-space: wrap;
 
   .text-start-deletecash {
     margin: 0 var(--space-16);
   }
+}
+
+/* 푸터 */
+cite {
+  color: var(--contents-secondary-color);
+  justify-content: left;
 }
