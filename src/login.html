@@ -10,6 +10,7 @@
   <link rel="stylesheet" as="style" href="../public/font/pretendardvariable.css" />
   <link rel="stylesheet" href="/src/styles/login.css" />
   <script type="module" src="/src/js/login.js"></script>
+  <script type="module" src="/src/js/page-start-forgot-pw.js"></script>
 </head>
 
 <body>
@@ -59,7 +60,7 @@
           .toLowerCase() // 자동 소문자 변환
           .replace(/[^a-z0-9@.]/g, '') // 영문 소문자, 숫자, @, .만 허용
       " required aria-required="true" aria-label="이메일을 입력해주세요." />
-          <label class="font-paragraph-lg" for="email">이메일</label>
+          <label class="font-paragraph-lg input-label" for="email">이메일</label>
           <!-- 이메일 에러 안내 문구 -->
           <div class="error-message">이메일을 다시 확인해주세요.</div>
         </div>
@@ -69,7 +70,7 @@
           <input id="password" type="password" placeholder=" "
             pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,12}$"
             title="영문, 숫자, 특수문자를 포함하여 8~12자 사이로 입력" required aria-required="true" aria-label="비밀번호를 입력해주세요." />
-          <label class="font-paragraph-lg" for="password">비밀번호 (8~12자, 영문+숫자+특수문자)</label>
+          <label class="font-paragraph-lg input-label" for="password">비밀번호 (8~12자, 영문+숫자+특수문자)</label>
           <!-- 비밀번호 에러 안내 문구 -->
           <div class="error-message">비밀번호 조건을 맞춰주세요.</div>
         </div>
@@ -99,13 +100,28 @@
           </div>
           <!-- 아이디, 비밀번호 찾기 -->
           <div class="box-start-findidpw">
-            <a href="/src/page-start-forgot-pw.html" aria-label="아이디 찾기">
-              <span>아이디 찾기</span>
-            </a>
+            <!-- Common/button--email -->
+        <button
+        class="button-login-forgot-pw--email show-email-dialog"
+        aria-label="email로 가입한 ID 찾기"
+      >
+        아이디 찾기
+        
+      </button>
+            
+            
             <span class="text-start-verticalbar">|</span>
-            <a class="text-start-deletecash" href="/src/page-start-forgot-pw.html" aria-label="비밀번호 찾기">
-              <span>비밀번호 찾기</span>
-            </a>
+
+        <!-- Common/button--password -->
+        <button
+          class="button-login-forgot-pw--email show-password-dialog"
+          aria-label="email로 비밀번호 다시 설정하기"
+        >
+          비밀번호 찾기
+        </button>
+            
+
+
           </div>
         </div>
         <!-- 로그인 버튼 -->
@@ -154,6 +170,128 @@
         </a>
       </div>
     </main>
+
+        <!-- fogot-pw-page--modal-page -->
+      <!-- 아이디 찾기용 다이얼로그 -->
+      <dialog class="login-panel-dialog email-dialog" aria-labelledby="email-event">
+        <div class="dialog-text-wrapper">
+          <h2 id="email-event" class="dialog--title">아이디 찾기</h2>
+        </div>
+        <div class="dialog-content-wrapper content-wrapper-email">
+          <p class="dialog--text font-paragragh-sm">
+            가입 시 설정한 이메일을 입력하여 ID를 확인할 수 있습니다.
+          </p>
+          <!-- Signup/modal-page--active-ID -->
+          <div class="dialog-input-start-sign-up-wrapper">
+            <input
+              class="input-start-sign-up input-start-sign-up--active"
+              type="email"
+              name="user-id"
+              id="user-id"
+              placeholder=" "
+              aria-errormessage="error-message-user-id"
+            />
+            <label
+              class="input-start-sign-up-label font-paragraph-lg label-active"
+              for="user-id"
+              >가입 시 설정한 이메일을 입력해주세요</label
+            >
+            <p
+              class="input-sign-up--error-message font-paragraph-xs"
+              id="error-message-user-id"
+              aria-live="polite"
+            >
+              <span>이메일 형식에 맞지 않습니다. 알맞는 이메일을 입력해주세요</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="dialog-btn-wrapper">
+          <button
+            class="close-dialog dialog-button-login-common font-label-lg"
+            type="button"
+            aria-label="취소, 전 단계로 이동"
+          >
+            취소
+          </button>
+
+          <!-- choice-btn-save -->
+          <a
+            class="dialog-choice-btn-save"
+            href="/src/page-start-forgot-pw-email.html"
+            aria-label="확인, 다음 단계로 이동"
+            onclick="showNewModal(event); return false;"
+            tabindex="0"
+          >
+            <span class="btn-contents-wrapper">
+              <p class="choice-btn-save-text font-label-lg">확인</p>
+            </span>
+          </a>
+        </div>
+      </dialog>
+
+      <!-- 비밀번호 찾기용 다이얼로그 -->
+      <dialog
+        class="login-panel-dialog password-dialog"
+        aria-labelledby="password-event"
+      >
+        <div class="dialog-text-wrapper">
+          <h2 id="password-event" class="dialog--title">비밀번호 재설정</h2>
+        </div>
+
+        <div class="dialog-content-wrapper">
+          <p class="dialog--text font-paragragh-sm">
+            비밀번호를 재설정하기 위한 페이지입니다.<br />
+            가입된 이메일 주소로 인증번호를 발송해 드립니다.
+          </p>
+
+          <!-- Signup/modal-page--active-PW -->
+          <div class="dialog-input-start-sign-up-wrapper">
+            <input
+              class="input-start-sign-up input-start-sign-up--active sign-up-pw"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder=" "
+              aria-errormessage="error-message-confirm-number"
+            />
+            <label
+              class="input-start-sign-up-label font-paragraph-lg label-active"
+              for="user-email"
+              >가입 시 사용한 이메일 주소를 입력해주세요</label
+            >
+            <p
+              class="input-sign-up--error-message font-paragraph-xs"
+              id="error-message-user-email"
+              aria-live="polite"
+            >
+            <span>이메일 형식에 맞지 않습니다. 알맞는 이메일을 입력해주세요</span>
+            </p>
+          </div>
+        </div>
+        <div class="dialog-btn-wrapper">
+          <button
+          class="close-dialog dialog-button-login-common font-label-lg"
+            aria-label="취소, 전 단계로 이동"
+          >
+            취소
+          </button>
+
+          <!-- choice-btn-save -->
+          <a
+            class="dialog-choice-btn-save"
+            href="/src/login.html"
+            aria-label="확인, 다음 단계로 이동"
+            tabindex="0"
+          >
+            <span class="btn-contents-wrapper">
+              <p class="choice-btn-save-text font-label-lg">확인</p>
+            </span>
+          </a>
+        </div>
+      </dialog>
+
+    
     <!-- 푸터 -->
     <footer>
       <cite class="font-paragraph-sm">&copy; 2025 LikeLion Corp. Bootcamp 13th Generation, Triple-Oil Team 3.
