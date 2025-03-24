@@ -1,4 +1,4 @@
-@import '../theme.css';
+@import '/src/theme.css';
 @import '/public/common/a11y.css';
 @import '/public/common/mini-reset.css';
 
@@ -10,6 +10,7 @@ body {
   align-items: center;
   min-height: 100vh;
   padding: var(--space-28);
+  position: relative;
   /* min-width: 500px; */
 
   /* 500px 미만 width값 지정으로 자연스러운 반응형 구현 목적 */
@@ -121,7 +122,7 @@ header {
 .box-start-content {
   display: block;
   text-align: center;
-  padding: var(--space-8) 0 var(--space-44);
+  padding: 0 0 var(--space-60);
   color: var(--contents-primary-color);
   font-weight: var(--font-weight-regular);
 }
@@ -160,7 +161,7 @@ header {
 .button--login {
   background-color: var(--dark-foundation-secondary-color);
   color: var(--foundation-background-color);
-  margin: 0 0 var(--space-8);
+  margin: var(--space-8) 0 var(--space-8);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
   border: 0.0625rem solid var(--dark-foundation-secondary-color);
 
@@ -196,9 +197,11 @@ header {
   border-radius: var(--space-8);
   padding: var(--space-4);
   color: var(--foundation-background-color);
+  border: .0437rem solid #373f67;
   text-align: center;
   display: flex;
   align-items: center;
+  white-space: nowrap;
   /* 3초 회원가입 문구 부드러운 효과 */
   /* transition: opacity 0.25s ease-out;
   opacity: 0; */
@@ -212,7 +215,9 @@ header {
   width: 0;
   height: 0;
   border: 0.625em solid transparent;
+  /* border: none; */
   border-top-color: #373f67;
+  border-bottom-color: #373f67;
   border-bottom: 0;
   border-left: 0;
   margin-left: -0.312em;
@@ -223,7 +228,7 @@ header {
 .text-start-firsttime {
   color: var(--dark-foundation-secondary-color);
   font-weight: var(--font-weight-regular);
-  margin: 0 0 var(--space-8);
+  /* margin: 0 0 var(--space-16); */
 }
 
 .button--signup {
@@ -244,7 +249,13 @@ header {
 }
 
 /* 푸터 */
+footer {
+  position: absolute;
+  bottom: var(--space-12);
+}
+
 cite {
   color: var(--contents-secondary-color);
   justify-content: left;
+  padding: var(--space-12);
 }
