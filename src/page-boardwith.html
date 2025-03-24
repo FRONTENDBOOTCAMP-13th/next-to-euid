@@ -13,10 +13,10 @@
     />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
     <link rel="stylesheet" href="/src/style.css" />
-    <link rel="stylesheet" href="/src/styles/page-main.css" />
+    <link rel="stylesheet" href="/src/styles/page-boardwith.css" />
     <!-- <script type="module" src="/src/main.js"></script> -->
   </head>
-  <body class="page-main">
+  <body>
     <header class="main-header">
       <div class="header-main--region-items">
         <div class="items-region">
@@ -36,10 +36,7 @@
         <div class="icon-wrapper-main-region">
           <div class="dropdown">
             <!-- 컴포넌트 all in one 페이지 합치고 링크 기재 예정 -->
-            <a
-              class="button-index-nav dropbtn font-label-lg"
-              href="#"
-              onclick="return false;"
+            <a class="button-index-nav dropbtn font-label-lg" href="#"
               ><svg
                 width="25"
                 height="25"
@@ -58,29 +55,12 @@
               </svg>
             </a>
             <ul class="dropdown-content">
-              <li>
-                <a href="/src/component-start.html" onclick="return false;"
-                  >라이트/다크 모드</a
-                >
-              </li>
-              <li>
-                <a href="/src/component-board.html" onclick="return false;"
-                  >큰 글 모드</a
-                >
-              </li>
-              <li>
-                <a href="/src/component-main.html" onclick="return false;"
-                  >돋보기</a
-                >
-              </li>
+              <li><a href="/src/component-start.html">라이트/다크 모드</a></li>
+              <li><a href="/src/component-board.html">큰 글 모드</a></li>
+              <li><a href="/src/component-main.html">돋보기</a></li>
             </ul>
           </div>
-          <a
-            href="#"
-            aria-label="검색창으로 이동"
-            tabindex="0"
-            onclick="return false;"
-          >
+          <a href="/" aria-label="검색창으로 이동" tabindex="0">
             <svg
               width="26"
               height="26"
@@ -103,12 +83,7 @@
               />
             </svg>
           </a>
-          <a
-            href="#"
-            aria-label="메뉴창으로 이동"
-            tabindex="0"
-            onclick="return false;"
-          >
+          <a href="/" aria-label="메뉴창으로 이동" tabindex="0">
             <svg
               width="26"
               height="26"
@@ -125,12 +100,7 @@
               />
             </svg>
           </a>
-          <a
-            href="#"
-            aria-label="알림창으로 이동"
-            tabindex="0"
-            onclick="return false;"
-          >
+          <a href="/" aria-label="알림창으로 이동" tabindex="0">
             <svg
               width="26"
               height="26"
@@ -147,421 +117,157 @@
         </div>
       </div>
     </header>
+    <!-- nav-boardwith -->
+    <div class="nav-boardwith">
+      <button class="button-main--inactive">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="var(--contents-primary-color)"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4.16675 14.1667H15.8334M4.16675 10H15.8334M4.16675 5.83334H15.8334"
+            stroke="var(--contents-primary-color)"
+            stroke-width="1.16667"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+        <span class="text-button-main--inactive font-paragraph-md">주제</span>
+      </button>
 
-    <div class="main-banner">
-      <div class="text-box">
-        <div class="text-box-main font-heading-lg">
-          풀리지 않는 버그 속 개발자로 살아남기
-        </div>
-        <div class="text-box-sub font-paragraph-md">자세히 보기</div>
-        <div class="text-box-final font-label-">01 —— 03</div>
-      </div>
-      <img
-        src="./asset/img/page-main-img.svg"
-        alt="베너 이미지"
-        class="banner-image"
-      />
+      <button class="button-main--inactive">
+        <span class="text-button-main--inactive font-paragraph-md">인기글</span>
+      </button>
+
+      <button class="button-main--inactive">
+        <span class="text-button-main--inactive font-paragraph-md"
+          >같이해요</span
+        >
+      </button>
+
+      <button class="button-main--inactive">
+        <span class="text-button-main--inactive font-paragraph-md"
+          >질의응답</span
+        >
+      </button>
+
+      <button class="button-main--inactive">
+        <span class="text-button-main--inactive font-paragraph-md"
+          >자유게시판</span
+        >
+      </button>
     </div>
 
-    <nav class="main-nav">
-      <div class="nav-main-items">
-        <div class="nav-three-items font-label-md">
-          <a
-            href="/"
-            aria-label="선택된 리스트"
-            tabindex="0"
-            onclick="return false;"
-            class="navitem--active font-label-md"
-            >선배님 스토리</a
+    <!-- main-boardwith -->
+
+    <div class="together-wrapper-board-boardField">
+      <div class="badge-board-boardField font-label-md">
+        <span class="visually-hidden">📝</span>
+        <span>
+          <p>같이해요</p>
+        </span>
+      </div>
+      <div class="box-board-boardField">
+        <p class="font-paragraph-lg">youtube 클론 프젝 같이 하실분~!</p>
+        <div class="box-board-inforitems--fullpeople font-paragraph-md">
+          <svg
+            width="14"
+            height="15"
+            viewBox="0 0 14 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-          <a
-            href="/"
-            aria-label="선택되지 않은 리스트"
-            tabindex="0"
-            onclick="return false;"
-            class="navitem--inactive font-label-md"
-            >질의 응답</a
+            <path
+              d="M9.33317 10.4167V11.5833H1.1665V10.4167C1.1665 10.4167 1.1665 8.08334 5.24984 8.08334C9.33317 8.08334 9.33317 10.4167 9.33317 10.4167ZM7.2915 4.87501C7.2915 4.47121 7.17176 4.07647 6.94742 3.74072C6.72308 3.40497 6.40421 3.14329 6.03115 2.98876C5.65808 2.83423 5.24757 2.7938 4.85153 2.87257C4.45548 2.95135 4.09169 3.1458 3.80616 3.43133C3.52063 3.71687 3.32618 4.08066 3.2474 4.4767C3.16862 4.87275 3.20905 5.28326 3.36358 5.65632C3.51811 6.02939 3.7798 6.34825 4.11555 6.57259C4.4513 6.79694 4.84603 6.91668 5.24984 6.91668C5.79132 6.91668 6.31063 6.70157 6.69351 6.31869C7.0764 5.9358 7.2915 5.41649 7.2915 4.87501ZM9.29817 8.08334C9.65677 8.36086 9.9502 8.7136 10.1578 9.11672C10.3654 9.51985 10.4822 9.96357 10.4998 10.4167V11.5833H12.8332V10.4167C12.8332 10.4167 12.8332 8.29918 9.29817 8.08334ZM8.74984 2.83334C8.34832 2.83111 7.95564 2.95115 7.624 3.17751C7.97834 3.67261 8.16887 4.26618 8.16887 4.87501C8.16887 5.48384 7.97834 6.07741 7.624 6.57251C7.95564 6.79887 8.34832 6.91891 8.74984 6.91668C9.29132 6.91668 9.81063 6.70157 10.1935 6.31869C10.5764 5.9358 10.7915 5.41649 10.7915 4.87501C10.7915 4.33353 10.5764 3.81422 10.1935 3.43133C9.81063 3.04845 9.29132 2.83334 8.74984 2.83334Z"
+              fill="#B1B4C3"
+            />
+          </svg>
+          <span class="text-board-inforitems">누구나 참여가능</span>
+        </div>
+        <div class="box-board-inforitems--calendar font-paragraph-md">
+          <svg
+            width="14"
+            height="15"
+            viewBox="0 0 14 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-          <a
-            href="/"
-            aria-label="선택되지 않은 리스트"
-            tabindex="0"
-            onclick="return false;"
-            class="navitem--inactive font-label-md"
-            >함께 해요</a
+            <path
+              d="M1.1665 11.5833C1.1665 12.575 1.92484 13.3333 2.9165 13.3333H11.0832C12.0748 13.3333 12.8332 12.575 12.8332 11.5833V6.91666H1.1665V11.5833ZM11.0832 2.83332H9.9165V2.24999C9.9165 1.89999 9.68317 1.66666 9.33317 1.66666C8.98317 1.66666 8.74984 1.89999 8.74984 2.24999V2.83332H5.24984V2.24999C5.24984 1.89999 5.0165 1.66666 4.6665 1.66666C4.3165 1.66666 4.08317 1.89999 4.08317 2.24999V2.83332H2.9165C1.92484 2.83332 1.1665 3.59166 1.1665 4.58332V5.74999H12.8332V4.58332C12.8332 3.59166 12.0748 2.83332 11.0832 2.83332Z"
+              fill="#B1B4C3"
+            />
+          </svg>
+          <span class="text-board-inforitems">내일, 오후 7:00</span>
+        </div>
+      </div>
+      <p class="font-paragraph-md">응암제 3동 &middot; 9분 전</p>
+      <div class="box-board-personver3">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="var(--contents-secondary-color)"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.91677 6.66667C2.91693 5.8766 3.12133 5.09998 3.51012 4.41219C3.89891 3.7244 4.45889 3.14879 5.13572 2.74122C5.81255 2.33365 6.58324 2.10796 7.37301 2.08605C8.16278 2.06414 8.9448 2.24676 9.64318 2.61618C10.3416 2.98561 10.9326 3.52929 11.3589 4.19447C11.7852 4.85964 12.0324 5.62373 12.0763 6.41258C12.1203 7.20143 11.9596 7.98824 11.6098 8.69668C11.2601 9.40511 10.7331 10.0111 10.0801 10.4558C11.4864 10.9716 12.7061 11.8964 13.5823 13.1113C14.4585 14.3261 14.9511 15.7753 14.9968 17.2725C14.9948 17.4339 14.9306 17.5883 14.8175 17.7035C14.7044 17.8187 14.5511 17.8857 14.3897 17.8905C14.2284 17.8954 14.0714 17.8377 13.9516 17.7295C13.8318 17.6213 13.7584 17.471 13.7468 17.31C13.6971 15.6862 13.0172 14.1456 11.8511 13.0145C10.6849 11.8835 9.12423 11.2509 7.49969 11.2509C5.87514 11.2509 4.31443 11.8835 3.14829 13.0145C1.98215 14.1456 1.30223 15.6862 1.2526 17.31C1.24426 17.4732 1.17233 17.6266 1.05224 17.7374C0.932137 17.8482 0.773418 17.9076 0.61008 17.9028C0.446743 17.898 0.291779 17.8295 0.178387 17.7118C0.0649947 17.5941 0.00219305 17.4367 0.00343608 17.2733C0.0488955 15.776 0.541442 14.3266 1.41767 13.1116C2.29391 11.8966 3.51372 10.9717 4.9201 10.4558C4.30246 10.0355 3.79701 9.47052 3.44783 8.81006C3.09864 8.1496 2.91633 7.41375 2.91677 6.66667ZM7.5001 3.33333C6.61605 3.33333 5.7682 3.68452 5.14308 4.30964C4.51796 4.93477 4.16677 5.78261 4.16677 6.66667C4.16677 7.55072 4.51796 8.39857 5.14308 9.02369C5.7682 9.64881 6.61605 10 7.5001 10C8.38416 10 9.232 9.64881 9.85713 9.02369C10.4822 8.39857 10.8334 7.55072 10.8334 6.66667C10.8334 5.78261 10.4822 4.93477 9.85713 4.30964C9.232 3.68452 8.38416 3.33333 7.5001 3.33333ZM14.4084 6.66667C14.2851 6.66667 14.1651 6.675 14.0468 6.69167C13.9642 6.70646 13.8794 6.70446 13.7976 6.68579C13.7157 6.66712 13.6385 6.63216 13.5705 6.58299C13.5025 6.53382 13.445 6.47146 13.4016 6.39962C13.3582 6.32778 13.3298 6.24793 13.3179 6.16484C13.306 6.08175 13.311 5.99712 13.3326 5.916C13.3541 5.83489 13.3918 5.75894 13.4433 5.69269C13.4948 5.62644 13.5592 5.57126 13.6325 5.53042C13.7058 5.48958 13.7866 5.46393 13.8701 5.455C14.6989 5.33517 15.544 5.49433 16.2725 5.90744C17.0009 6.32054 17.5713 6.96414 17.8939 7.73694C18.2165 8.50974 18.273 9.36787 18.0545 10.1763C17.8359 10.9847 17.3548 11.6975 16.6868 12.2025C17.6688 12.6422 18.5025 13.3567 19.0875 14.2597C19.6725 15.1627 19.9836 16.2157 19.9834 17.2917C19.9834 17.4574 19.9176 17.6164 19.8004 17.7336C19.6832 17.8508 19.5242 17.9167 19.3584 17.9167C19.1927 17.9167 19.0337 17.8508 18.9165 17.7336C18.7993 17.6164 18.7334 17.4574 18.7334 17.2917C18.7333 16.3618 18.4337 15.4567 17.879 14.7104C17.3242 13.9641 16.5438 13.4164 15.6534 13.1483L15.2084 13.015V11.6183L15.5501 11.4442C16.0566 11.1876 16.4618 10.7679 16.7004 10.2527C16.9389 9.73753 16.9969 9.15698 16.865 8.6048C16.733 8.05261 16.4188 7.56101 15.9731 7.20936C15.5274 6.8577 14.9762 6.66652 14.4084 6.66667Z"
+            fill="var(--contents-secondary-color)"
+          />
+        </svg>
+        <span class="text-board-personver3"> 1/3명 </span>
+      </div>
+    </div>
+
+    <div class="together-wrapper-board-boardField">
+      <div class="badge-board-boardField font-label-md">
+        <span class="visually-hidden">📝</span>
+        <span>
+          <p>질의 응답</p>
+        </span>
+      </div>
+      <div class="box-board-boardField">
+        <p class="font-paragraph-lg">text</p>
+        <div class="box-board-inforitems--fullpeople font-paragraph-md">
+          <span class="text-board-inforitems"
+            >아니 디버깅 돌려봤는데도 왜 이...
+          </span>
+        </div>
+        <div class="box-board-inforitems--calendar font-paragraph-md">
+          <span class="text-board-inforitems"
+            >내가 혼자 게임 만들려고 코드 짰는ㄷㅔ 왜...</span
           >
         </div>
       </div>
-    </nav>
+      <p class="font-paragraph-md">
+        남가좌동 &middot; 15분 전 &middot; 조회 12
+      </p>
+    </div>
 
-    <main class="main-main">
-      <div class="main-grid">
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">
-                  디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
-                </p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 1기 수강생 박치열</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">영문과 전공생에서</p>
-                <p class="text-storyfield">UIUX 디자이너로 취업하기까지</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 3기 수강생 김진우</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">나는 프론트일까? 백일까?</p>
-                <p class="text-storyfield">여전히 모르겠다면 물어봐!</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 2기 수강생 최혜수</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">코딩과 디자인의 그 어딘가</p>
-                <p class="text-storyfield">두가지 모두 하고 싶은 욕심쟁이</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 5기 수강생 염진희</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">
-                  디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
-                </p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 1기 수강생 박치열</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">영문과 전공생에서</p>
-                <p class="text-storyfield">UIUX 디자이너로 취업하기까지</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 3기 수강생 김진우</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">나는 프론트일까? 백일까?</p>
-                <p class="text-storyfield">여전히 모르겠다면 물어봐!</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 2기 수강생 최혜수</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">코딩과 디자인의 그 어딘가</p>
-                <p class="text-storyfield">두가지 모두 하고 싶은 욕심쟁이</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 5기 수강생 염진희</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">
-                  디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
-                </p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 1기 수강생 박치열</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">영문과 전공생에서</p>
-                <p class="text-storyfield">UIUX 디자이너로 취업하기까지</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 3기 수강생 김진우</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">나는 프론트일까? 백일까?</p>
-                <p class="text-storyfield">여전히 모르겠다면 물어봐!</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 2기 수강생 최혜수</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">코딩과 디자인의 그 어딘가</p>
-                <p class="text-storyfield">두가지 모두 하고 싶은 욕심쟁이</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 5기 수강생 염진희</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">
-                  디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
-                </p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 1기 수강생 박치열</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">영문과 전공생에서</p>
-                <p class="text-storyfield">UIUX 디자이너로 취업하기까지</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 3기 수강생 김진우</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">나는 프론트일까? 백일까?</p>
-                <p class="text-storyfield">여전히 모르겠다면 물어봐!</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 2기 수강생 최혜수</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">코딩과 디자인의 그 어딘가</p>
-                <p class="text-storyfield">두가지 모두 하고 싶은 욕심쟁이</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 5기 수강생 염진희</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">
-                  디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
-                </p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 1기 수강생 박치열</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">영문과 전공생에서</p>
-                <p class="text-storyfield">UIUX 디자이너로 취업하기까지</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 3기 수강생 김진우</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">나는 프론트일까? 백일까?</p>
-                <p class="text-storyfield">여전히 모르겠다면 물어봐!</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 2기 수강생 최혜수</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">코딩과 디자인의 그 어딘가</p>
-                <p class="text-storyfield">두가지 모두 하고 싶은 욕심쟁이</p>
-              </div>
-              <p class="info-text-storyfield">UIUX | 5기 수강생 염진희</p>
-            </div>
-          </div>
-        </a>
+    <div class="together-wrapper-board-boardField">
+      <div class="badge-board-boardField font-label-md">
+        <span class="visually-hidden">📝</span>
+        <span>
+          <p>자유게시판</p>
+        </span>
       </div>
-    </main>
+      <div class="box-board-boardField">
+        <p class="font-paragraph-lg">text</p>
+        <div class="box-board-inforitems--fullpeople font-paragraph-md">
+          <span class="text-board-inforitems">오늘 점심 뭐먹? 점메추~~~</span>
+        </div>
+        <div class="box-board-inforitems--calendar font-paragraph-md">
+          <span class="text-board-inforitems"
+            >코드 공부하다 연희동 근처에서 밥먹을건데...</span
+          >
+        </div>
+      </div>
+      <p class="font-paragraph-md">연희동 &middot; 49분 전 &middot; 조회 4</p>
+    </div>
+
+    <!-- footer-boardwith -->
 
     <footer class="main-footer">
       <nav class="nav-start-common--list-item">
@@ -570,10 +276,9 @@
           <!-- Icon/active-fullhome -->
           <a
             class="nav-item-box"
-            href="#"
+            href="/"
             aria-label="홈으로 이동"
             tabindex="0"
-            onclick="return false;"
           >
             <svg
               width="14"
@@ -598,10 +303,9 @@
           <!-- Icon/inactive-file -->
           <a
             class="nav-item-box"
-            href="#"
+            href="/"
             aria-label="전체 게시판으로 이동"
             tabindex="0"
-            onclick="return false;"
           >
             <svg
               width="12"
@@ -626,10 +330,9 @@
           <!-- Icon/inactive-map -->
           <a
             class="nav-item-box"
-            href="#"
+            href="/"
             aria-label="우리 동네 게시판으로 이동"
             tabindex="0"
-            onclick="return false;"
           >
             <svg
               width="14"
@@ -654,10 +357,9 @@
           <!-- Icon/inactive-chat -->
           <a
             class="nav-item-box"
-            href="#"
+            href="/"
             aria-label="채팅창으로 이동"
             tabindex="0"
-            onclick="return false;"
           >
             <svg
               width="18"
@@ -682,10 +384,9 @@
           <!-- Icon/inactive-my -->
           <a
             class="nav-item-box"
-            href="#"
+            href="/"
             aria-label="개인 페이지로 이동"
             tabindex="0"
-            onclick="return false;"
           >
             <svg
               width="14"
