@@ -1,13 +1,12 @@
 // 로그인 유효성 검사 및 메인 페이지 이동
-const loginBtn = document.getElementById("loginBtn");
+const loginBtn = document.getElementById('loginBtn');
 
-loginBtn.addEventListener("click", function (e) {
+loginBtn.addEventListener('click', function (e) {
   e.preventDefault(); // 기본 제출 막기
 
-
   // const id = document.getElementById("id");
-  const email = document.getElementById("email");
-  const password = document.getElementById("password");
+  const email = document.getElementById('email');
+  const password = document.getElementById('password');
 
   // 각 필드 유효성 검사 + reportValidity로 경고 및 포커스 처리
   // if (!id.checkValidity()) {
@@ -26,5 +25,5 @@ loginBtn.addEventListener("click", function (e) {
   }
 
   // 모든 조건 충족 → 메인 페이지 이동
-  window.location.href = "./page-main.html";
+  window.location.href = './page-main.html';
 });
