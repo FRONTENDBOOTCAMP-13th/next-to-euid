@@ -9,7 +9,8 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  min-width: 500px;
+  padding: var(--space-28);
+  /* min-width: 500px; */
 
   /* 500px 미만 width값 지정으로 자연스러운 반응형 구현 목적 */
   @media (max-width: 500px) {
