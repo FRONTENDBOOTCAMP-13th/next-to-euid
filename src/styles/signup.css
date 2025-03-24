@@ -1,4 +1,4 @@
-@import '../theme.css';
+@import '/src/theme.css';
 @import '/public/common/a11y.css';
 @import '/public/common/mini-reset.css';
 
