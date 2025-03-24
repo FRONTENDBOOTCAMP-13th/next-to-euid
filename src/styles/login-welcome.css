@@ -197,7 +197,7 @@ header {
   border-radius: var(--space-8);
   padding: var(--space-4);
   color: var(--foundation-background-color);
-  border: .0437rem solid #373f67;
+  border: 0.0437rem solid #373f67;
   text-align: center;
   display: flex;
   align-items: center;
