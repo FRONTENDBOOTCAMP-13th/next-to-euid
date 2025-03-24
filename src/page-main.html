@@ -12,9 +12,8 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
-    <link rel="stylesheet" href="/src/style.css" />
+    <!-- <link rel="stylesheet" href="/src/style.css" /> -->
     <link rel="stylesheet" href="/src/styles/page-main.css" />
-    <!-- <script type="module" src="/src/main.js"></script> -->
   </head>
   <body class="page-main">
     <header class="main-header">
@@ -39,7 +38,9 @@
             <a
               class="button-index-nav dropbtn font-label-lg"
               href="#"
-              onclick="return false;"
+              aria-label="웹 접근성 버튼"
+              onclick="return false;
+              "
               ><svg
                 width="25"
                 height="25"
@@ -168,7 +169,7 @@
         <div class="nav-three-items font-label-md">
           <a
             href="/"
-            aria-label="선택된 리스트"
+            aria-label="선배님 스토리 선택됨"
             tabindex="0"
             onclick="return false;"
             class="navitem--active font-label-md"
@@ -176,7 +177,7 @@
           >
           <a
             href="/"
-            aria-label="선택되지 않은 리스트"
+            aria-label="질의 응답 선택되지 않음"
             tabindex="0"
             onclick="return false;"
             class="navitem--inactive font-label-md"
@@ -184,7 +185,7 @@
           >
           <a
             href="/"
-            aria-label="선택되지 않은 리스트"
+            aria-label="함께 해요 선택되지 않음"
             tabindex="0"
             onclick="return false;"
             class="navitem--inactive font-label-md"
@@ -196,370 +197,706 @@
 
     <main class="main-main">
       <div class="main-grid">
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="박치열 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-박치열.jpg"
+                  alt="박치열님 스토리필드"
+                />
+              </div>
               <div class="title-storyfield">
-                <p class="text-storyfield">
+                <p class="text-storyfield font-paragraph-md">
                   디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
                 </p>
               </div>
-              <p class="info-text-storyfield">UIUX | 1기 수강생 박치열</p>
             </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">영문과 전공생에서</p>
-                <p class="text-storyfield">UIUX 디자이너로 취업하기까지</p>
+          </a>
+          <a
+            href="#"
+            aria-label="박치열님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 1기 수강생 박치열
+            </p>
+          </a>
+        </div>
+
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="김진우 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-김진우.jpg"
+                  alt="김진우님 스토리필드"
+                />
               </div>
-              <p class="info-text-storyfield">UIUX | 3기 수강생 김진우</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
               <div class="title-storyfield">
-                <p class="text-storyfield">나는 프론트일까? 백일까?</p>
-                <p class="text-storyfield">여전히 모르겠다면 물어봐!</p>
+                <p class="text-storyfield font-paragraph-md">
+                  영문과 전공생에서 <br />
+                  UIUX 디자이너로 취업하기까지
+                </p>
               </div>
-              <p class="info-text-storyfield">UIUX | 2기 수강생 최혜수</p>
             </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">코딩과 디자인의 그 어딘가</p>
-                <p class="text-storyfield">두가지 모두 하고 싶은 욕심쟁이</p>
+          </a>
+          <a
+            href="#"
+            aria-label="김진우님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 3기 수강생 김진우
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="최혜수 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-최혜수.jpg"
+                  alt="최혜수님 스토리필드"
+                />
               </div>
-              <p class="info-text-storyfield">UIUX | 5기 수강생 염진희</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
               <div class="title-storyfield">
-                <p class="text-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  나는 프론트일까? 백일까? <br />
+                  여전히 모르겠다면 물어봐!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="최혜수님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 2기 수강생 최혜수
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="염진희 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-염진희.jpg"
+                  alt="염진희님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  코딩과 디자인의 그 어딘가 <br />
+                  두가지 모두 하고 싶은 욕심쟁이
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="염진희님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 5기 수강생 염진희
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="박치열 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-박치열.jpg"
+                  alt="박치열님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
                   디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
                 </p>
               </div>
-              <p class="info-text-storyfield">UIUX | 1기 수강생 박치열</p>
             </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">영문과 전공생에서</p>
-                <p class="text-storyfield">UIUX 디자이너로 취업하기까지</p>
+          </a>
+          <a
+            href="#"
+            aria-label="박치열님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 1기 수강생 박치열
+            </p>
+          </a>
+        </div>
+
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="김진우 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-김진우.jpg"
+                  alt="김진우님 스토리필드"
+                />
               </div>
-              <p class="info-text-storyfield">UIUX | 3기 수강생 김진우</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
               <div class="title-storyfield">
-                <p class="text-storyfield">나는 프론트일까? 백일까?</p>
-                <p class="text-storyfield">여전히 모르겠다면 물어봐!</p>
+                <p class="text-storyfield font-paragraph-md">
+                  영문과 전공생에서 <br />
+                  UIUX 디자이너로 취업하기까지
+                </p>
               </div>
-              <p class="info-text-storyfield">UIUX | 2기 수강생 최혜수</p>
             </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">코딩과 디자인의 그 어딘가</p>
-                <p class="text-storyfield">두가지 모두 하고 싶은 욕심쟁이</p>
+          </a>
+          <a
+            href="#"
+            aria-label="김진우님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 3기 수강생 김진우
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="최혜수 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-최혜수.jpg"
+                  alt="최혜수님 스토리필드"
+                />
               </div>
-              <p class="info-text-storyfield">UIUX | 5기 수강생 염진희</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
               <div class="title-storyfield">
-                <p class="text-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  나는 프론트일까? 백일까? <br />
+                  여전히 모르겠다면 물어봐!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="최혜수님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 2기 수강생 최혜수
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="염진희 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-염진희.jpg"
+                  alt="염진희님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  코딩과 디자인의 그 어딘가 <br />
+                  두가지 모두 하고 싶은 욕심쟁이
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="염진희님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 5기 수강생 염진희
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="박치열 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-박치열.jpg"
+                  alt="박치열님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
                   디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
                 </p>
               </div>
-              <p class="info-text-storyfield">UIUX | 1기 수강생 박치열</p>
             </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">영문과 전공생에서</p>
-                <p class="text-storyfield">UIUX 디자이너로 취업하기까지</p>
+          </a>
+          <a
+            href="#"
+            aria-label="박치열님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 1기 수강생 박치열
+            </p>
+          </a>
+        </div>
+
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="김진우 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-김진우.jpg"
+                  alt="김진우님 스토리필드"
+                />
               </div>
-              <p class="info-text-storyfield">UIUX | 3기 수강생 김진우</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
               <div class="title-storyfield">
-                <p class="text-storyfield">나는 프론트일까? 백일까?</p>
-                <p class="text-storyfield">여전히 모르겠다면 물어봐!</p>
+                <p class="text-storyfield font-paragraph-md">
+                  영문과 전공생에서 <br />
+                  UIUX 디자이너로 취업하기까지
+                </p>
               </div>
-              <p class="info-text-storyfield">UIUX | 2기 수강생 최혜수</p>
             </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">코딩과 디자인의 그 어딘가</p>
-                <p class="text-storyfield">두가지 모두 하고 싶은 욕심쟁이</p>
+          </a>
+          <a
+            href="#"
+            aria-label="김진우님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 3기 수강생 김진우
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="최혜수 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-최혜수.jpg"
+                  alt="최혜수님 스토리필드"
+                />
               </div>
-              <p class="info-text-storyfield">UIUX | 5기 수강생 염진희</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
               <div class="title-storyfield">
-                <p class="text-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  나는 프론트일까? 백일까? <br />
+                  여전히 모르겠다면 물어봐!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="최혜수님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 2기 수강생 최혜수
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="염진희 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-염진희.jpg"
+                  alt="염진희님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  코딩과 디자인의 그 어딘가 <br />
+                  두가지 모두 하고 싶은 욕심쟁이
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="염진희님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 5기 수강생 염진희
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="박치열 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-박치열.jpg"
+                  alt="박치열님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
                   디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
                 </p>
               </div>
-              <p class="info-text-storyfield">UIUX | 1기 수강생 박치열</p>
             </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">영문과 전공생에서</p>
-                <p class="text-storyfield">UIUX 디자이너로 취업하기까지</p>
+          </a>
+          <a
+            href="#"
+            aria-label="박치열님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 1기 수강생 박치열
+            </p>
+          </a>
+        </div>
+
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="김진우 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-김진우.jpg"
+                  alt="김진우님 스토리필드"
+                />
               </div>
-              <p class="info-text-storyfield">UIUX | 3기 수강생 김진우</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
               <div class="title-storyfield">
-                <p class="text-storyfield">나는 프론트일까? 백일까?</p>
-                <p class="text-storyfield">여전히 모르겠다면 물어봐!</p>
+                <p class="text-storyfield font-paragraph-md">
+                  영문과 전공생에서 <br />
+                  UIUX 디자이너로 취업하기까지
+                </p>
               </div>
-              <p class="info-text-storyfield">UIUX | 2기 수강생 최혜수</p>
             </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">코딩과 디자인의 그 어딘가</p>
-                <p class="text-storyfield">두가지 모두 하고 싶은 욕심쟁이</p>
+          </a>
+          <a
+            href="#"
+            aria-label="김진우님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 3기 수강생 김진우
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="최혜수 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-최혜수.jpg"
+                  alt="최혜수님 스토리필드"
+                />
               </div>
-              <p class="info-text-storyfield">UIUX | 5기 수강생 염진희</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
               <div class="title-storyfield">
-                <p class="text-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  나는 프론트일까? 백일까? <br />
+                  여전히 모르겠다면 물어봐!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="최혜수님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 2기 수강생 최혜수
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="염진희 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-염진희.jpg"
+                  alt="염진희님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  코딩과 디자인의 그 어딘가 <br />
+                  두가지 모두 하고 싶은 욕심쟁이
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="염진희님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 5기 수강생 염진희
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="박치열 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-박치열.jpg"
+                  alt="박치열님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
                   디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
                 </p>
               </div>
-              <p class="info-text-storyfield">UIUX | 1기 수강생 박치열</p>
             </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
-              <div class="title-storyfield">
-                <p class="text-storyfield">영문과 전공생에서</p>
-                <p class="text-storyfield">UIUX 디자이너로 취업하기까지</p>
+          </a>
+          <a
+            href="#"
+            aria-label="박치열님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 1기 수강생 박치열
+            </p>
+          </a>
+        </div>
+
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="김진우 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-김진우.jpg"
+                  alt="김진우님 스토리필드"
+                />
               </div>
-              <p class="info-text-storyfield">UIUX | 3기 수강생 김진우</p>
-            </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
               <div class="title-storyfield">
-                <p class="text-storyfield">나는 프론트일까? 백일까?</p>
-                <p class="text-storyfield">여전히 모르겠다면 물어봐!</p>
+                <p class="text-storyfield font-paragraph-md">
+                  영문과 전공생에서 <br />
+                  UIUX 디자이너로 취업하기까지
+                </p>
               </div>
-              <p class="info-text-storyfield">UIUX | 2기 수강생 최혜수</p>
             </div>
-          </div>
-        </a>
-        <a
-          href="#"
-          aria-label="선배님 스토리필드 내용으로 이동"
-          tabindex="0"
-          onclick="return false;"
-          class="anchor-main-list-storyfield"
-        >
-          <div class="main-list-storyfield">
-            <div class="thumbnail-storyfield-rounded-box"></div>
-            <div class="text-wrapper-storyfield font-paragraph-md">
+          </a>
+          <a
+            href="#"
+            aria-label="김진우님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 3기 수강생 김진우
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="최혜수 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-최혜수.jpg"
+                  alt="최혜수님 스토리필드"
+                />
+              </div>
               <div class="title-storyfield">
-                <p class="text-storyfield">코딩과 디자인의 그 어딘가</p>
-                <p class="text-storyfield">두가지 모두 하고 싶은 욕심쟁이</p>
+                <p class="text-storyfield font-paragraph-md">
+                  나는 프론트일까? 백일까? <br />
+                  여전히 모르겠다면 물어봐!
+                </p>
               </div>
-              <p class="info-text-storyfield">UIUX | 5기 수강생 염진희</p>
             </div>
-          </div>
-        </a>
+          </a>
+          <a
+            href="#"
+            aria-label="최혜수님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 2기 수강생 최혜수
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="염진희 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-염진희.jpg"
+                  alt="염진희님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  코딩과 디자인의 그 어딘가 <br />
+                  두가지 모두 하고 싶은 욕심쟁이
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="염진희님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 5기 수강생 염진희
+            </p>
+          </a>
+        </div>
       </div>
     </main>
 
