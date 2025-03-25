@@ -1,84 +1,124 @@
 <!doctype html>
 <html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page-Board-study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/style.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Page-Board-study</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
-  <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/font/pretendardvariable.css" />
-  <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="./styles/page-board-study-search.css" />
+    <!-- <script type="module" src="/src/main.js"></script> -->
+  </head>
 
-  <link rel="stylesheet" href="./styles/page-board-study-search.css" />
-  <!-- <script type="module" src="/src/main.js"></script> -->
-</head>
-
-<body class="page-board-study--search">
-  <!-- Common/back header -->
-  <header class="header-board-common--previous">
-    <!-- Icon/left -->
-    <div class="icon-start-left">
-      <a class="icon-start-left--link" href="/" aria-label="이전 페이지로 이동" tabindex="0">
-        <svg class="page-start-forgot-pw-icon" width="9" height="14" viewBox="0 0 9 14"
-          fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M7.94219 12.8079C8.00026 12.866 8.04632 12.9349 8.07775 13.0108C8.10918 13.0867 8.12535 13.168 8.12535 13.2501C8.12535 13.3322 8.10918 13.4135 8.07775 13.4894C8.04632 13.5653 8.00026 13.6342 7.94219 13.6923C7.88412 13.7504 7.81518 13.7964 7.73931 13.8278C7.66344 13.8593 7.58213 13.8755 7.5 13.8755C7.41788 13.8755 7.33656 13.8593 7.26069 13.8278C7.18482 13.7964 7.11588 13.7504 7.05782 13.6923L0.807816 7.44229C0.749705 7.38425 0.703606 7.31531 0.672154 7.23944C0.640701 7.16357 0.624512 7.08224 0.624512 7.0001C0.624512 6.91797 0.640701 6.83664 0.672154 6.76077C0.703606 6.68489 0.749705 6.61596 0.807816 6.55792L7.05782 0.307916C7.17509 0.19064 7.33415 0.124756 7.5 0.124756C7.66586 0.124756 7.82492 0.19064 7.94219 0.307916C8.05947 0.425191 8.12535 0.584251 8.12535 0.750103C8.12535 0.915956 8.05947 1.07502 7.94219 1.19229L2.1336 7.0001L7.94219 12.8079Z"
-            fill="var(--contents-primary-color)" />
-        </svg>
-      </a>
-    </div>
-  </header>
-  <div class="search-page-main-contents">
-    <!-- Signup/board-page-search--nav-input -->
-    <div class="search-input-start-sign-up-wrapper">
-      <input class="input-start-sign-up input-start-sign-up--active" type="text" name="user-id" id="user-id"
-        placeholder=" " aria-errormessage="error-message-user-id" />
-      <label class="input-start-sign-up-label font-label-lg label-search" for="user-id">이웃과 어떤 활동을 할까요</label>
-    </div>
-
-    <!-- Signup/board-page-search--main-input -->
-    <div class="main-contents-wrapper">
-      <div class="main-contents--activity-wrapper">
-        <p class="activity-title font-label-md">남가좌제2동 근처 인기활동</p>
-        <ul class="activity-section">
-          <li class="activity-item">
-            <!-- Main/button-main-with-hamburger -->
-            <button class="button-board--inactive">
-              <span class="text-button-main--inactive font-paragraph-md">💻 같이 프로젝트해요</span>
-            </button>
-          </li>
-          <li class="activity-item">
-            <!-- Main/button-main-with-hamburger -->
-            <button class="button-board--inactive">
-              <span class="text-button-main--inactive font-paragraph-md">📝 같이 스터디해요</span>
-            </button>
-          </li>
-          <li class="activity-item">
-            <!-- Main/button-main-with-hamburger -->
-            <button class="button-board--inactive">
-              <span class="text-button-main--inactive font-paragraph-md">🍚 같이 밥먹어요</span>
-            </button>
-          </li>
-          <li class="activity-item">
-            <!-- Main/button-main-with-hamburger -->
-            <button class="button-board--inactive">
-              <span class="text-button-main--inactive font-paragraph-md">⌨️ 같이 Lv2알고리즘 풀어요</span>
-            </button>
-          </li>
-          <li class="activity-item">
-            <!-- Main/button-main-with-hamburger -->
-            <button class="button-board--inactive">
-              <span class="text-button-main--inactive font-paragraph-md">🙈 오프라인으로 만나요</span>
-            </button>
-          </li>
-        </ul>
+  <body class="page-board-study--search">
+    <!-- Common/back header -->
+    <header class="header-board-common--previous">
+      <!-- Icon/left -->
+      <div class="icon-start-left">
+        <a
+          class="icon-start-left--link"
+          href="/"
+          aria-label="이전 페이지로 이동"
+          tabindex="0"
+        >
+          <svg
+            class="page-start-forgot-pw-icon"
+            width="9"
+            height="14"
+            viewBox="0 0 9 14"
+            fill="var(--contents-primary-color)"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.94219 12.8079C8.00026 12.866 8.04632 12.9349 8.07775 13.0108C8.10918 13.0867 8.12535 13.168 8.12535 13.2501C8.12535 13.3322 8.10918 13.4135 8.07775 13.4894C8.04632 13.5653 8.00026 13.6342 7.94219 13.6923C7.88412 13.7504 7.81518 13.7964 7.73931 13.8278C7.66344 13.8593 7.58213 13.8755 7.5 13.8755C7.41788 13.8755 7.33656 13.8593 7.26069 13.8278C7.18482 13.7964 7.11588 13.7504 7.05782 13.6923L0.807816 7.44229C0.749705 7.38425 0.703606 7.31531 0.672154 7.23944C0.640701 7.16357 0.624512 7.08224 0.624512 7.0001C0.624512 6.91797 0.640701 6.83664 0.672154 6.76077C0.703606 6.68489 0.749705 6.61596 0.807816 6.55792L7.05782 0.307916C7.17509 0.19064 7.33415 0.124756 7.5 0.124756C7.66586 0.124756 7.82492 0.19064 7.94219 0.307916C8.05947 0.425191 8.12535 0.584251 8.12535 0.750103C8.12535 0.915956 8.05947 1.07502 7.94219 1.19229L2.1336 7.0001L7.94219 12.8079Z"
+              fill="var(--contents-primary-color)"
+            />
+          </svg>
+        </a>
       </div>
+    </header>
+    <div class="search-page-main-contents">
+      <!-- Signup/board-page-search--nav-input -->
+      <div class="search-input-start-sign-up-wrapper">
+        <input
+          class="input-start-sign-up input-start-sign-up--active"
+          type="text"
+          name="user-id"
+          id="user-id"
+          placeholder=" "
+          aria-errormessage="error-message-user-id"
+        />
+        <label
+          class="input-start-sign-up-label font-label-lg label-search"
+          for="user-id"
+          >이웃과 어떤 활동을 할까요</label
+        >
+      </div>
+
+      <!-- Signup/board-page-search--main-input -->
+      <div class="main-contents-wrapper">
+        <div class="main-contents--activity-wrapper">
+          <p class="activity-title font-label-md">남가좌제2동 근처 인기활동</p>
+          <ul class="activity-section">
+            <li class="activity-item">
+              <!-- Main/button-main-with-hamburger -->
+              <button class="button-board--inactive">
+                <span class="text-button-main--inactive font-paragraph-md"
+                  >💻 같이 프로젝트해요</span
+                >
+              </button>
+            </li>
+            <li class="activity-item">
+              <!-- Main/button-main-with-hamburger -->
+              <button class="button-board--inactive">
+                <span class="text-button-main--inactive font-paragraph-md"
+                  >📝 같이 스터디해요</span
+                >
+              </button>
+            </li>
+            <li class="activity-item">
+              <!-- Main/button-main-with-hamburger -->
+              <button class="button-board--inactive">
+                <span class="text-button-main--inactive font-paragraph-md"
+                  >🍚 같이 밥먹어요</span
+                >
+              </button>
+            </li>
+            <li class="activity-item">
+              <!-- Main/button-main-with-hamburger -->
+              <button class="button-board--inactive">
+                <span class="text-button-main--inactive font-paragraph-md"
+                  >⌨️ 같이 Lv2알고리즘 풀어요</span
+                >
+              </button>
+            </li>
+            <li class="activity-item">
+              <!-- Main/button-main-with-hamburger -->
+              <button class="button-board--inactive">
+                <span class="text-button-main--inactive font-paragraph-md"
+                  >🙈 오프라인으로 만나요</span
+                >
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Common/button <a>-->
+      <a
+        href="./page-board-study-write.html"
+        class="button-board-common font-heading-sm"
+        aria-label="다음 단계로 이동"
+        >다음</a
+      >
     </div>
-
-    <!-- Common/button <a>-->
-    <a href="./page-board-study-write.html" class="button-board-common font-heading-sm" aria-label="다음 단계로 이동">다음</a>
-  </div>
-</body>
-
+  </body>
 </html>

@@ -1,128 +1,55 @@
 <!doctype html>
 <html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Start-forgot-pw-Page-</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="./styles/page-start-forgot-pw.css" />
+    <!-- <script type="module" src="/src/main.js"></script> -->
+    <script type="module" src="/src/js/page-start-forgot-pw.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Page-Start-forgot-pw</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
-  <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/font/pretendardvariable.css" />
-  <link rel="stylesheet" href="/src/style.css" />
-  <link rel="stylesheet" href="./styles/page-start-forgot-pw.css" />
-  <!-- <script type="module" src="/src/main.js"></script> -->
-  <script type="module" src="/src/js/page-start-forgot-pw.js"></script>
-</head>
-
-<body class="page-start-forgot-pw--main">
-  <!-- Common/back -->
-  <header class="header-start-common--previous">
-    <!-- Icon/left -->
-    <div class="icon-start-left">
-      <a class="icon-start-left--link" href="/" aria-label="이전 페이지로 이동" tabindex="0">
-        <svg class="page-start-forgot-pw-icon" width="9" height="14" viewBox="0 0 9 14"
-          fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M7.94219 12.8079C8.00026 12.866 8.04632 12.9349 8.07775 13.0108C8.10918 13.0867 8.12535 13.168 8.12535 13.2501C8.12535 13.3322 8.10918 13.4135 8.07775 13.4894C8.04632 13.5653 8.00026 13.6342 7.94219 13.6923C7.88412 13.7504 7.81518 13.7964 7.73931 13.8278C7.66344 13.8593 7.58213 13.8755 7.5 13.8755C7.41788 13.8755 7.33656 13.8593 7.26069 13.8278C7.18482 13.7964 7.11588 13.7504 7.05782 13.6923L0.807816 7.44229C0.749705 7.38425 0.703606 7.31531 0.672154 7.23944C0.640701 7.16357 0.624512 7.08224 0.624512 7.0001C0.624512 6.91797 0.640701 6.83664 0.672154 6.76077C0.703606 6.68489 0.749705 6.61596 0.807816 6.55792L7.05782 0.307916C7.17509 0.19064 7.33415 0.124756 7.5 0.124756C7.66586 0.124756 7.82492 0.19064 7.94219 0.307916C8.05947 0.425191 8.12535 0.584251 8.12535 0.750103C8.12535 0.915956 8.05947 1.07502 7.94219 1.19229L2.1336 7.0001L7.94219 12.8079Z"
-            fill="var(--contents-primary-color)" />
-        </svg>
-      </a>
-    </div>
-  </header>
-  <div class="page-start-forgot-pw--contents">
-    <h1 class="page-forgot-pw--title" aria-label="계정 찾기 페이지">
-      계정 찾기
-    </h1>
-
-    <!-- forgot-pw-page--contents -->
-    <div class="page-forgot-button-wrapper">
-      <!-- Common/button--email -->
-      <button class="button-start-forgot-pw--email font-label-xl show-email-dialog" aria-label="ID로 가입한 email 찾기">
-        email 주소를 잊었어요
-        <div class="icon-start-right">
-          <svg aria-label="클릭하여 email 찾기 화면으로 이동" width="9" height="14" viewBox="0 0 9 14"
-            fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
+  <body class="page-start-forgot-pw--main">
+    <!-- Common/back -->
+    <header class="header-start-common--previous">
+      <!-- Icon/left -->
+      <div class="icon-start-left">
+        <a
+          class="icon-start-left--link"
+          href="/"
+          aria-label="이전 페이지로 이동"
+          tabindex="0"
+        >
+          <svg
+            class="page-start-forgot-pw-icon"
+            width="9"
+            height="14"
+            viewBox="0 0 9 14"
+            fill="var(--contents-primary-color)"
+            xmlns="http://www.w3.org/2000/svg"
+          >
             <path
-              d="M8.19229 7.44217L1.94229 13.6922C1.88422 13.7502 1.81528 13.7963 1.73941 13.8277C1.66354 13.8592 1.58223 13.8753 1.5001 13.8753C1.41798 13.8753 1.33666 13.8592 1.26079 13.8277C1.18492 13.7963 1.11598 13.7502 1.05792 13.6922C0.999847 13.6341 0.953784 13.5652 0.922357 13.4893C0.890931 13.4134 0.874756 13.3321 0.874756 13.25C0.874756 13.1679 0.890931 13.0865 0.922357 13.0107C0.953784 12.9348 0.999847 12.8659 1.05792 12.8078L6.86651 6.99998L1.05792 1.19217C0.94064 1.07489 0.874756 0.915834 0.874756 0.749981C0.874756 0.584129 0.94064 0.425069 1.05792 0.307794C1.17519 0.190518 1.33425 0.124634 1.5001 0.124634C1.66596 0.124634 1.82502 0.190518 1.94229 0.307794L8.19229 6.55779C8.2504 6.61584 8.2965 6.68477 8.32795 6.76064C8.35941 6.83652 8.37559 6.91785 8.37559 6.99998C8.37559 7.08212 8.35941 7.16344 8.32795 7.23932C8.2965 7.31519 8.2504 7.38412 8.19229 7.44217Z"
-              fill="var(--contents-primary-color)" />
+              d="M7.94219 12.8079C8.00026 12.866 8.04632 12.9349 8.07775 13.0108C8.10918 13.0867 8.12535 13.168 8.12535 13.2501C8.12535 13.3322 8.10918 13.4135 8.07775 13.4894C8.04632 13.5653 8.00026 13.6342 7.94219 13.6923C7.88412 13.7504 7.81518 13.7964 7.73931 13.8278C7.66344 13.8593 7.58213 13.8755 7.5 13.8755C7.41788 13.8755 7.33656 13.8593 7.26069 13.8278C7.18482 13.7964 7.11588 13.7504 7.05782 13.6923L0.807816 7.44229C0.749705 7.38425 0.703606 7.31531 0.672154 7.23944C0.640701 7.16357 0.624512 7.08224 0.624512 7.0001C0.624512 6.91797 0.640701 6.83664 0.672154 6.76077C0.703606 6.68489 0.749705 6.61596 0.807816 6.55792L7.05782 0.307916C7.17509 0.19064 7.33415 0.124756 7.5 0.124756C7.66586 0.124756 7.82492 0.19064 7.94219 0.307916C8.05947 0.425191 8.12535 0.584251 8.12535 0.750103C8.12535 0.915956 8.05947 1.07502 7.94219 1.19229L2.1336 7.0001L7.94219 12.8079Z"
+              fill="var(--contents-primary-color)"
+            />
           </svg>
-        </div>
-      </button>
-
-      <!-- Common/button--password -->
-      <button class="button-start-forgot-pw--email font-label-xl show-password-dialog" aria-label="email로 비밀번호 다시 설정하기">
-        비밀번호를 잊었어요
-        <div class="icon-start-right">
-          <svg aria-label="클릭하여 비밀번호 찾기 화면으로 이동" width="9" height="14" viewBox="0 0 9 14"
-            fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M8.19229 7.44217L1.94229 13.6922C1.88422 13.7502 1.81528 13.7963 1.73941 13.8277C1.66354 13.8592 1.58223 13.8753 1.5001 13.8753C1.41798 13.8753 1.33666 13.8592 1.26079 13.8277C1.18492 13.7963 1.11598 13.7502 1.05792 13.6922C0.999847 13.6341 0.953784 13.5652 0.922357 13.4893C0.890931 13.4134 0.874756 13.3321 0.874756 13.25C0.874756 13.1679 0.890931 13.0865 0.922357 13.0107C0.953784 12.9348 0.999847 12.8659 1.05792 12.8078L6.86651 6.99998L1.05792 1.19217C0.94064 1.07489 0.874756 0.915834 0.874756 0.749981C0.874756 0.584129 0.94064 0.425069 1.05792 0.307794C1.17519 0.190518 1.33425 0.124634 1.5001 0.124634C1.66596 0.124634 1.82502 0.190518 1.94229 0.307794L8.19229 6.55779C8.2504 6.61584 8.2965 6.68477 8.32795 6.76064C8.35941 6.83652 8.37559 6.91785 8.37559 6.99998C8.37559 7.08212 8.35941 7.16344 8.32795 7.23932C8.2965 7.31519 8.2504 7.38412 8.19229 7.44217Z"
-              fill="var(--contents-primary-color)" />
-          </svg>
-        </div>
-      </button>
-    </div>
-
-    <!-- fogot-pw-page--modal-page -->
-    <!-- 이메일 찾기용 다이얼로그 -->
-    <dialog class="panel-dialog email-dialog" aria-labelledby="email-event">
-      <div class="dialog-text-wrapper">
-        <h2 id="email-event" class="dialog--title">이메일 찾기</h2>
-      </div>
-      <div class="dialog-content-wrapper content-wrapper-email">
-        <p class="dialog--text font-paragragh-sm">
-          가입 시 설정한 ID를 입력하여 이메일 주소를 확인할 수 있습니다.
-        </p>
-        <!-- Signup/modal-page--active-ID -->
-        <div class="dialog-input-start-sign-up-wrapper">
-          <input class="input-start-sign-up input-start-sign-up--active" type="text" name="user-id" id="user-id"
-            placeholder=" " aria-errormessage="error-message-user-id" />
-          <label class="input-start-sign-up-label font-paragraph-lg label-active" for="user-id">가입 시 설정한 ID을
-            입력해주세요</label>
-          <p class="input-sign-up--error-message font-paragraph-xs" id="error-message-user-id" aria-live="polite">
-            <span>아이디를 입력해주세요</span>
-          </p>
-        </div>
-      </div>
-
-      <div class="dialog-btn-wrapper">
-        <button class="close-dialog dialog-button-start-common font-label-lg" type="button" aria-label="취소, 전 단계로 이동">
-          취소
-        </button>
-
-        <!-- choice-btn-save -->
-        <a class="dialog-choice-btn-save" href="./page-start-forgot-pw-email.html" aria-label="확인, 다음 단계로 이동"
-          onclick="showNewModal(event); return false;" tabindex="0">
-          <span class="btn-contents-wrapper">
-            <p class="choice-btn-save-text font-label-lg">확인</p>
-          </span>
         </a>
       </div>
-    </dialog>
+    </header>
+    <div class="page-start-forgot-pw--contents">
+      <h1 class="page-forgot-pw--title" aria-label="계정 찾기 페이지">
+        계정 찾기
+      </h1>
 
-<<<<<<< HEAD
-    <!-- 비밀번호 찾기용 다이얼로그 -->
-    <dialog class="panel-dialog password-dialog" aria-labelledby="password-event">
-      <div class="dialog-text-wrapper">
-        <h2 id="password-event" class="dialog--title">비밀번호 재설정</h2>
-      </div>
-
-      <div class="dialog-content-wrapper">
-        <p class="dialog--text font-paragragh-sm">
-          비밀번호를 재설정하기 위한 페이지입니다.<br />
-          가입된 이메일 주소로 인증번호를 발송해 드립니다.
-        </p>
-
-        <!-- Signup/modal-page--active-PW -->
-        <div class="dialog-input-start-sign-up-wrapper">
-          <input class="input-start-sign-up input-start-sign-up--active sign-up-pw" type="email" name="user-email"
-            id="user-email" placeholder=" " aria-errormessage="error-message-confirm-number" />
-          <label class="input-start-sign-up-label font-paragraph-lg label-active" for="user-email">가입 시 사용한 이메일 주소를
-            입력해주세요</label>
-          <p class="input-sign-up--error-message font-paragraph-xs" id="error-message-user-email" aria-live="polite">
-            <span>알맞는 이메일 주소를 입력해주세요</span>
-          </p>
-=======
       <!-- forgot-pw-page--contents -->
       <div class="page-forgot-button-wrapper">
         <!-- Common/button--email -->
@@ -205,35 +132,26 @@
               <span>아이디를 입력해주세요</span>
             </p>
           </div>
->>>>>>> develop
         </div>
-      </div>
+      </dialog>
+    </div>
+    <div class="dialog-btn-wrapper">
+      <button
+        class="close-dialog dialog-button-start-common font-label-lg"
+        type="button"
+        aria-label="취소, 전 단계로 이동"
+      >
+        취소
+      </button>
       <div class="dialog-btn-wrapper">
-        <button class="close-dialog dialog-button-start-common font-label-lg" type="button" aria-label="취소, 전 단계로 이동">
+        <button
+          class="close-dialog dialog-button-login-common font-label-lg"
+          type="button"
+          aria-label="취소, 전 단계로 이동"
+        >
           취소
         </button>
-
-<<<<<<< HEAD
-        <!-- choice-btn-save -->
-        <a class="dialog-choice-btn-save" href="/src/page-start-forgot-pw-number.html" aria-label="확인, 다음 단계로 이동"
-          tabindex="0">
-          <span class="btn-contents-wrapper">
-            <p class="choice-btn-save-text font-label-lg">확인</p>
-          </span>
-        </a>
       </div>
-    </dialog>
-  </div>
-</body>
-=======
-        <div class="dialog-btn-wrapper">
-          <button
-            class="close-dialog dialog-button-login-common font-label-lg"
-            type="button"
-            aria-label="취소, 전 단계로 이동"
-          >
-            취소
-          </button>
->>>>>>> develop
-
+    </div>
+  </body>
 </html>

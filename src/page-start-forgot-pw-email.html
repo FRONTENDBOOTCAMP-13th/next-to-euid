@@ -1,37 +1,8 @@
 <!doctype html>
 <html lang="ko-KR">
-<<<<<<< HEAD
-
-<head>
-  <meta charset="UTF-8" />
-  <title>Page-Start-forgot-pw-email</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" href="./src/asset/favicon/tripple-oil.svg" />
-  <link rel="preload" as="font" href="/font/woff2/PretendardVariable.woff2" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/font/pretendardvariable.css" />
-  <link rel="stylesheet" href="./src/style.css" />
-  <link rel="stylesheet" href="./styles/page-start-forgot-pw.css" />
-  <link rel="stylesheet" href="./styles/page-start-forgot-pw-email.css" />
-  <!-- <script type="module" src="./src/main.js"></script> -->
-</head>
-
-<body class="page-start-forgot-pw--main">
-  <!-- Common/back -->
-  <header class="header-start-common--previous">
-    <!-- Icon/left -->
-    <div class="icon-start-left">
-      <a class="icon-start-left--link" href="javascript:history.back()" aria-label="이전 페이지로 이동" tabindex="0">
-        <svg class="page-start-forgot-pw-icon" width="9" height="14" viewBox="0 0 9 14"
-          fill="var(--contents-primary-color)" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M7.94219 12.8079C8.00026 12.866 8.04632 12.9349 8.07775 13.0108C8.10918 13.0867 8.12535 13.168 8.12535 13.2501C8.12535 13.3322 8.10918 13.4135 8.07775 13.4894C8.04632 13.5653 8.00026 13.6342 7.94219 13.6923C7.88412 13.7504 7.81518 13.7964 7.73931 13.8278C7.66344 13.8593 7.58213 13.8755 7.5 13.8755C7.41788 13.8755 7.33656 13.8593 7.26069 13.8278C7.18482 13.7964 7.11588 13.7504 7.05782 13.6923L0.807816 7.44229C0.749705 7.38425 0.703606 7.31531 0.672154 7.23944C0.640701 7.16357 0.624512 7.08224 0.624512 7.0001C0.624512 6.91797 0.640701 6.83664 0.672154 6.76077C0.703606 6.68489 0.749705 6.61596 0.807816 6.55792L7.05782 0.307916C7.17509 0.19064 7.33415 0.124756 7.5 0.124756C7.66586 0.124756 7.82492 0.19064 7.94219 0.307916C8.05947 0.425191 8.12535 0.584251 8.12535 0.750103C8.12535 0.915956 8.05947 1.07502 7.94219 1.19229L2.1336 7.0001L7.94219 12.8079Z"
-            fill="var(--contents-primary-color)" />
-        </svg>
-      </a>
-=======
   <head>
     <meta charset="UTF-8" />
-    <title>Page-Start-forgot-pw-email</title>
+    <title>Start-forgot-pw-email-Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./src/asset/favicon/tripple-oil.svg" />
     <link
@@ -40,12 +11,13 @@
       href="/font/woff2/PretendardVariable.woff2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="stylesheet" href="./styles/page-start-forgot-pw.css" />
     <link rel="stylesheet" href="./styles/page-start-forgot-pw-email.css" />
     <!-- <script type="module" src="./src/main.js"></script> -->
   </head>
+
   <body class="page-start-forgot-pw--main">
     <!-- Common/back -->
     <header class="header-start-common--previous">
@@ -78,8 +50,9 @@
         계정 찾기
       </h1>
       <div class="forgot-pw-email--contents-wrapper">
-        <p class="pw-email-text font-paragraph-2xl"
-        aria-label="사용하신 아아디 정보"
+        <p
+          class="pw-email-text font-paragraph-2xl"
+          aria-label="사용하신 아아디 정보"
         >
           사용자님께서 가입하실 때 사용하신 아이디는 ab***123 입니다
         </p>
@@ -102,29 +75,34 @@
           </span>
         </a>
       </div>
->>>>>>> develop
     </div>
-  </header>
-  <div class="page-start-forgot-pw--contents">
-    <h1 class="page-forgot-pw--title" aria-label="계정 찾기 페이지">
-      계정 찾기
-    </h1>
-    <div class="forgot-pw-email--contents-wrapper">
-      <p class="pw-email-text font-paragraph-2xl">
-        사용자님께서 가입하실 때 사용한 이메일 주소는 ab***123@naver.com입니다
-      </p>
+    <div class="page-start-forgot-pw--contents">
+      <h1 class="page-forgot-pw--title" aria-label="계정 찾기 페이지">
+        계정 찾기
+      </h1>
+      <div class="forgot-pw-email--contents-wrapper">
+        <p class="pw-email-text font-paragraph-2xl">
+          사용자님께서 가입하실 때 사용한 이메일 주소는 ab***123@naver.com입니다
+        </p>
 
-      <!-- choice-btn-save -->
-      <a class="dialog-choice-btn-save" href="./page-start-forgot-pw-number.html" aria-label="확인, 다음 단계로 이동"
-        onclick="showNewModal(event); return false;" tabindex="0">
-        <div class="btn-contents-wrapper">
-          <p class="choice-btn-save-text font-label-lg" aria-label="다음 단계로 이동">
-            다음 단계
-          </p>
-        </div>
-      </a>
+        <!-- choice-btn-save -->
+        <a
+          class="dialog-choice-btn-save"
+          href="./page-start-forgot-pw-number.html"
+          aria-label="확인, 다음 단계로 이동"
+          onclick="showNewModal(event); return false;"
+          tabindex="0"
+        >
+          <div class="btn-contents-wrapper">
+            <p
+              class="choice-btn-save-text font-label-lg"
+              aria-label="다음 단계로 이동"
+            >
+              다음 단계
+            </p>
+          </div>
+        </a>
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
