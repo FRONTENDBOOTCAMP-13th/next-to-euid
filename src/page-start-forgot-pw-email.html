@@ -11,12 +11,13 @@
       href="/font/woff2/PretendardVariable.woff2"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" />
     <link rel="stylesheet" href="./src/style.css" />
     <link rel="stylesheet" href="./styles/page-start-forgot-pw.css" />
     <link rel="stylesheet" href="./styles/page-start-forgot-pw-email.css" />
     <!-- <script type="module" src="./src/main.js"></script> -->
   </head>
+
   <body class="page-start-forgot-pw--main">
     <!-- Common/back -->
     <header class="header-start-common--previous">
@@ -72,6 +73,34 @@
               로그인하기
             </p>
           </span>
+        </a>
+      </div>
+    </div>
+    <div class="page-start-forgot-pw--contents">
+      <h1 class="page-forgot-pw--title" aria-label="계정 찾기 페이지">
+        계정 찾기
+      </h1>
+      <div class="forgot-pw-email--contents-wrapper">
+        <p class="pw-email-text font-paragraph-2xl">
+          사용자님께서 가입하실 때 사용한 이메일 주소는 ab***123@naver.com입니다
+        </p>
+
+        <!-- choice-btn-save -->
+        <a
+          class="dialog-choice-btn-save"
+          href="./page-start-forgot-pw-number.html"
+          aria-label="확인, 다음 단계로 이동"
+          onclick="showNewModal(event); return false;"
+          tabindex="0"
+        >
+          <div class="btn-contents-wrapper">
+            <p
+              class="choice-btn-save-text font-label-lg"
+              aria-label="다음 단계로 이동"
+            >
+              다음 단계
+            </p>
+          </div>
         </a>
       </div>
     </div>
