@@ -167,17 +167,23 @@
             </div>
             <!-- 아이디, 비밀번호 찾기 -->
             <div class="box-start-findidpw">
-              <a href="/src/page-start-forgot-pw.html" aria-label="아이디 찾기">
-                <span>아이디 찾기</span>
-              </a>
-              <span class="text-start-verticalbar">|</span>
-              <a
-                class="text-start-deletecash"
-                href="/src/page-start-forgot-pw.html"
-                aria-label="비밀번호 찾기"
+              <!-- Common/button--email -->
+              <button
+                class="button-login-forgot-pw--email show-email-dialog"
+                aria-label="email로 가입한 ID 찾기"
               >
-                <span>비밀번호 찾기</span>
-              </a>
+                아이디 찾기
+              </button>
+
+              <span class="text-start-verticalbar">|</span>
+
+              <!-- Common/button--password -->
+              <button
+                class="button-login-forgot-pw--email show-password-dialog"
+                aria-label="email로 비밀번호 다시 설정하기"
+              >
+                비밀번호 찾기
+              </button>
             </div>
           </div>
           <!-- 로그인 버튼 -->
