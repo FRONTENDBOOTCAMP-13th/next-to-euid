@@ -23,6 +23,12 @@
   display: contents;
 }
 
+.pw-number-text {
+  color: var(--contents-secondary-color);
+  margin: var(--spacing-md) var(--spacing-2xl);
+  text-align: center;
+}
+
 /* 인증창 wrapper */
 .dialog-input-start-sign-up-wrapper {
   align-items: center;
@@ -75,8 +81,7 @@
 
 .forgot--error-message {
   position: absolute;
-  left: 2rem;
-  top: 140%;
+  top: 125%;
   transform: translateY(-50%);
   color: var(--foundation-negative-color);
   transition: all 0.2s ease-out;
@@ -95,6 +100,8 @@
   justify-content: space-between;
   align-items: start;
   padding-inline: var(--spacing-2xl);
+  margin-top: var(--spacing-3xl);
+  gap: var(--spacing-xl);
 }
 
 /* 버튼 공통 스타일 */
@@ -106,7 +113,7 @@
 /* 취소 버튼 텍스트 스타일 */
 .choice-btn-save-text--cancel {
   align-items: center;
-  background-color: var(--foundation-primary-color);
+  background-color: var(--contents-tertiary-color);
   border: 0.0625rem solid var(--contents-secondary-color);
   border-radius: var(--spacing-sm);
   color: var(--foundation-background-color);
@@ -124,7 +131,7 @@
   background: var(--foundation-tertiary-color);
   border: 0.0625rem solid var(--contents-secondary-color);
   border-radius: var(--spacing-sm);
-  color: var(--contents-primary-color);
+  color: var(--foundation-background-color);
   height: var(--spacing-2xl);
   display: flex;
   justify-content: center;
