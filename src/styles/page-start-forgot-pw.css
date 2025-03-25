@@ -96,11 +96,17 @@
 
 /* forgot-pw-page--modal-page dialog 전체 세팅 */
 .panel-dialog {
-  background-color: var(--foundation-background-color);
-  border-color: var(--foundation-secondary-color);
-  border-radius: var(--spacing-sm);
-  height: 95%;
-  width: 80%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--contents-primary-color);
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
 }
 
 /* dialog가 열려 있을 때만 적용할 스타일 */
@@ -111,6 +117,15 @@
 }
 
 .dialog-text-wrapper {
+
+  background-color: var(--foundation-background-color);
+  padding: 2rem 1.5rem;
+  border-radius: 0.625rem;
+  width: 90%;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+
   margin: var(--spacing-md);
   text-align: center;
 }

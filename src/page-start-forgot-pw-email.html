@@ -24,8 +24,8 @@
       <div class="icon-start-left">
         <a
           class="icon-start-left--link"
-          href="javascript:history.back()"
-          aria-label="이전 페이지로 이동"
+          href="/src/login.html"
+          aria-label="로그인 페이지로 이동"
           tabindex="0"
         >
           <svg
@@ -45,18 +45,20 @@
       </div>
     </header>
     <div class="page-start-forgot-pw--contents">
-      <h1 class="page-forgot-pw--title" aria-label="계정 찾기 페이지">
+      <h1 class="page-login-forgot-pw--title" aria-label="계정 찾기 페이지">
         계정 찾기
       </h1>
       <div class="forgot-pw-email--contents-wrapper">
-        <p class="pw-email-text font-paragraph-2xl">
-          사용자님께서 가입하실 때 사용한 이메일 주소는 ab***123@naver.com입니다
+        <p class="pw-email-text font-paragraph-2xl"
+        aria-label="사용하신 아아디 정보"
+        >
+          사용자님께서 가입하실 때 사용하신 아이디는 ab***123 입니다
         </p>
 
         <!-- choice-btn-save -->
         <a
           class="dialog-choice-btn-save"
-          href="./page-start-forgot-pw-number.html"
+          href="/src/login.html"
           aria-label="확인, 다음 단계로 이동"
           onclick="showNewModal(event); return false;"
           tabindex="0"
@@ -64,9 +66,9 @@
           <span class="btn-contents-wrapper">
             <p
               class="choice-btn-save-text font-label-lg"
-              aria-label="다음 단계로 이동"
+              aria-label="로그인 페이지로 이동"
             >
-              다음 단계
+              로그인하기
             </p>
           </span>
         </a>
