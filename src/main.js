@@ -44,6 +44,3 @@ document.addEventListener('DOMContentLoaded', () => {
     button.classList.add('visible');
   }, 600);
 });
-
-
-
