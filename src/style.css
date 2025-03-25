@@ -38,12 +38,15 @@ h1 {
       animation-play-state: running;
     }
   }
-/* 
+  /* 
   .group-page-nav {
     background-color: var(--foundation-background-color);
     color: var(--contents-primary-color);
   } */
 
+  .group-page-nav {
+    background-color: var(--contents-tertiary-color);
+  }
 
   .text-index-name {
     /* height: 62.5rem; */
@@ -206,10 +209,9 @@ h1 {
   /* height: 31.25rem; */
   display: grid;
   grid-template-rows: auto 1fr;
-min-height: auto;
+  min-height: auto;
   align-items: center;
 }
-
 
 /* 768px 이하일 때 적용되는 스타일 */
 @media (max-width: 768px) {
@@ -218,7 +220,7 @@ min-height: auto;
     display: flex; /* 그리드 대신 플렉스 사용 */
     flex-direction: column; /* 세로 방향으로 배치 */
   }
-  
+
   .profile-grid {
     width: 100%;
     display: flex;
@@ -226,14 +228,14 @@ min-height: auto;
     gap: 2rem; /* 카드 사이 간격 */
     align-items: center; /* 중앙 정렬 */
   }
-  
+
   .profile-card {
     width: 90%; /* 카드 너비 조정 */
     height: auto; /* 카드 높이를 내용에 맞게 자동 조정 */
     min-height: 23.75rem; /* 최소 높이 설정 */
     margin-bottom: 1rem;
   }
-  
+
   /* 내용이 넘칠 경우 스크롤 방지 */
   .task-list {
     overflow: visible;
@@ -244,8 +246,8 @@ min-height: auto;
 .title-wrapper {
   display: flex;
   flex-direction: row;
-align-items: center;
-gap: var(--spacing-sm);
+  align-items: center;
+  gap: var(--spacing-sm);
 }
 
 .task-title {
@@ -512,9 +514,9 @@ nav .button-index-nav {
   /* max-width: 518px; */
   margin: 0 auto;
 
-  h2 {
+  /* h2 {
     background: var(--foundation-tertiary-color);
-  }
+  } */
 }
 
 /* 스크럼 과정 공유 */
@@ -676,8 +678,7 @@ nav .button-index-nav {
 
 /* 테이블 스타일 */
 .table-wrapper {
-
- padding-inline: var(--space-52); 
+  padding-inline: var(--space-52);
   /* overflow-x: auto; */
   /* 가로 스크롤 적용 */
 }

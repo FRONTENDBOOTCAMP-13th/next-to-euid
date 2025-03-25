@@ -1,6 +1,6 @@
-@import "/src/theme.css";
-@import "/public/common/a11y.css";
-@import "/public/common/mini-reset.css";
+@import '/src/theme.css';
+@import '/public/common/a11y.css';
+@import '/public/common/mini-reset.css';
 
 /* 기본 스타일 */
 body {
@@ -164,7 +164,7 @@ input:invalid + .error-message {
     border-radius: var(--space-4);
 
     /* 자동 로그인 input 체크박스 하단 border 제거 */
-    &[type="checkbox"] {
+    &[type='checkbox'] {
       border-bottom: none;
     }
   }
@@ -316,7 +316,6 @@ cite {
   justify-content: left;
   display: none;
 }
-
 
 /* fogot-pw-page--modal-page */
 .login-panel-dialog {
