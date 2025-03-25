@@ -75,6 +75,82 @@
           </p>
         </a>
       </div>
+<<<<<<< HEAD
+=======
+    </header>
+
+    <div class="page-start-forgot-pw--contents">
+      <h1 class="page-login-forgot-pw--title" aria-label="비밀번호 찾기 페이지">
+        비밀번호 찾기
+      </h1>
+
+      <div class="page-forgot-pw--contents">
+        <div class="forgot-pw-email--contents-wrapper">
+          <p class="pw-number-text font-paragragh-sm">
+            비밀번호를 재설정하기 위한 페이지입니다.<br />
+            가입된 이메일 주소로 인증번호를 발송해드립니다.
+          </p>
+
+          <!-- Signup/modal-page--active-PW -->
+          <div class="dialog-input-start-sign-up-wrapper">
+            <input
+              class="input-start-sign-up-pw input-start-sign-up--active sign-up-pw"
+              type="text"
+              name="confirm-number"
+              id="confirm-number"
+              pattern="^\d{1,6}$"
+              maxlength="6"
+              placeholder=" "
+              aria-errormessage="error-message-confirm-number"
+            />
+            <label class="label-forgot font-paragraph-lg" for="confirm-number"
+              >메일 주소로 전송된 인증 번호를 입력해주세요</label
+            >
+            <p
+              class="forgot--error-message font-paragraph-xs"
+              id="error-message-confirm-number"
+              aria-live="polite"
+              aria-label="6자리 이하의 숫자를 입력해주세요"
+            >
+              6자리 이하의 숫자를 입력해주세요
+            </p>
+          </div>
+
+          <div class="dialog-info-wrapper">
+            <p class="font-paragraph-sm">혹시 인증 메일을 못 받으셨나요?</p>
+            <button class="dialog-info-btn" aria-label="인증 메일 다시 전송">
+              인증 메일 다시 전송하기
+            </button>
+          </div>
+        </div>
+        <div class="btn-contents-wrapper dialog-btn-wrapper--number">
+          <!-- choice-btn-save--cancel-forgot-main -->
+          <a
+            class="dialog-choice-btn-save--cancel"
+            href="/src/login.html"
+            aria-label="취소, 로그인 페이지로 이동"
+            tabindex="0"
+          >
+            <p class="choice-btn-save-text--cancel font-label-lg">취소</p>
+          </a>
+
+          <!-- choice-btn-save--next-step -->
+          <a
+            class="dialog-choice-btn-save--next"
+            href="#"
+            aria-label="확인, 다음 단계로 이동"
+            tabindex="0"
+          >
+            <p
+              class="choice-btn-save-text font-label-lg"
+              aria-label="다음 단계로 이동, 비밀번호 수정하기"
+            >
+              다음 단계
+            </p>
+          </a>
+        </div>
+      </div>
+>>>>>>> develop
     </div>
   </div>
 </body>

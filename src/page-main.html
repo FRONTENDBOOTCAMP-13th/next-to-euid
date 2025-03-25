@@ -1,5 +1,156 @@
 <!doctype html>
 <html lang="ko-KR">
+<<<<<<< HEAD
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page-Main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <!-- <link rel="stylesheet" href="/src/style.css" /> -->
+    <link rel="stylesheet" href="/src/styles/page-main.css" />
+  </head>
+  <body class="page-main">
+    <header class="main-header">
+      <div class="header-main--region-items">
+        <div class="items-region">
+          <label id="region-label" for="items-region" class="visually-hidden"
+            >지역을 선택하세요:</label
+          >
+          <select
+            id="items-region"
+            name="items-region"
+            class="region-wrapper font-label-lg"
+          >
+            <option class="region-name font-label-lg">남가좌제2동</option>
+            <option class="region-name font-label-lg">남가좌제1동</option>
+            <option class="region-name font-label-lg">홍제동</option>
+          </select>
+        </div>
+        <div class="icon-wrapper-main-region">
+          <div class="dropdown">
+            <!-- 컴포넌트 all in one 페이지 합치고 링크 기재 예정 -->
+            <a
+              class="button-index-nav dropbtn font-label-lg"
+              href="#"
+              aria-label="웹 접근성 버튼"
+              onclick="return false;
+              "
+              ><svg
+                width="25"
+                height="25"
+                viewBox="0 0 17 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.97219 4.00634C7.33192 4.24671 7.75485 4.375 8.1875 4.375C8.76747 4.37438 9.32351 4.14371 9.73361 3.73361C10.1437 3.32351 10.3744 2.76747 10.375 2.1875C10.375 1.75485 10.2467 1.33192 10.0063 0.972191C9.76597 0.612459 9.42433 0.332081 9.02462 0.166515C8.62491 0.000947831 8.18507 -0.042372 7.76074 0.0420332C7.33641 0.126438 6.94663 0.334778 6.64071 0.640705C6.33478 0.946632 6.12644 1.33641 6.04203 1.76074C5.95763 2.18507 6.00095 2.62491 6.16651 3.02462C6.33208 3.42433 6.61246 3.76598 6.97219 4.00634Z"
+                  fill="var(--contents-primary-color)"
+                />
+                <path
+                  d="M14.982 4.41088L14.9996 4.40619C15.7418 4.21127 16.2492 4.96635 16.2492 5.65502C16.2492 6.34369 15.6242 6.66791 14.9992 6.90229C14.9785 6.91012 14.9574 6.9169 14.9359 6.9226L11.4484 8.14174C11 8.3101 10.8078 8.4851 10.7656 8.56323L10.7639 8.56665L10.7625 8.56909C10.718 8.64838 10.5863 8.98666 10.75 10.0105L10.9762 11.7683L12.2508 18.5937C12.2625 18.6453 12.2723 18.6984 12.2805 18.7523C12.3734 19.3851 11.9102 19.9999 11.0305 19.9999C10.2648 19.9999 9.92695 19.4714 9.78047 18.7523C9.78047 18.7523 8.65391 12.5972 8.10703 12.5972C7.56016 12.5972 6.46641 18.7523 6.46641 18.7523C6.31992 19.4714 5.98203 19.9999 5.21641 19.9999C4.33906 19.9999 3.87578 19.3878 3.96641 18.757L3.97539 18.7074C3.97852 18.6878 3.98203 18.6687 3.98594 18.6499L5.24336 11.7675L5.46992 10.0097C5.51562 9.72377 5.64453 8.90463 5.4832 8.49096C5.43359 8.36205 5.33203 8.21323 4.95195 8.06752L1.23242 6.9058V6.89487C0.613281 6.66166 0 6.33666 0 5.65424C0 4.96518 0.507813 4.21127 1.25 4.40659C1.356 4.43421 1.46033 4.46786 1.5625 4.50737C2.58906 4.79916 5.79805 5.65854 8.10781 5.65854C10.5934 5.65854 14.1215 4.66401 14.8484 4.45073C14.8875 4.43862 14.9266 4.4269 14.9656 4.41596L14.982 4.41088Z"
+                  fill="var(--contents-primary-color)"
+                />
+              </svg>
+            </a>
+            <ul class="dropdown-content">
+              <li>
+                <a href="/src/component-start.html" onclick="return false;"
+                  >라이트/다크 모드</a
+                >
+              </li>
+              <li>
+                <a href="/src/component-board.html" onclick="return false;"
+                  >큰 글 모드</a
+                >
+              </li>
+              <li>
+                <a href="/src/component-main.html" onclick="return false;"
+                  >돋보기</a
+                >
+              </li>
+            </ul>
+          </div>
+          <a
+            href="#"
+            aria-label="검색창으로 이동"
+            tabindex="0"
+            onclick="return false;"
+          >
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.2272 3.25C9.64948 3.25 8.10717 3.71786 6.79532 4.59441C5.48347 5.47095 4.46101 6.71683 3.85723 8.17447C3.25346 9.63212 3.09548 11.2361 3.40328 12.7835C3.71109 14.3309 4.47084 15.7523 5.58648 16.868C6.70211 17.9836 8.12352 18.7434 9.67095 19.0512C11.2184 19.359 12.8223 19.201 14.28 18.5972C15.7376 17.9934 16.9835 16.971 17.8601 15.6591C18.7366 14.3473 19.2045 12.805 19.2045 11.2272C19.2043 9.11158 18.3638 7.08262 16.8678 5.58662C15.3718 4.09063 13.3429 3.25013 11.2272 3.25Z"
+                stroke="var(--contents-primary-color)"
+                stroke-width="1.25"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M17.1787 17.1788L22.7499 22.75"
+                stroke="var(--contents-primary-color)"
+                stroke-width="1.25"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            aria-label="메뉴창으로 이동"
+            tabindex="0"
+            onclick="return false;"
+          >
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 20 20"
+              fill="var(--contents-primary-color)"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.16675 14.1667H15.8334M4.16675 10H15.8334M4.16675 5.83334H15.8334"
+                stroke="var(--contents-primary-color)"
+                stroke-width="1.16667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a
+            href="#"
+            aria-label="알림창으로 이동"
+            tabindex="0"
+            onclick="return false;"
+          >
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 20 20"
+              fill="var(--contents-primary-color)"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.3282 13.7453C16.8946 12.9984 16.2501 10.8852 16.2501 8.125C16.2501 6.4674 15.5916 4.87769 14.4195 3.70558C13.2474 2.53348 11.6577 1.875 10.0001 1.875C8.34247 1.875 6.75276 2.53348 5.58065 3.70558C4.40855 4.87769 3.75007 6.4674 3.75007 8.125C3.75007 10.8859 3.10476 12.9984 2.67116 13.7453C2.56044 13.9352 2.50174 14.1509 2.50098 14.3707C2.50023 14.5905 2.55745 14.8066 2.66687 14.9973C2.77629 15.1879 2.93404 15.3463 3.12422 15.4565C3.31439 15.5667 3.53027 15.6248 3.75007 15.625H6.93835C7.08255 16.3306 7.46603 16.9647 8.02392 17.4201C8.58182 17.8756 9.2799 18.1243 10.0001 18.1243C10.7202 18.1243 11.4183 17.8756 11.9762 17.4201C12.5341 16.9647 12.9176 16.3306 13.0618 15.625H16.2501C16.4698 15.6247 16.6856 15.5665 16.8757 15.4562C17.0657 15.346 17.2234 15.1875 17.3327 14.9969C17.442 14.8063 17.4992 14.5903 17.4984 14.3705C17.4976 14.1508 17.4389 13.9351 17.3282 13.7453ZM10.0001 16.875C9.61243 16.8749 9.23435 16.7546 8.91788 16.5308C8.60141 16.3069 8.3621 15.9905 8.23288 15.625H11.7673C11.638 15.9905 11.3987 16.3069 11.0823 16.5308C10.7658 16.7546 10.3877 16.8749 10.0001 16.875ZM3.75007 14.375C4.35163 13.3406 5.00007 10.9438 5.00007 8.125C5.00007 6.79892 5.52686 5.52715 6.46454 4.58947C7.40222 3.65178 8.67399 3.125 10.0001 3.125C11.3262 3.125 12.5979 3.65178 13.5356 4.58947C14.4733 5.52715 15.0001 6.79892 15.0001 8.125C15.0001 10.9414 15.6469 13.3383 16.2501 14.375H3.75007Z"
+                fill="var(--contents-primary-color)"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+>>>>>>> develop
 
 <head>
   <meta charset="UTF-8" />
@@ -78,6 +229,7 @@
     </div>
   </header>
 
+<<<<<<< HEAD
   <div class="main-banner">
     <div class="text-box">
       <div class="text-box-main font-heading-lg">
@@ -116,6 +268,35 @@
             </div>
             <p class="info-text-storyfield">UIUX | 1기 수강생 박치열</p>
           </div>
+=======
+    <nav class="main-nav">
+      <div class="nav-main-items">
+        <div class="nav-three-items font-label-md">
+          <a
+            href="/"
+            aria-label="선배님 스토리 선택됨"
+            tabindex="0"
+            onclick="return false;"
+            class="navitem--active font-label-md"
+            >선배님 스토리</a
+          >
+          <a
+            href="/"
+            aria-label="질의 응답 선택되지 않음"
+            tabindex="0"
+            onclick="return false;"
+            class="navitem--inactive font-label-md"
+            >질의 응답</a
+          >
+          <a
+            href="/"
+            aria-label="함께 해요 선택되지 않음"
+            tabindex="0"
+            onclick="return false;"
+            class="navitem--inactive font-label-md"
+            >함께 해요</a
+          >
+>>>>>>> develop
         </div>
       </a>
       <a href="#" aria-label="선배님 스토리필드 내용으로 이동" tabindex="0" onclick="return false;"
@@ -445,4 +626,857 @@
   </footer>
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+    <main class="main-main">
+      <div class="main-grid">
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="박치열 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-박치열.jpg"
+                  alt="박치열님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="박치열님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 1기 수강생 박치열
+            </p>
+          </a>
+        </div>
+
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="김진우 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-김진우.jpg"
+                  alt="김진우님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  영문과 전공생에서 <br />
+                  UIUX 디자이너로 취업하기까지
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="김진우님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 3기 수강생 김진우
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="최혜수 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-최혜수.jpg"
+                  alt="최혜수님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  나는 프론트일까? 백일까? <br />
+                  여전히 모르겠다면 물어봐!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="최혜수님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 2기 수강생 최혜수
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="염진희 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-염진희.jpg"
+                  alt="염진희님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  코딩과 디자인의 그 어딘가 <br />
+                  두가지 모두 하고 싶은 욕심쟁이
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="염진희님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 5기 수강생 염진희
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="박치열 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-박치열.jpg"
+                  alt="박치열님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="박치열님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 1기 수강생 박치열
+            </p>
+          </a>
+        </div>
+
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="김진우 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-김진우.jpg"
+                  alt="김진우님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  영문과 전공생에서 <br />
+                  UIUX 디자이너로 취업하기까지
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="김진우님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 3기 수강생 김진우
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="최혜수 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-최혜수.jpg"
+                  alt="최혜수님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  나는 프론트일까? 백일까? <br />
+                  여전히 모르겠다면 물어봐!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="최혜수님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 2기 수강생 최혜수
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="염진희 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-염진희.jpg"
+                  alt="염진희님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  코딩과 디자인의 그 어딘가 <br />
+                  두가지 모두 하고 싶은 욕심쟁이
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="염진희님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 5기 수강생 염진희
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="박치열 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-박치열.jpg"
+                  alt="박치열님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="박치열님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 1기 수강생 박치열
+            </p>
+          </a>
+        </div>
+
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="김진우 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-김진우.jpg"
+                  alt="김진우님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  영문과 전공생에서 <br />
+                  UIUX 디자이너로 취업하기까지
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="김진우님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 3기 수강생 김진우
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="최혜수 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-최혜수.jpg"
+                  alt="최혜수님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  나는 프론트일까? 백일까? <br />
+                  여전히 모르겠다면 물어봐!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="최혜수님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 2기 수강생 최혜수
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="염진희 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-염진희.jpg"
+                  alt="염진희님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  코딩과 디자인의 그 어딘가 <br />
+                  두가지 모두 하고 싶은 욕심쟁이
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="염진희님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 5기 수강생 염진희
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="박치열 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-박치열.jpg"
+                  alt="박치열님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="박치열님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 1기 수강생 박치열
+            </p>
+          </a>
+        </div>
+
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="김진우 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-김진우.jpg"
+                  alt="김진우님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  영문과 전공생에서 <br />
+                  UIUX 디자이너로 취업하기까지
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="김진우님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 3기 수강생 김진우
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="최혜수 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-최혜수.jpg"
+                  alt="최혜수님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  나는 프론트일까? 백일까? <br />
+                  여전히 모르겠다면 물어봐!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="최혜수님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 2기 수강생 최혜수
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="염진희 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-염진희.jpg"
+                  alt="염진희님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  코딩과 디자인의 그 어딘가 <br />
+                  두가지 모두 하고 싶은 욕심쟁이
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="염진희님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 5기 수강생 염진희
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="박치열 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-박치열.jpg"
+                  alt="박치열님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  디자인에 대해 하나도 알지 못했던 내가 취업할 수 있었던 이유
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="박치열님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 1기 수강생 박치열
+            </p>
+          </a>
+        </div>
+
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="김진우 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-김진우.jpg"
+                  alt="김진우님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  영문과 전공생에서 <br />
+                  UIUX 디자이너로 취업하기까지
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="김진우님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 3기 수강생 김진우
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="최혜수 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-최혜수.jpg"
+                  alt="최혜수님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  나는 프론트일까? 백일까? <br />
+                  여전히 모르겠다면 물어봐!
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="최혜수님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 2기 수강생 최혜수
+            </p>
+          </a>
+        </div>
+        <div class="main-list-storyfield">
+          <a
+            href="#"
+            aria-label="염진희 선배님 스토리필드 내용으로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield"
+          >
+            <div class="main-list-storyfield-title-text">
+              <div class="thumbnail-storyfield-rounded-box">
+                <img
+                  src="/src/asset/img/page-main-염진희.jpg"
+                  alt="염진희님 스토리필드"
+                />
+              </div>
+              <div class="title-storyfield">
+                <p class="text-storyfield font-paragraph-md">
+                  코딩과 디자인의 그 어딘가 <br />
+                  두가지 모두 하고 싶은 욕심쟁이
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="#"
+            aria-label="염진희님 정보로 이동"
+            tabindex="0"
+            onclick="return false;"
+            class="anchor-main-list-storyfield-info"
+          >
+            <p class="info-text-storyfield font-paragraph-md">
+              UIUX | 5기 수강생 염진희
+            </p>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="main-footer">
+      <nav class="nav-start-common--list-item">
+        <!-- Common/nav-items-home--active -->
+        <div class="item-start-common--nav-items-home--active">
+          <!-- Icon/active-fullhome -->
+          <a
+            class="nav-item-box"
+            href="#"
+            aria-label="홈으로 이동"
+            tabindex="0"
+            onclick="return false;"
+          >
+            <svg
+              width="14"
+              height="16"
+              viewBox="0 0 14 16"
+              fill="var(--contents-primary-color)"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0.333252 15.5V5.5L6.99992 0.5L13.6666 5.5V15.5H8.66658V9.66667H5.33325V15.5H0.333252Z"
+                fill="var(--contents-primary-color)"
+              />
+            </svg>
+            <span class="item-start-common--nav-items-home-text nav-item-text"
+              >홈</span
+            >
+          </a>
+        </div>
+
+        <!-- Common/nav-items-file--inactive -->
+        <div class="item-start-common--nav-items-file--inactive">
+          <!-- Icon/inactive-file -->
+          <a
+            class="nav-item-box"
+            href="#"
+            aria-label="전체 게시판으로 이동"
+            tabindex="0"
+            onclick="return false;"
+          >
+            <svg
+              width="12"
+              height="16"
+              viewBox="0 0 12 16"
+              fill="var(--contents-primary-color)"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 0C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H10C10.5304 16 11.0391 15.7893 11.4142 15.4142C11.7893 15.0391 12 14.5304 12 14V5.414C11.9996 5.01631 11.8414 4.63503 11.56 4.354L7.646 0.439C7.3648 0.157982 6.98355 8.48813e-05 6.586 0H2ZM1 2C1 1.73478 1.10536 1.48043 1.29289 1.29289C1.48043 1.10536 1.73478 1 2 1H6V4.5C6 4.89782 6.15803 5.27936 6.43934 5.56066C6.72064 5.84196 7.10217 6 7.5 6H11V14C11 14.2652 10.8946 14.5196 10.7071 14.7071C10.5196 14.8946 10.2652 15 10 15H2C1.73478 15 1.48043 14.8946 1.29289 14.7071C1.10536 14.5196 1 14.2652 1 14V2ZM10.793 5H7.5C7.36739 5 7.24021 4.94732 7.14645 4.85355C7.05268 4.75979 7 4.63261 7 4.5V1.207L10.793 5Z"
+                fill="var(--contents-primary-color)"
+              />
+            </svg>
+            <span class="item-start-common--nav-items-file-text nav-item-text"
+              >게시판</span
+            >
+          </a>
+        </div>
+
+        <!-- Common/nav-items-map--inactive -->
+        <div class="item-start-common--nav-items-map--inactive">
+          <!-- Icon/inactive-map -->
+          <a
+            class="nav-item-box"
+            href="#"
+            aria-label="우리 동네 게시판으로 이동"
+            tabindex="0"
+            onclick="return false;"
+          >
+            <svg
+              width="14"
+              height="18"
+              viewBox="0 0 14 18"
+              fill="var(--contents-primary-color)"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12.625 16.6562H8.34531C9.1065 16.0039 9.81956 15.2973 10.4789 14.5422C12.5984 12.1047 13.7188 9.54219 13.7188 7.125C13.7188 5.34308 13.0109 3.63414 11.7509 2.37413C10.4909 1.11412 8.78192 0.40625 7 0.40625C5.21808 0.40625 3.50914 1.11412 2.24913 2.37413C0.989117 3.63414 0.28125 5.34308 0.28125 7.125C0.28125 9.53984 1.40156 12.1047 3.52109 14.5422C4.18044 15.2973 4.8935 16.0039 5.65469 16.6562H1.375C1.25068 16.6562 1.13145 16.7056 1.04354 16.7935C0.955636 16.8815 0.90625 17.0007 0.90625 17.125C0.90625 17.2493 0.955636 17.3685 1.04354 17.4565C1.13145 17.5444 1.25068 17.5938 1.375 17.5938H12.625C12.7493 17.5938 12.8685 17.5444 12.9565 17.4565C13.0444 17.3685 13.0938 17.2493 13.0938 17.125C13.0938 17.0007 13.0444 16.8815 12.9565 16.7935C12.8685 16.7056 12.7493 16.6562 12.625 16.6562ZM1.21875 7.125C1.21875 5.59172 1.82784 4.12123 2.91204 3.03704C3.99623 1.95284 5.46672 1.34375 7 1.34375C8.53328 1.34375 10.0038 1.95284 11.088 3.03704C12.1722 4.12123 12.7812 5.59172 12.7812 7.125C12.7812 11.7828 8.17188 15.6352 7 16.5398C5.82812 15.6352 1.21875 11.7828 1.21875 7.125ZM9.96875 7.125C9.96875 6.53784 9.79464 5.96386 9.46842 5.47565C9.14221 4.98744 8.67856 4.60693 8.13609 4.38223C7.59362 4.15754 6.99671 4.09874 6.42083 4.21329C5.84494 4.32784 5.31596 4.61059 4.90078 5.02578C4.48559 5.44096 4.20284 5.96994 4.08829 6.54583C3.97374 7.12171 4.03254 7.71862 4.25723 8.26109C4.48193 8.80356 4.86244 9.26721 5.35065 9.59342C5.83886 9.91964 6.41284 10.0938 7 10.0938C7.78736 10.0938 8.54247 9.78097 9.09922 9.22422C9.65597 8.66747 9.96875 7.91236 9.96875 7.125ZM4.96875 7.125C4.96875 6.72326 5.08788 6.33054 5.31108 5.9965C5.53427 5.66246 5.85151 5.40211 6.22267 5.24837C6.59384 5.09463 7.00225 5.0544 7.39628 5.13278C7.7903 5.21116 8.15224 5.40461 8.43631 5.68869C8.72039 5.97276 8.91384 6.3347 8.99222 6.72872C9.0706 7.12275 9.03037 7.53116 8.87663 7.90233C8.72289 8.27349 8.46254 8.59073 8.1285 8.81392C7.79446 9.03712 7.40174 9.15625 7 9.15625C6.46128 9.15625 5.94462 8.94224 5.56369 8.56131C5.18276 8.18038 4.96875 7.66372 4.96875 7.125Z"
+                fill="var(--contents-primary-color)"
+              />
+            </svg>
+            <span class="item-start-common--nav-items-map-text nav-item-text"
+              >내 근처</span
+            >
+          </a>
+        </div>
+
+        <!-- Common/nav-items-chat--inactive -->
+        <div class="item-start-common--nav-items-chat--inactive">
+          <!-- Icon/inactive-chat -->
+          <a
+            class="nav-item-box"
+            href="#"
+            aria-label="채팅창으로 이동"
+            tabindex="0"
+            onclick="return false;"
+          >
+            <svg
+              width="18"
+              height="16"
+              viewBox="0 0 18 16"
+              fill="var(--contents-primary-color)"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.9422 12.6195C17.3866 11.7386 17.6105 10.7629 17.5946 9.77634C17.5787 8.78978 17.3235 7.82183 16.8509 6.9557C16.3783 6.08956 15.7024 5.35113 14.8814 4.80389C14.0604 4.25665 13.1188 3.91696 12.1375 3.81401C11.8259 3.05561 11.3646 2.36787 10.781 1.79198C10.1974 1.21608 9.50361 0.76388 8.74114 0.462441C7.97867 0.161003 7.16322 0.016529 6.3436 0.037671C5.52398 0.0588129 4.71706 0.245136 3.97114 0.585483C3.22523 0.92583 2.55567 1.4132 2.00255 2.01841C1.44943 2.62363 1.02414 3.33424 0.752124 4.10769C0.480111 4.88115 0.366978 5.70154 0.419498 6.51974C0.472018 7.33795 0.689112 8.13715 1.05778 8.86948L0.442936 11.0234C0.397128 11.1841 0.3951 11.3541 0.437063 11.5158C0.479025 11.6776 0.563453 11.8252 0.681606 11.9433C0.799759 12.0615 0.947344 12.1459 1.10908 12.1879C1.27082 12.2298 1.44084 12.2278 1.60153 12.182L3.75544 11.5671C4.41405 11.8981 5.12709 12.1072 5.86012 12.1843C6.17898 12.962 6.65516 13.6653 7.25876 14.2502C7.86237 14.835 8.58037 15.2888 9.36769 15.583C10.155 15.8772 10.9946 16.0054 11.8339 15.9597C12.6731 15.9139 13.4938 15.6952 14.2445 15.3171L16.3984 15.932C16.5591 15.9778 16.7291 15.9798 16.8909 15.9379C17.0526 15.8959 17.2002 15.8115 17.3183 15.6933C17.4365 15.5752 17.5209 15.4276 17.5629 15.2658C17.6048 15.1041 17.6028 14.9341 17.557 14.7734L16.9422 12.6195ZM3.807 10.596C3.76339 10.5958 3.71998 10.6019 3.67809 10.614L1.34372 11.2812L2.01012 8.9476C2.04416 8.82909 2.03012 8.70194 1.97106 8.5937C1.37838 7.5046 1.198 6.2384 1.46297 5.02712C1.72795 3.81584 2.42053 2.7406 3.41381 1.99844C4.40708 1.25628 5.63454 0.896894 6.87124 0.986141C8.10795 1.07539 9.27108 1.60729 10.1475 2.48438C11.0239 3.36147 11.555 4.525 11.6433 5.76178C11.7316 6.99855 11.3713 8.22573 10.6283 9.21845C9.88543 10.2112 8.80967 10.9029 7.59819 11.167C6.38671 11.431 5.12065 11.2497 4.032 10.6562C3.96313 10.6178 3.88582 10.5972 3.807 10.596ZM15.989 12.6968L16.6562 15.0312L14.3226 14.3648C14.2041 14.3308 14.077 14.3448 13.9687 14.4039C13.3625 14.7343 12.6961 14.9397 12.009 15.0077C11.322 15.0758 10.6282 15.0052 9.96896 14.8001C9.3097 14.595 8.69835 14.2595 8.17116 13.8137C7.64397 13.3679 7.2117 12.8207 6.89997 12.2046C7.77648 12.1476 8.63026 11.9016 9.4027 11.4834C10.1751 11.0652 10.8479 10.4849 11.3749 9.78215C11.9019 9.07943 12.2705 8.27098 12.4556 7.41233C12.6406 6.55368 12.6376 5.66515 12.4468 4.80776C13.247 4.95675 14.0005 5.29304 14.6457 5.78912C15.2909 6.28519 15.8096 6.92697 16.1592 7.66194C16.5088 8.39691 16.6795 9.20421 16.6572 10.0178C16.635 10.8314 16.4205 11.6281 16.0312 12.3429C15.9711 12.4507 15.9559 12.5779 15.989 12.6968Z"
+                fill="var(--contents-primary-color)"
+              />
+            </svg>
+            <span class="item-start-common--nav-items-chat-text nav-item-text"
+              >채팅</span
+            >
+          </a>
+        </div>
+
+        <!-- Common/nav-items-my--inactive -->
+        <div class="item-start-common--nav-items-my--inactive">
+          <!-- Icon/inactive-my -->
+          <a
+            class="nav-item-box"
+            href="#"
+            aria-label="개인 페이지로 이동"
+            tabindex="0"
+            onclick="return false;"
+          >
+            <svg
+              width="14"
+              height="16"
+              viewBox="0 0 14 16"
+              fill="var(--contents-primary-color)"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7 0C5.93913 0 4.92172 0.421427 4.17157 1.17157C3.42143 1.92172 3 2.93913 3 4C3 5.06087 3.42143 6.07828 4.17157 6.82843C4.92172 7.57857 5.93913 8 7 8C8.06087 8 9.07828 7.57857 9.82843 6.82843C10.5786 6.07828 11 5.06087 11 4C11 2.93913 10.5786 1.92172 9.82843 1.17157C9.07828 0.421427 8.06087 0 7 0ZM4 4C4 3.20435 4.31607 2.44129 4.87868 1.87868C5.44129 1.31607 6.20435 1 7 1C7.79565 1 8.55871 1.31607 9.12132 1.87868C9.68393 2.44129 10 3.20435 10 4C10 4.79565 9.68393 5.55871 9.12132 6.12132C8.55871 6.68393 7.79565 7 7 7C6.20435 7 5.44129 6.68393 4.87868 6.12132C4.31607 5.55871 4 4.79565 4 4ZM2.009 9C1.74564 8.99895 1.48466 9.04989 1.24102 9.14992C0.997393 9.24994 0.775904 9.39708 0.589259 9.58289C0.402614 9.7687 0.254485 9.98952 0.153366 10.2327C0.0522479 10.4759 0.000129512 10.7366 0 11C0 12.691 0.833 13.966 2.135 14.797C3.417 15.614 5.145 16 7 16C8.855 16 10.583 15.614 11.865 14.797C13.167 13.967 14 12.69 14 11C14 10.4696 13.7893 9.96086 13.4142 9.58579C13.0391 9.21071 12.5304 9 12 9H2.009ZM1 11C1 10.447 1.448 10 2.009 10H12C12.2652 10 12.5196 10.1054 12.7071 10.2929C12.8946 10.4804 13 10.7348 13 11C13 12.309 12.378 13.284 11.327 13.953C10.257 14.636 8.735 15 7 15C5.265 15 3.743 14.636 2.673 13.953C1.623 13.283 1 12.31 1 11Z"
+                fill="var(--contents-primary-color)"
+              />
+            </svg>
+            <span class="item-start-common--nav-items-my-text nav-item-text"
+              >나의 이듬</span
+            >
+          </a>
+        </div>
+      </nav>
+    </footer>
+  </body>
+</html>
+>>>>>>> develop

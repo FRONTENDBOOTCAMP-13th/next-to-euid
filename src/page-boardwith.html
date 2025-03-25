@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="ko-KR">
+<<<<<<< HEAD
 
 <head>
   <meta charset="UTF-8" />
@@ -23,6 +24,123 @@
           <option class="region-name font-label-lg">남가좌제1동</option>
           <option class="region-name font-label-lg">홍제동</option>
         </select>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <title>Page-Main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" as="style" href="/font/pretendardvariable.css" />
+    <!-- <link rel="stylesheet" href="/src/style.css" /> -->
+    <link rel="stylesheet" href="/src/styles/page-boardwith.css" />
+    <!-- <script type="module" src="/src/main.js"></script> -->
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-main--region-items">
+        <div class="items-region">
+          <label id="region-label" for="items-region" class="visually-hidden"
+            >지역을 선택하세요:</label
+          >
+          <select
+            id="items-region"
+            name="items-region"
+            class="region-wrapper font-label-lg"
+          >
+            <option class="region-name font-label-lg">남가좌제2동</option>
+            <option class="region-name font-label-lg">남가좌제1동</option>
+            <option class="region-name font-label-lg">홍제동</option>
+          </select>
+        </div>
+        <div class="icon-wrapper-main-region">
+          <div class="dropdown">
+            <!-- 컴포넌트 all in one 페이지 합치고 링크 기재 예정 -->
+            <a class="button-index-nav dropbtn font-label-lg" href="#"
+              ><svg
+                width="25"
+                height="25"
+                viewBox="0 0 17 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.97219 4.00634C7.33192 4.24671 7.75485 4.375 8.1875 4.375C8.76747 4.37438 9.32351 4.14371 9.73361 3.73361C10.1437 3.32351 10.3744 2.76747 10.375 2.1875C10.375 1.75485 10.2467 1.33192 10.0063 0.972191C9.76597 0.612459 9.42433 0.332081 9.02462 0.166515C8.62491 0.000947831 8.18507 -0.042372 7.76074 0.0420332C7.33641 0.126438 6.94663 0.334778 6.64071 0.640705C6.33478 0.946632 6.12644 1.33641 6.04203 1.76074C5.95763 2.18507 6.00095 2.62491 6.16651 3.02462C6.33208 3.42433 6.61246 3.76598 6.97219 4.00634Z"
+                  fill="var(--contents-primary-color)"
+                />
+                <path
+                  d="M14.982 4.41088L14.9996 4.40619C15.7418 4.21127 16.2492 4.96635 16.2492 5.65502C16.2492 6.34369 15.6242 6.66791 14.9992 6.90229C14.9785 6.91012 14.9574 6.9169 14.9359 6.9226L11.4484 8.14174C11 8.3101 10.8078 8.4851 10.7656 8.56323L10.7639 8.56665L10.7625 8.56909C10.718 8.64838 10.5863 8.98666 10.75 10.0105L10.9762 11.7683L12.2508 18.5937C12.2625 18.6453 12.2723 18.6984 12.2805 18.7523C12.3734 19.3851 11.9102 19.9999 11.0305 19.9999C10.2648 19.9999 9.92695 19.4714 9.78047 18.7523C9.78047 18.7523 8.65391 12.5972 8.10703 12.5972C7.56016 12.5972 6.46641 18.7523 6.46641 18.7523C6.31992 19.4714 5.98203 19.9999 5.21641 19.9999C4.33906 19.9999 3.87578 19.3878 3.96641 18.757L3.97539 18.7074C3.97852 18.6878 3.98203 18.6687 3.98594 18.6499L5.24336 11.7675L5.46992 10.0097C5.51562 9.72377 5.64453 8.90463 5.4832 8.49096C5.43359 8.36205 5.33203 8.21323 4.95195 8.06752L1.23242 6.9058V6.89487C0.613281 6.66166 0 6.33666 0 5.65424C0 4.96518 0.507813 4.21127 1.25 4.40659C1.356 4.43421 1.46033 4.46786 1.5625 4.50737C2.58906 4.79916 5.79805 5.65854 8.10781 5.65854C10.5934 5.65854 14.1215 4.66401 14.8484 4.45073C14.8875 4.43862 14.9266 4.4269 14.9656 4.41596L14.982 4.41088Z"
+                  fill="var(--contents-primary-color)"
+                />
+              </svg>
+            </a>
+            <ul class="dropdown-content">
+              <li><a href="/src/component-start.html">라이트/다크 모드</a></li>
+              <li><a href="/src/component-board.html">큰 글 모드</a></li>
+              <li><a href="/src/component-main.html">돋보기</a></li>
+            </ul>
+          </div>
+          <a href="/" aria-label="검색창으로 이동" tabindex="0">
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 26 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M11.2272 3.25C9.64948 3.25 8.10717 3.71786 6.79532 4.59441C5.48347 5.47095 4.46101 6.71683 3.85723 8.17447C3.25346 9.63212 3.09548 11.2361 3.40328 12.7835C3.71109 14.3309 4.47084 15.7523 5.58648 16.868C6.70211 17.9836 8.12352 18.7434 9.67095 19.0512C11.2184 19.359 12.8223 19.201 14.28 18.5972C15.7376 17.9934 16.9835 16.971 17.8601 15.6591C18.7366 14.3473 19.2045 12.805 19.2045 11.2272C19.2043 9.11158 18.3638 7.08262 16.8678 5.58662C15.3718 4.09063 13.3429 3.25013 11.2272 3.25Z"
+                stroke="var(--contents-primary-color)"
+                stroke-width="1.25"
+                stroke-miterlimit="10"
+              />
+              <path
+                d="M17.1787 17.1788L22.7499 22.75"
+                stroke="var(--contents-primary-color)"
+                stroke-width="1.25"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+          <a href="/" aria-label="메뉴창으로 이동" tabindex="0">
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 20 20"
+              fill="var(--contents-primary-color)"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.16675 14.1667H15.8334M4.16675 10H15.8334M4.16675 5.83334H15.8334"
+                stroke="var(--contents-primary-color)"
+                stroke-width="1.16667"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <a href="/" aria-label="알림창으로 이동" tabindex="0">
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 20 20"
+              fill="var(--contents-primary-color)"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M17.3282 13.7453C16.8946 12.9984 16.2501 10.8852 16.2501 8.125C16.2501 6.4674 15.5916 4.87769 14.4195 3.70558C13.2474 2.53348 11.6577 1.875 10.0001 1.875C8.34247 1.875 6.75276 2.53348 5.58065 3.70558C4.40855 4.87769 3.75007 6.4674 3.75007 8.125C3.75007 10.8859 3.10476 12.9984 2.67116 13.7453C2.56044 13.9352 2.50174 14.1509 2.50098 14.3707C2.50023 14.5905 2.55745 14.8066 2.66687 14.9973C2.77629 15.1879 2.93404 15.3463 3.12422 15.4565C3.31439 15.5667 3.53027 15.6248 3.75007 15.625H6.93835C7.08255 16.3306 7.46603 16.9647 8.02392 17.4201C8.58182 17.8756 9.2799 18.1243 10.0001 18.1243C10.7202 18.1243 11.4183 17.8756 11.9762 17.4201C12.5341 16.9647 12.9176 16.3306 13.0618 15.625H16.2501C16.4698 15.6247 16.6856 15.5665 16.8757 15.4562C17.0657 15.346 17.2234 15.1875 17.3327 14.9969C17.442 14.8063 17.4992 14.5903 17.4984 14.3705C17.4976 14.1508 17.4389 13.9351 17.3282 13.7453ZM10.0001 16.875C9.61243 16.8749 9.23435 16.7546 8.91788 16.5308C8.60141 16.3069 8.3621 15.9905 8.23288 15.625H11.7673C11.638 15.9905 11.3987 16.3069 11.0823 16.5308C10.7658 16.7546 10.3877 16.8749 10.0001 16.875ZM3.75007 14.375C4.35163 13.3406 5.00007 10.9438 5.00007 8.125C5.00007 6.79892 5.52686 5.52715 6.46454 4.58947C7.40222 3.65178 8.67399 3.125 10.0001 3.125C11.3262 3.125 12.5979 3.65178 13.5356 4.58947C14.4733 5.52715 15.0001 6.79892 15.0001 8.125C15.0001 10.9414 15.6469 13.3383 16.2501 14.375H3.75007Z"
+                fill="var(--contents-primary-color)"
+              />
+            </svg>
+          </a>
+        </div>
+>>>>>>> develop
       </div>
       <div class="icon-wrapper-main-region">
         <div class="dropdown">

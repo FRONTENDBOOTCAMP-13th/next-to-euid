@@ -94,6 +94,7 @@
   padding: 20px 153px 0px 20px;
   color: var(--foundation-background-color);
   position: relative;
+  min-width: 350px;
 }
 
 .text-box-main {
@@ -103,6 +104,7 @@
 
 .text-box-final {
   margin-top: var(--space-64);
+  padding-bottom: var(--space-48);
 }
 
 .banner-image {
@@ -117,6 +119,7 @@
   padding: 0px;
   position: sticky;
   top: 37px;
+  min-width: 350px;
 }
 
 .nav-main-items {
@@ -172,6 +175,7 @@
   justify-content: center;
   align-content: center;
   background-color: var(--foundation-background-color);
+  min-width: 350px;
 }
 
 .main-grid {
@@ -214,9 +218,18 @@
   /* width: 138px; */
 }
 
-.main-list-storyfield {
+.anchor-main-list-storyfield-info {
+  text-decoration: none;
+  display: inline-block;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* width: 138px; */
+}
+
+.main-list-storyfield-title-text {
   width: 138px;
-  height: 171px;
+  height: 154px;
   display: flex;
   flex-direction: column;
   gap: var(--space-12);
@@ -229,11 +242,13 @@
   background-color: var(--contents-secondary-color);
 }
 
-.text-wrapper-storyfield {
-  width: 138px;
-  height: 55px;
-  display: flex;
-  flex-direction: column;
+.thumbnail-storyfield-rounded-box img {
+  width: 100%; /* 부모 요소 너비에 맞춤 */
+  height: 100%; /* 부모 요소 높이에 맞춤 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 꽉 채우기 */
+  border-radius: 5px;
+  /* border: 0.1px solid var(--contents-tertiary-color); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .title-storyfield {
@@ -245,7 +260,7 @@
 
 .text-storyfield {
   color: var(--contents-primary-color);
-  height: 17px;
+  height: 34px;
   line-height: 15px;
   font-size: 8.5px;
 }
@@ -277,8 +292,25 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-  padding: var(--space-8) var(--space-12) var(--space-24) var(--space-12);
+  padding: var(--space-8);
   width: 100%;
+}
+
+.nav-item-box {
+  /* <a> */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+
+  .nav-item-text {
+    margin-top: var(--spacing-xs);
+    white-space: nowrap;
+  }
+
+  &:visited {
+    color: inherit;
+  }
 }
 
 .item-start-common--nav-items-my-text {
