@@ -29,18 +29,18 @@ loginBtn.addEventListener('click', function (e) {
 });
 
 // 비밀번호 재설정 다이얼로그 유효성 검사
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   // 아이디 찾기 다이얼로그 관련 요소
-  const emailConfirmBtn = document.getElementById("email-confirm-btn");
-  const userIdField = document.getElementById("user-id");
-  
+  const emailConfirmBtn = document.getElementById('email-confirm-btn');
+  const userIdField = document.getElementById('user-id');
+
   // 비밀번호 찾기 다이얼로그 관련 요소
-  const passwordConfirmBtn = document.getElementById("password-confirm-btn");
-  const userEmailField = document.getElementById("user-email");
-  
+  const passwordConfirmBtn = document.getElementById('password-confirm-btn');
+  const userEmailField = document.getElementById('user-email');
+
   // 아이디 찾기 확인 버튼 이벤트
   if (emailConfirmBtn) {
-    emailConfirmBtn.addEventListener("click", function(e) {
+    emailConfirmBtn.addEventListener('click', function (e) {
       if (!userIdField.value.trim() || !userIdField.checkValidity()) {
         e.preventDefault();
         userIdField.focus();
@@ -49,10 +49,10 @@ document.addEventListener('DOMContentLoaded', function() {
       // 유효성 검사 통과 시 처리
     });
   }
-  
+
   // 비밀번호 찾기 확인 버튼 이벤트
   if (passwordConfirmBtn) {
-    passwordConfirmBtn.addEventListener("click", function(e) {
+    passwordConfirmBtn.addEventListener('click', function (e) {
       if (!userEmailField.value.trim() || !userEmailField.checkValidity()) {
         e.preventDefault();
         userEmailField.focus();
