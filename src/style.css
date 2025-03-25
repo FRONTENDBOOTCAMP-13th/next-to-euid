@@ -1,6 +1,6 @@
-@import "/public/common/mini-reset.css";
-@import "/public/common/a11y.css";
-@import "/src/theme.css";
+@import '/public/common/mini-reset.css';
+@import '/public/common/a11y.css';
+@import '/src/theme.css';
 
 body {
   background-color: var(--foundation-background-color);
@@ -11,7 +11,7 @@ h1 {
   margin-block: 2rem;
 
   &::before {
-    content: "🎁";
+    content: '🎁';
     margin-inline-end: var(--space-8);
   }
 
@@ -39,7 +39,7 @@ h1 {
     color: var(--contents-primary-color);
 
     &::before {
-      content: "";
+      content: '';
       margin-inline-end: var(--space-8);
       animation: pulse 0.5s infinite ease-in-out;
       animation-play-state: running;
@@ -125,7 +125,6 @@ h1 {
     margin-bottom: 0;
   }
 }
-
 
 .group-intro {
   width: 100%;
@@ -285,7 +284,6 @@ h1 {
 }
 
 .contact {
-
   a {
     /* text-decoration: dotted; */
     color: var(--contents-primary-color);
@@ -315,7 +313,6 @@ h1 {
 
 /* 반응형 디자인 --------- */
 @media (max-width: 400px) {
-
   .category-grid,
   .profile-grid {
     /* width: 12.5rem;
@@ -350,11 +347,13 @@ h1 {
 .profile-card:hover {
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.35s ease-in, box-shadow 0.3s ease;
+  transition:
+    transform 0.35s ease-in,
+    box-shadow 0.3s ease;
 }
 
 /* 전체 페이지 진입 효과 */
-body main>* {
+body main > * {
   animation: fadeUp 0.8s ease-in-out;
   animation-fill-mode: both;
   animation-delay: 0.3s;
