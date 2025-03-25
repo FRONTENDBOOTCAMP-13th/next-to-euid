@@ -2,7 +2,7 @@
 <html lang="ko-KR">
   <head>
     <meta charset="UTF-8" />
-    <title>Login Page</title>
+    <title>Login-Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
     <link
@@ -11,11 +11,7 @@
       href="../public/font/woff2/PretendardVariable.woff2"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      as="style"
-      href="../public/font/pretendardvariable.css"
-    />
+    <link rel="stylesheet" href="../public/font/pretendardvariable.css" />
     <link rel="stylesheet" href="/src/styles/login.css" />
     <script type="module" src="/src/js/login.js"></script>
 
@@ -78,7 +74,7 @@
         <!-- 이메일, 비밀번호 입력창 -->
         <form class="login-form">
           <!-- 이메일 입력창 -->
-          <div class="input-group" novalidate>
+          <div class="input-group">
             <input
               id="email"
               type="email"
@@ -171,23 +167,17 @@
             </div>
             <!-- 아이디, 비밀번호 찾기 -->
             <div class="box-start-findidpw">
-              <!-- Common/button--email -->
-              <button
-                class="button-login-forgot-pw--email show-email-dialog"
-                aria-label="email로 가입한 ID 찾기"
-              >
-                아이디 찾기
-              </button>
-
+              <a href="/src/page-start-forgot-pw.html" aria-label="아이디 찾기">
+                <span>아이디 찾기</span>
+              </a>
               <span class="text-start-verticalbar">|</span>
-
-              <!-- Common/button--password -->
-              <button
-                class="button-login-forgot-pw--email show-password-dialog"
-                aria-label="email로 비밀번호 다시 설정하기"
+              <a
+                class="text-start-deletecash"
+                href="/src/page-start-forgot-pw.html"
+                aria-label="비밀번호 찾기"
               >
-                비밀번호 찾기
-              </button>
+                <span>비밀번호 찾기</span>
+              </a>
             </div>
           </div>
           <!-- 로그인 버튼 -->
@@ -200,6 +190,7 @@
           >
             로그인
           </button>
+          <!-- html validator로 검사 시 href 사용이 불가한 것으로 확인되었으나 submit backend 동작 제한으로 button으로 구현된 유효성검사와 프로젝트 발표 진행을 위한 다음 페이지(메인 페이지 연결)연결 링크 기능 동시 필요하여 부득이 예외로 진행함.  -->
         </form>
 
         <!-- 간편 로그인 -->
@@ -344,9 +335,9 @@
             onclick="showNewModal(event); return false;"
             tabindex="0"
           >
-            <span class="btn-contents-wrapper">
+            <div class="btn-contents-wrapper">
               <p class="choice-btn-save-text font-label-lg">확인</p>
-            </span>
+            </div>
           </a>
         </div>
       </dialog>
@@ -414,9 +405,9 @@
             aria-label="확인, 인증번호 입력 페이지로 이동"
             tabindex="0"
           >
-            <span class="btn-contents-wrapper">
+            <div class="btn-contents-wrapper">
               <p class="choice-btn-save-text font-label-lg">확인</p>
-            </span>
+            </div>
           </a>
         </div>
       </dialog>
