@@ -2,12 +2,13 @@
 
 > "당신 곁에 엔터이듬, with EUID's 함께 성장하기, 함께 배우고 적용하며 성장해보세요!"
 
-## 👥 팀원 정보
+## 배포 페이지
+[Triple Oil](https://triple-oil.netlify.app/)
 
+## 👥 팀원 정보
 | 이름 | MBTI | 지역 | 생일 | githubID |
-|------|------|------|------|---------|
+|------|------|------|------|
 | 김현지 | ENTJ | 경기/용인 | 1월 5일 | [hyunji1117](https://github.com/hyunji1117) |
-| 권도연 | INFP | 경기/분당 | 10월 23일 | [doyeon1111](https://github.com/doyeon1111) |
 | 박형석 | ISFJ | 경기/고양 | 1월 27일 | [Flowyson](https://github.com/Flowyson) |
 | 김태우 | **ISFJ** | 서울 | 7월 11일 | [twkimfe](https://github.com/twkimfe) |
 
