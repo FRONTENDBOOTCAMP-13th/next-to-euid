@@ -19,9 +19,11 @@
     <!--- 헤더 --->
     <header>
       <!-- 로고 이미지 -->
-      <h1 class="image-start-logo" aria-label="이듬 로고 이미지" tabindex="0">
+      <h1 class="image-start-logo">
         <a href="./login-welcome.html">
-          <svg width="80" height="30" viewBox="0 0 73 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <span class="sr-only">로그인 페이지로 이동</span>
+          <svg width="80" height="30" viewBox="0 0 73 27" fill="none" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_6_94)">
               <path
                 d="M0 0H14.9241L17.2545 4.41228H5.29726V10.5464H14.6033L15.9289 12.7705L14.6033 14.9946H5.29726V22.0972H17.2545L15.3178 26.5455H0V0Z"
@@ -50,7 +52,7 @@
 
     <!--- 메인 --->
     <!-- 전체 컨테이너 -->
-    <main class="container-start">
+    <main role="main" class="container-start">
       <!-- 이메일, 비밀번호 입력창 -->
       <form class="login-form">
         <!-- 이메일 입력창 -->
@@ -82,8 +84,9 @@
           <!-- 자동 로그인 -->
           <div class="checkbox svg">
             <input class="checkbox__input" type="checkbox" name="checkbox-2" id="checkbox-2" />
-            <label class="checkbox__label svg-tag" for="checkbox-2" aria-label="자동 로그인을 원하신다면 체크해주세요.">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <label class="checkbox__label svg-tag" for="checkbox-2">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg">
                 <path class="svg--area"
                   d="M23.9229 12.0021C23.9229 14.3609 23.2234 16.6666 21.9128 18.6277C20.6023 20.5889 18.7396 22.1173 16.5604 23.0198C14.3811 23.9222 11.9832 24.1581 9.66984 23.6977C7.3565 23.2372 5.23168 22.101 3.56411 20.4329C1.89654 18.7647 0.761138 16.6395 0.301494 14.326C-0.15815 12.0125 0.0786163 9.6146 0.981848 7.43567C1.88508 5.25674 3.4142 3.39461 5.37582 2.08479C7.33744 0.774969 9.64343 0.0763014 12.0022 0.0771492C13.568 0.0771491 15.1184 0.385629 16.565 0.984968C18.0116 1.58431 19.3259 2.46276 20.4329 3.57016C21.5399 4.67755 22.4179 5.99218 23.0167 7.43896C23.6155 8.88575 23.9234 10.4363 23.9229 12.0021Z"
                   fill="#719cf7" />
@@ -246,8 +249,9 @@
 
     <!-- 푸터 -->
     <footer>
-      <cite class="font-paragraph-sm">&copy; 2025 LikeLion Corp. Bootcamp 13th Generation, Triple-Oil Team
-        3. All rights reserved.</cite>
+      <small class="font-paragraph-sm">&copy; 2025 LikeLion Corp. Bootcamp 13th Generation, Triple-Oil Team
+        3. All rights reserved.
+      </small>
     </footer>
   </div>
 </body>

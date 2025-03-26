@@ -255,6 +255,13 @@ header {
 
   .text-start-deletecash {
     margin: 0 var(--space-16);
+    /* 사용자가 클릭했을 때 웹사이트 내부 로직이 실행되는 캐시 삭제 기능을 트리거에 <button> 태그가 적절함으로 수정 진행 */
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
   }
 }
 
