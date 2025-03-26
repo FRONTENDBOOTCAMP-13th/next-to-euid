@@ -90,11 +90,9 @@ a {
 
 .confirm-btn:focus {
   /* focus 시 발생되는 modal-content 1px 커지는 부분 조정 */
-  padding: .6875rem 1.5rem;
-  border: .0625rem solid var(--foundation-background-color);
+  padding: 0.6875rem 1.5rem;
+  border: 0.0625rem solid var(--foundation-background-color);
 }
-
-
 
 /** 헤더 **/
 header {
