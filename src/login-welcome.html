@@ -44,22 +44,15 @@
     <!--- 헤더 --->
     <header>
       <!-- 로고 이미지 -->
-      <span
-        class="sr-only"
-        aria-label="이듬에 오신 것을 환영합니다."
-        tabindex="0"
-        >이듬에 오신 것을 환영합니다.</span
-      >
-      <h1
-        class="image-start-logo"
-        aria-label="함께 성장하는 개발자 커뮤니티 이듬의 로고 이미지입니다."
-        tabindex="0"
-      >
+      <span class="sr-only">이듬에 오신 것을 환영합니다.</span>
+      <h1 class="image-start-logo">
         <svg
           width="80"
           height="30"
           viewBox="0 0 73 27"
           fill="none"
+          aria-label="함께 성장하는 개발자 커뮤니티 이듬의 로고 이미지입니다."
+          tabindex="0"
           xmlns="http://www.w3.org/2000/svg"
         >
           <g clip-path="url(#clip0_6_94)">
@@ -134,23 +127,26 @@
           <!-- 로그인 버튼 -->
           <a
             href="./login.html"
+            role="button"
             aria-label="로그인 버튼입니다."
+            tabindex="0"
             class="button button--login"
           >
             로그인
           </a>
           <!-- 링크 정보 -->
           <div class="box-start-infolinks font-paragraph-md">
-            <a aria-label="최신 버전으로 업데이트하기" href="#">
+            <a href="#" aria-label="최신 버전으로 업데이트하기">
               <span>ver 1.0.1 업데이트</span>
             </a>
-            <a
-              href="#"
-              aria-label="캐시 데이터를 삭제하기"
+            <!-- 사용자가 클릭했을 때 웹사이트 내부 로직이 실행되는 캐시 삭제 기능을 트리거에 <button> 태그가 적절함으로 수정 진행 -->
+            <button
+              type="button"
               class="text-start-deletecash"
+              aria-label="캐시 데이터를 삭제하기"
             >
               <span>캐시 데이터 삭제</span>
-            </a>
+            </button>
             <a href="#" aria-label="오픈 라이선스 정보 보기">
               <span>오픈 라이선스</span>
             </a>

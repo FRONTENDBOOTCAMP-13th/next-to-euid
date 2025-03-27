@@ -311,7 +311,7 @@ input:invalid + .error-message {
 }
 
 /* 푸터 */
-cite {
+small {
   color: var(--contents-secondary-color);
   justify-content: left;
   display: none;
@@ -354,6 +354,7 @@ cite {
   height: 100%;
   gap: var(--spacing-md);
 }
+
 .dialog--title {
   color: var(--foundation-primary-color);
   font-size: var(--font-xl-24);
@@ -362,6 +363,7 @@ cite {
   justify-content: end;
   height: 100%;
 }
+
 .dialog--text {
   color: var(--contents-primary-color);
   font-size: var(--font-lg-16);
@@ -446,6 +448,7 @@ cite {
   transition: all 0.3s ease;
   z-index: 10;
 }
+
 .login-panel-dialog[open] .input-start-sign-up-label {
   text-align: center;
 }

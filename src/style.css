@@ -375,7 +375,6 @@ h1 {
 
 /* 반응형 디자인 --------- */
 @media (max-width: 400px) {
-
   .category-grid,
   .profile-grid {
     /* width: 12.5rem;
@@ -416,7 +415,7 @@ h1 {
 }
 
 /* 전체 페이지 진입 효과 */
-body main>* {
+body main > * {
   animation: fadeUp 0.8s ease-in-out;
   animation-fill-mode: both;
   animation-delay: 0.3s;
