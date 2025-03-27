@@ -9,6 +9,7 @@ body {
 h1 {
   color: var(--contents-primary-color);
   margin-block: 2rem;
+
   strong {
     font-size: 16px;
   }
@@ -29,7 +30,6 @@ h1 {
 
   h2 {
     margin-block: 1rem;
-    /* color: var(--contents-primary-color); */
 
     &::before {
       content: '';
@@ -38,14 +38,10 @@ h1 {
       animation-play-state: running;
     }
   }
-  /* 
-  .group-page-nav {
-    background-color: var(--foundation-background-color);
-    color: var(--contents-primary-color);
-  } */
 
   .group-page-nav {
-    background-color: var(--contents-tertiary-color);
+    /* wave 웹 접근성 평가 낮은 색상 대비로 배경색 변경 진행 */
+    background-color: var(--foundation-primary-color);
   }
 
   .text-index-name {
@@ -216,23 +212,32 @@ h1 {
 /* 768px 이하일 때 적용되는 스타일 */
 @media (max-width: 768px) {
   .group-member {
-    height: auto; /* 높이를 자동으로 설정해 내용에 맞게 조정 */
-    display: flex; /* 그리드 대신 플렉스 사용 */
-    flex-direction: column; /* 세로 방향으로 배치 */
+    height: auto;
+    /* 높이를 자동으로 설정해 내용에 맞게 조정 */
+    display: flex;
+    /* 그리드 대신 플렉스 사용 */
+    flex-direction: column;
+    /* 세로 방향으로 배치 */
   }
 
   .profile-grid {
     width: 100%;
     display: flex;
-    flex-direction: column; /* 카드를 세로로 쌓음 */
-    gap: 2rem; /* 카드 사이 간격 */
-    align-items: center; /* 중앙 정렬 */
+    flex-direction: column;
+    /* 카드를 세로로 쌓음 */
+    gap: 2rem;
+    /* 카드 사이 간격 */
+    align-items: center;
+    /* 중앙 정렬 */
   }
 
   .profile-card {
-    width: 90%; /* 카드 너비 조정 */
-    height: auto; /* 카드 높이를 내용에 맞게 자동 조정 */
-    min-height: 23.75rem; /* 최소 높이 설정 */
+    width: 90%;
+    /* 카드 너비 조정 */
+    height: auto;
+    /* 카드 높이를 내용에 맞게 자동 조정 */
+    min-height: 23.75rem;
+    /* 최소 높이 설정 */
     margin-bottom: 1rem;
   }
 
@@ -327,21 +332,22 @@ h1 {
   color: var(--contents-primary-color);
 }
 
-.incomplete {
+.mbti {
   color: var(--contents-primary-color);
 }
 
-.ongoing {
+.area {
   color: var(--contents-primary-color);
 }
 
-.completed {
-  color: green;
+.note {
+  /* wave 웹 접근성 평가 다크모드에서 낮은 색상 대비로 폰트색 변경 진행 */
+  /* color: green; */
+  color: var(--contents-primary-color);
 }
 
 .contact {
   a {
-    /* text-decoration: dotted; */
     color: var(--contents-primary-color);
   }
 }
@@ -455,7 +461,8 @@ nav {
 nav .button-index-nav {
   padding: 10px 0;
   border-radius: var(--space-12);
-  color: var(--foundation-background-color);
+  /* color: var(--foundation-background-color); */
+  color: white;
   cursor: pointer;
   text-decoration: none;
 }

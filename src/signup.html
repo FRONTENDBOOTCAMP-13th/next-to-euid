@@ -21,16 +21,14 @@
     <header>
       <!-- 로고 이미지 -->
       <h1 class="image-start-logo">
-        <a
-          href="./login-welcome.html"
-          aria-label="시작 화면으로 돌아가려면 해당 로그 이미지를 클릭해주세요."
-          tabindex="0"
-        >
+        <a href="./login-welcome.html">
+          <span class="sr-only">로그인 페이지로 이동</span>
           <svg
             width="80"
             height="30"
             viewBox="0 0 73 27"
             fill="none"
+            aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
           >
             <g clip-path="url(#clip0_6_94)">
@@ -148,13 +146,13 @@
               type="checkbox"
               name="checkbox-2"
               id="checkbox-2"
-              aria-label="
-
-회원가입을 진행하면 개인정보 처리방침 및 이용약관에 동의합니다. 동의하신다면 체크해주세요.
-
-"
+              required
             />
             <label class="checkbox__label svg-tag" for="checkbox-2">
+              <span class="sr-only">
+                회원가입을 마치기 전 개인정보 처리방침 및 이용약관에 동의가
+                필요합니다. 동의하신다면 체크해주세요.
+              </span>
               <svg
                 width="20"
                 height="20"
@@ -183,14 +181,13 @@
                   fill="white"
                 />
               </svg>
-              <!-- 약관동의 -->
-              <p class="text-start-signup">
-                회원가입을 진행하면
-                <a href="#" class="text-start-infolink">개인정보 처리방침</a> 및
-                <a href="#" class="text-start-infolink">이용약관</a>에
-                동의합니다.
-              </p>
             </label>
+            <!-- 약관동의 -->
+            <p class="text-start-signup">
+              회원가입을 진행하면
+              <a href="#" class="text-start-infolink">개인정보 처리방침</a> 및
+              <a href="#" class="text-start-infolink">이용약관</a>에 동의합니다.
+            </p>
           </div>
         </div>
         <!-- 회원가입 버튼 -->

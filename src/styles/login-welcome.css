@@ -73,7 +73,9 @@ a {
 /* 확인 버튼 */
 .confirm-btn {
   padding: 0.75rem 1.5rem;
-  background-color: #699afe;
+  /* wave 웹 접근성 평가 낮은 색상 대비로 배경색 변경 진행 */
+  background-color: var(--foundation-primary-color);
+
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -83,7 +85,13 @@ a {
 }
 
 .confirm-btn:hover {
-  background-color: #4a7ddf;
+  background-color: var(--foundation-primary-color);
+}
+
+.confirm-btn:focus {
+  /* focus 시 발생되는 modal-content 1px 커지는 부분 조정 */
+  padding: 0.6875rem 1.5rem;
+  border: 0.0625rem solid var(--foundation-background-color);
 }
 
 /** 헤더 **/
@@ -187,15 +195,15 @@ header {
 }
 
 .text-start-guidbox {
-  width: 130px;
-  height: 25px;
+  width: 132px;
+  height: 27px;
 
   position: absolute;
   top: -32px;
   right: 20px;
   background: var(--foundation-primary-color);
   border-radius: var(--space-8);
-  padding: var(--space-4);
+  padding: var(--space-4) var(--space-56) var(--space-4) var(--space-4);
   color: var(--foundation-background-color);
   border: 0.0437rem solid #373f67;
   text-align: center;
@@ -245,6 +253,13 @@ header {
 
   .text-start-deletecash {
     margin: 0 var(--space-16);
+    /* 사용자가 클릭했을 때 웹사이트 내부 로직이 실행되는 캐시 삭제 기능을 트리거에 <button> 태그가 적절함으로 수정 진행 */
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
   }
 }
 
@@ -255,7 +270,8 @@ footer {
 }
 
 cite {
-  color: var(--contents-secondary-color);
+  /* wave 웹 접근성 평가 낮은 색상 대비로 색상 변경 진행 */
+  color: var(--contents-primary-color);
   justify-content: left;
   padding: var(--space-12);
 }

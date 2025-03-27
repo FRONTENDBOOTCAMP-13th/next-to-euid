@@ -23,13 +23,15 @@
       <!--- 헤더 --->
       <header>
         <!-- 로고 이미지 -->
-        <h1 class="image-start-logo" aria-label="이듬 로고 이미지" tabindex="0">
+        <h1 class="image-start-logo">
           <a href="./login-welcome.html">
+            <span class="sr-only">로그인 페이지로 이동</span>
             <svg
               width="80"
               height="30"
               viewBox="0 0 73 27"
               fill="none"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
             >
               <g clip-path="url(#clip0_6_94)">
@@ -70,7 +72,7 @@
 
       <!--- 메인 --->
       <!-- 전체 컨테이너 -->
-      <main class="container-start">
+      <main role="main" class="container-start">
         <!-- 이메일, 비밀번호 입력창 -->
         <form class="login-form">
           <!-- 이메일 입력창 -->
@@ -129,16 +131,13 @@
                 name="checkbox-2"
                 id="checkbox-2"
               />
-              <label
-                class="checkbox__label svg-tag"
-                for="checkbox-2"
-                aria-label="자동 로그인을 원하신다면 체크해주세요."
-              >
+              <label class="checkbox__label svg-tag" for="checkbox-2">
                 <svg
                   width="20"
                   height="20"
                   viewBox="0 0 24 24"
                   fill="none"
+                  aria-hidden="true"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
@@ -310,7 +309,7 @@
               for="user-id"
               >가입 시 사용한 이메일 주소를 입력해주세요</label
             >
-            <p
+            <div
               class="input-sign-up--error-message font-paragraph-xs"
               id="error-message-user-id"
               aria-live="polite"
@@ -319,7 +318,7 @@
               <span
                 >이메일 형식에 맞지 않습니다. 알맞는 이메일을 입력해주세요</span
               >
-            </p>
+            </div>
           </div>
         </div>
 
@@ -420,10 +419,10 @@
 
       <!-- 푸터 -->
       <footer>
-        <cite class="font-paragraph-sm"
+        <small class="font-paragraph-sm"
           >&copy; 2025 LikeLion Corp. Bootcamp 13th Generation, Triple-Oil Team
-          3. All rights reserved.</cite
-        >
+          3. All rights reserved.
+        </small>
       </footer>
     </div>
   </body>
