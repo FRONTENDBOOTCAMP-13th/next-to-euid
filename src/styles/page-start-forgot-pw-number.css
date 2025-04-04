@@ -76,7 +76,7 @@
 }
 
 .label-forgot {
-  color: var(--contents-tertiary-color);
+  color: var(--contents-primary-color);
 }
 
 .forgot--error-message {
@@ -128,10 +128,10 @@
 /* 확인 버튼 텍스트 스타일 */
 .choice-btn-save-text {
   align-items: center;
-  background: var(--foundation-tertiary-color);
+  background-color: var(--dark-foundation-secondary-color);
   border: 0.0625rem solid var(--contents-secondary-color);
   border-radius: var(--spacing-sm);
-  color: var(--foundation-background-color);
+  color: var(--dark-contents-primary-color);
   height: var(--spacing-2xl);
   display: flex;
   justify-content: center;
