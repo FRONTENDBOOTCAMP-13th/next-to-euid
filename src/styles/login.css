@@ -366,7 +366,7 @@ small {
 }
 
 .dialog--title {
-  color: var(--foundation-primary-color);
+  color: var(--contents-primary-color);
   font-size: var(--font-xl-24);
   display: flex;
   flex-direction: column;
@@ -407,10 +407,10 @@ small {
 
 .dialog-choice-btn-save {
   align-items: center;
-  background: var(--foundation-tertiary-color);
+  background-color: var(--dark-foundation-secondary-color);
   border: 0.0625rem solid var(--contents-secondary-color);
   border-radius: var(--spacing-sm);
-  color: var(--foundation-background-color);
+  color: var(--dark-contents-primary-color);
   height: var(--spacing-2xl);
   display: flex;
   justify-content: space-between;
@@ -464,7 +464,7 @@ small {
 }
 
 .label-active {
-  color: var(--contents-tertiary-color);
+  color: var(--contents-primary-color);
 }
 
 .login-panel-dialog[open] .input-sign-up--error-message {

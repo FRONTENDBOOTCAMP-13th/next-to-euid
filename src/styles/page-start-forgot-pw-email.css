@@ -31,7 +31,7 @@
 }
 
 .page-login-forgot-pw--title {
-  color: var(--foundation-primary-color);
+  color: var(--contents-primary-color);
   font-size: var(--font-xl-24);
   display: flex;
   flex-direction: column;
@@ -50,13 +50,14 @@
 
 /* forgot-pw-email--contents-wrapper 세팅 */
 .pw-email-text {
-  color: var(--contents-secondary-color);
+  color: var(--contents-primary-color);
   margin: 5rem var(--spacing-3xl);
   text-align: center;
 }
 
 .dialog-choice-btn-save {
-  color: var(--foundation-background-color);
+  background-color: var(--dark-foundation-secondary-color);
+  color: var(--dark-contents-primary-color);
   padding-inline: var(--spacing-4xl);
   height: 3.0938rem;
   width: 100%;
