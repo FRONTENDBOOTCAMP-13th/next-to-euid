@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "all": "run-s clean build preview",
-    "start": "live-server ./src --port=8090 --host=localhost --no-browser"
+    "start": "live-server ./src --port=8090 --host=localhost --no-browser",
+    "format": "prettier . --write"
   },
   "devDependencies": {
     "braces": "^3.0.3",
