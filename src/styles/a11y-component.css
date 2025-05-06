@@ -12,22 +12,22 @@
   }
 }
 
-.side-menu--inner {
+.side-menu-inner {
   position: fixed;
   top: 0;
   right: 0;
   width: 285px;
   height: 100vh;
-  box-shadow: -5px 0 4px 0 rgba(0, 0, 0, 0.3);
-  /* transform: translateX(100%); */
-  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
+  transition: transform 0.4s ease-in;
   z-index: 1000;
   padding: 2rem 0 0;
 
-  /* 열렸을 때 상태 */
-  /* &.is-active {
+  &.open {
     transform: translateX(0);
-  }  */
+    background-color: #fff;
+    box-shadow: -5px 0 4px 0 rgba(0, 0, 0, 0.3);
+  }
 
   #close-button {
     position: absolute;
@@ -45,7 +45,7 @@
   }
 }
 
-.ally-menu-panel {
+.a11y-menu-panel {
   display: grid;
   grid-template-columns: repeat(2, 7.5rem);
   grid-template-rows: repeat(2, 6.25rem);

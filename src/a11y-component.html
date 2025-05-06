@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="/src/styles/a11y-component.css" />
-    <script type="module" src="/src/a11y-component.js"></script>
   </head>
   <body>
     <h1>Accessibility Widget Button</h1>
     <ul>
       <li>HTML : 메뉴 영역과 토글 버튼</li>
-      <li>CSS : 메뉴 위치를 오른쪽 바깥에 두고, transform으로 슬라이딩</li>
+      <li>SASS : 메뉴 위치를 오른쪽 바깥에 두고, transform으로 슬라이딩</li>
       <li>JavaScript : 버튼 클릭 시 메뉴에 클래스 추가/제거</li>
     </ul>
 
@@ -41,9 +40,14 @@
         </svg>
       </button>
 
-      <div class="side-menu--inner">
+      <div class="side-menu-inner">
         <!-- 접근성 닫기 버튼 -->
-        <button id="close-button" aria-label="접근성 정보 닫기">
+        <button
+          id="close-button"
+          aria-controls="a11y-closeBtn"
+          aria-expanded="false"
+          aria-label="접근성 정보 닫기"
+        >
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +75,7 @@
           </svg>
         </button>
 
-        <div class="ally-menu-panel">
+        <div class="a11y-menu-panel">
           <!-- 돋보기 버튼 -->
           <button>
             <svg
@@ -226,5 +230,6 @@
         </div>
       </div>
     </section>
+    <script src="/src/a11y-component.js"></script>
   </body>
 </html>
