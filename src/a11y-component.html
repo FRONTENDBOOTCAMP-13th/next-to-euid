@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>A11y-Component</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/src/asset/favicon/tripple-oil.svg" />
+    <!-- <link
+      rel="preload"
+      as="font"
+      href="/font/woff2/PretendardVariable.woff2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/font/pretendardvariable.css" /> -->
+    <link rel="stylesheet" href="/src/style.css" />
+    <link rel="stylesheet" href="./styles/component-start.css" />
+    <link rel="stylesheet" href="./styles/a11y-component.css" />
+
+    <!-- <script type="module" src="/src/main.js"></script> -->
+  </head>
+
+  <body class="component-page">
+    <h1 class="page-title">EUIM UI Project component</h1>
+    <div class="start-section">
+      <section class="wrapper icon-wrapper">
+        <h2 class="title-section">a11y component / a11y 컴포넌트</h2>
+        <!-- Atomic Unit Components -->
+        <div class="component-atomic">
+          <ul class="component-start component-atomic-start-icon">
+            <!-- Button/a11y- -->
+            <li class="component-atomic-icon-start--active">
+              Button/a11y
+              <div class="icon-start-fullmy--active"></div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <script src="/src/a11y-component.js"></script>
+    <script>
+      // 돋보기 초기화 (옵션 설정 가능)
+      const myMagnifier = Magnifier.init({
+        size: 250, // 돋보기 크기 (픽셀)
+        zoomLevel: 2, // 확대 배율 (200%)
+        borderColor: '#3498db', // 테두리 색상
+        showButton: true, // 버튼 표시 여부
+        buttonText: '돋보기 켜기',
+        buttonOffText: '돋보기 끄기',
+      });
+
+      // 프로그래밍 방식으로 돋보기 제어 예시
+      // myMagnifier.enable();  // 돋보기 활성화
+      // myMagnifier.disable(); // 돋보기 비활성화
+      // console.log(myMagnifier.isActive()); // 활성화 상태 확인
+    </script>
+  </body>
+</html>
